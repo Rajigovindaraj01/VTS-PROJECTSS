@@ -1,0 +1,488 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header{
+    margin: auto;
+    width: 98vw;
+    background-color:#6B8E23;
+    padding: 30px;
+    border-bottom: 1px solid rgb(19, 8, 8);
+    box-shadow: 3px 3px 5px gray;
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10%;
+    align-items: center;
+}
+
+.link-items{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+nav a{
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: "Inter", sans-serif;
+    color: white;
+    padding: 10px;
+    border: 1px solid #6B8E23;
+    border-radius: 10px;
+    align-content: center;
+}
+nav a:hover{
+    cursor: pointer;
+    border: 1px solid #FFB300;
+    border-radius: 10px;
+}
+
+.sign-button{
+    width: 11vw;
+    padding: 15px;
+    font-family: "Inter", sans-serif;
+    color: black;
+    background-color: #FFB300;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.profile img{
+    width: 100%;
+    height: 100%;
+}
+.profile:hover{
+    border: 1px solid #6B8E23;
+}
+@media (max-width:1024px) {
+    header{
+        width: 98vw;
+    }
+    nav {
+        grid-template-columns: 1fr 2fr;
+        gap: 5%;
+    }
+
+    .link-items {
+        gap:20px;
+    }
+
+    nav a {
+        font-size:20px;
+        padding: 8px;
+    }
+
+    .sign-button {
+        width: 10vw;
+        padding: 12px;
+        font-size: 1em;
+    }
+}
+
+/* 600px to 1020px*/
+@media (max-width: 1020px) and (min-width: 600px) {
+    header{
+        width: 98vw;
+    }
+    nav {
+        grid-template-columns: 1fr 2fr;
+        gap: 5%;
+    }
+
+    .link-items {
+        gap:10px;
+    }
+
+    nav a {
+        font-size:1em;
+        padding: 8px;
+    }
+
+    .sign-button {
+        width: 8vw;
+        padding: 12px;
+        font-size: 1em;
+    }
+    .profile{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        font-size: 12px;
+    }
+    .profile img{
+        width: 50%;
+        height: 50%;
+    }
+    .profile:hover{
+        border: 1px solid #6B8E23;
+    }
+}
+
+/* 300px to 600px*/
+@media (max-width: 600px) and (min-width: 300px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .link-items {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 1.2em;
+        padding: 8px 15px;
+    }
+
+    header {
+        padding: 20px;
+    }
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.container{
+    width: 85vw;
+    height: 60vh;
+    margin: auto;
+    position: relative;
+    top: 50px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+.profile-item{
+    padding: 5px;
+}
+.profile1{
+    font-family: "Inter", sans-serif;
+    color: #FFB300;
+    font-size: 35px;
+}
+.name{
+    font-family: "Inter", sans-serif;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.course{
+    font-family: "Inter", sans-serif;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.mail{
+    font-family: "Inter", sans-serif;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.phone{
+    font-family: "Inter", sans-serif;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.buttons{
+    font-family: "Inter", sans-serif;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: #FFB300;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+@media (min-width:300px) and (max-width:600px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .container img{
+        width: 100%;
+        height: 100%;
+    }
+    .name,
+    .mail,
+    .phone,
+    .course{
+        font-size: 20px;
+    }
+    .buttons{
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+@media (min-width:601px) and (max-width:1020px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .container img{
+        width: 100%;
+        height: 100%;
+    }
+    .name,
+    .mail,
+    .phone,
+    .course{
+        font-size: 20px;
+    }
+    .buttons{
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.course-status-container{
+    width: 85vw;
+    height: 80vh;
+    margin: auto;
+    position: relative;
+    top: 50px;
+}
+.course-status-container h1{
+    color: #FFB300;
+    font-family: "Inter", sans-serif;
+}
+.table-container{
+    position: relative;
+    top: 50px;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.table-container-col1{
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    justify-items: center;
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+.table-container-col1 > * {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+}
+
+@media (min-width:300px) and (max-width:600px) {
+    .table-container{
+        top: 300px;
+    }
+    .course-status-container h1{
+        position: relative;
+        top: 300px;
+    }
+    .table-container-col1{
+        font-size: 15px;
+    }
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+footer{
+    background-color: #6B8E23;
+    height: 60vh;
+    position: relative;
+    top: 130px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 20px;
+}
+.footer-col1{
+    display: grid;
+    grid-template-rows: 6fr 1fr;
+}
+.footer-col1 p{
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+.footer-col2{
+    padding: 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    border-right: 2px solid black;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    margin-top: 5%;
+    font-weight: bold;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid #6B8E23;
+    padding: 5px;
+    width: 15vw;
+}
+.links a:hover{
+    border: 1px solid #FFB300;
+    border-radius: 10px;
+}
+.footer-col3{
+    padding: 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+}
+.links1{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border-right: 2px solid black;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    margin-top: 5%;
+    font-weight: bold;
+}
+.links1 a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid #6B8E23;
+    padding: 5px;
+    width: 15vw;
+}
+.links1 a:hover{
+    border: 1px solid #FFB300;
+    border-radius: 10px;
+}
+
+.footer-col4{
+    padding: 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+}
+.links2{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    margin-top: 5%;
+    font-weight: bold;
+}
+.Contact{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+.Contact a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid #6B8E23;
+    padding: 5px;
+    width: 15vw;
+}
+.Contact a:hover{
+    border: 1px solid #FFB300;
+    border-radius: 10px;
+}
+
+/* Mobile: 300px to 600px */
+@media (min-width: 300px) and (max-width: 600px) {
+    footer {
+      grid-template-columns: 1fr;
+      height: auto;
+      top: 400px;
+      padding: 10px;
+      gap: 20px;
+    }
+  
+    .footer-col1, .footer-col2, .footer-col3, .footer-col4 {
+      padding: 10px;
+      text-align: center;
+      justify-items: center;
+    }
+    .links a, .links1 a, .Contact a {
+      width: 80vw;
+      font-size: 14px;
+    }
+  
+    .links, .links1, .Contact {
+      gap: 20px;
+      border-right: none;
+      justify-content: left;
+    }
+  
+    .footer-col1 img {
+      width: 60%;
+    }
+  
+    .footer-col1 p {
+      font-size: 16px;
+      text-align: center
+    }
+  }
+  
+  /* Tablet: 601px to 1020px */
+  @media (min-width: 601px) and (max-width: 1020px) {
+    footer {
+      grid-template-columns: 1fr 1fr;
+      height: auto;
+      top: 200px;
+      gap: 30px;
+    }
+  
+    .footer-col1 img {
+      width: 50%;
+    }
+  
+    .links a, .links1 a, .Contact a {
+      width: 30vw;
+      font-size: 16px;
+    }
+  
+    .links, .links1, .Contact {
+      border-right: none;
+    }
+  
+    .footer-col1 p {
+      font-size: 18px;
+    }
+  }
+  
+  /* Laptop: 1024px */
+  @media (min-width: 1021px) and (max-width: 1024px) {
+    footer {
+      grid-template-columns: repeat(4, 1fr);
+      height: auto;
+      top: 200px;
+    }
+  
+    .links a, .links1 a, .Contact a {
+      width: 12vw;
+      font-size: 16px;
+    }
+  
+    .footer-col1 img {
+      width: 45%;
+    }
+  
+    .footer-col1 p {
+      font-size: 20px;
+    }
+  }

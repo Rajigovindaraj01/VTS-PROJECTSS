@@ -1,0 +1,316 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container{
+    background-color:#6B8E23;
+    height: 150vh;
+    margin: auto;
+    width: 98vw;
+}
+.login-container{
+    width: 90vw;
+    background-color: white;
+    height: 130vh;
+    margin: auto;
+    position: relative;
+    top: 60px;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+}
+.image{
+    overflow: hidden;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.login-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-content img{
+    position: absolute;
+    top: 5%;
+    left: 22%;
+    transform: translateX(-22px);
+}
+.login-content h1{
+    position: absolute;
+    top: 15%;
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+}
+.email{
+    position: absolute;
+    top: 25%;
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    padding: 15px;
+    width: 35vw;
+    color: black;
+}
+.pass{
+    position: absolute;
+    top: 38%;
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    padding: 15px;
+    width: 35vw;
+    color: black;
+}
+.email::placeholder{
+    color: black;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+}
+.pass::placeholder{
+    color: black;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+}
+.login-content .login{
+    position: absolute;
+    top: 50%;
+    text-decoration: none;
+    background-color: #FFB300;
+    padding: 18px 210px;
+    color: black;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.or-divider {
+    position: absolute;
+    top: 60%;
+    width: 40%;
+    text-align: center;
+    border-bottom: 2px solid black;
+    line-height: 0.10em;
+    margin: 20px 0 20px;
+  }
+  
+  .or-divider span {
+    background: white;
+    padding: 0 10px;
+    color: black;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+  }
+  
+.login-google{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 70%;
+    padding: 18px 140px;
+    color: black;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    background-color: white;
+}
+.login-google img{
+    position: absolute;
+    left: 20%;
+    top: 25%;
+}
+.login-content p{
+    position: absolute;
+    top: 85%;
+    color: black;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+.Sign{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------- Mobile: 300px to 600px --------------- */
+@media screen and (max-width: 600px) {
+    .container{
+        height: 160vh;
+    }
+    .login-container {
+      grid-template-columns: 1fr;
+      height: 140vh;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .image {
+      height: 200px;
+    }
+  
+    .login-content img {
+      position: static;
+      margin-top: 20px;
+      left: 50%;
+      transform: translateX(-0%);
+      width: 80px;
+    }
+  
+    .login-content h1 {
+      position: static;
+      font-size: 30px;
+      margin: 10px 0;
+    }
+  
+    .email,
+    .pass {
+      position: static;
+      width: 80%;
+      font-size: 18px;
+      margin: 10px 0;
+    }
+  
+    .login-content .login {
+      position: static;
+      padding: 12px 90px;
+      font-size: 18px;
+      margin: 15px 0;
+    }
+  
+    .or-divider {
+      position: static;
+      width: 80%;
+      margin: 20px 0;
+    }
+  
+    .login-google {
+      position: static;
+      padding: 12px 10px;
+      font-size: 18px;
+      margin-bottom: 15px;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .login-google img {
+      position: static;
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .login-content p {
+      position: static;
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+  }
+  
+  /* --------------- Tablet: 601px to 1020px --------------- */
+  @media screen and (min-width: 601px) and (max-width: 1020px) {
+    .container{
+        height: 200vh;
+    }
+    .login-container {
+      grid-template-columns: 1fr;
+      height: auto;
+    }
+  
+    .image {
+      height: 300px;
+    }
+  
+    .login-content img {
+      position: static;
+      margin-top: 30px;
+      width: 90px;
+      left: 50%;
+      transform: translateX(-0%);
+    }
+  
+    .login-content h1 {
+      position: static;
+      font-size: 35px;
+      margin: 15px 0;
+    }
+  
+    .email,
+    .pass {
+      position: static;
+      width: 70%;
+      font-size: 20px;
+      margin: 12px 0;
+    }
+  
+    .login-content .login {
+      position: static;
+      padding: 14px 100px;
+      font-size: 20px;
+      margin: 15px 0;
+    }
+  
+    .or-divider {
+      position: static;
+      width: 70%;
+      margin: 25px 0;
+    }
+  
+    .login-google {
+      position: static;
+      padding: 10px 100px;
+      font-size: 20px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+  
+    .login-google img {
+      position: static;
+      margin-right: 10px;
+      width: 22px;
+      height: 22px;
+      margin-bottom: 20px;
+    }
+  
+    .login-content p {
+      position: static;
+      margin-bottom: 40px;
+      font-size: 18px;
+    }
+  }
+  
+  /* --------------- Laptop: 1024px and above --------------- */
+  @media screen and (min-width: 1024px) {
+    .login-container {
+      grid-template-columns: 4fr 3fr;
+      height: 130vh;
+    }
+  
+    .login-content img,
+    .login-content h1,
+    .email,
+    .pass,
+    .login-content .login,
+    .or-divider,
+    .login-google,
+    .login-content p {
+      position: absolute;
+    }
+    .login-content .login{
+      padding: 14px 150px;
+    }
+  }
+  

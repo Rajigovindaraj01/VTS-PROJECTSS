@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Invoice</title>
+  <link rel="stylesheet" href="../css/invoics.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Boldonse&family=Cookie&family=Creepster&family=Engagement&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Outline&family=Londrina+Shadow&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Rochester&family=Rubik+Mono+One&family=Rubik+Wet+Paint&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sacramento&family=Special+Gothic+Condensed+One&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="invoice-container" id="invoice">
+    <h1>Tax Invoice</h1>
+
+    <div class="sold-by">
+      <p><span class="highlight">Sold By:</span> <strong style="color: #f26a2e;font-weight: 500; font-size: 20px;">Vetri Market</strong></p>
+      <p><span class="highlight">Ship-From Address:</span> Vetri market<br/>
+      65, Old Market, Sivagurunathapuram, Surandai,<br/>
+      Tamil Nadu 627-859</p>
+    </div>
+    <hr>
+    <div class="details">
+      <div class="order-info">
+        <p><span class="highlight">Order ID:</span> <span id="order-id"></span></p>
+        <p><span class="highlight">Order Date:</span> <span id="order-date"></span></p>
+      </div>
+      <div class="address">
+        <p class="highlight">Billing Address</p>
+        <p id="customer-name"></p>
+        <p id="customer-address"></p>
+        <p id="customer-phone"></p>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Total Amount</th>
+        </tr>
+      </thead>
+      <tbody id="product-table-body">
+        
+      </tbody>
+    </table>
+
+    <div class="total">Total ₹ <span id="grand-total">0.00</span></div>
+
+    <button class="download-btn" onclick="downloadInvoice()">Download Invoice</button>
+  </div>
+
+  <script>
+  const randomBillNo = "ORD" + Math.floor(100000 + Math.random() * 900000);
+  const currentDate = new Date();
+  const formattedDate = currentDate.toLocaleDateString("en-IN", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric"
+  });
+
+  if (!sessionStorage.getItem("completedOrder")) {
+    const completedOrder = {
+      billNo: randomBillNo,
+      date: formattedDate
+    };
+    sessionStorage.setItem("completedOrder", JSON.stringify(completedOrder));
+  }
+
+  const customer = JSON.parse(localStorage.getItem("customer")) || {};
+  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const completedOrder = JSON.parse(sessionStorage.getItem("completedOrder")) || {};
+  document.getElementById("order-id").textContent = completedOrder.billNo || "N/A";
+  document.getElementById("order-date").textContent = completedOrder.date || "N/A";
+  document.getElementById("customer-name").textContent = customer.name || "";
+  document.getElementById("customer-address").textContent = customer.address || "";
+  document.getElementById("customer-phone").textContent = `Phone– ${customer.number || ""}`;
+  const tableBody = document.getElementById("product-table-body");
+  let totalAmount = 0;
+
+  cart.forEach(product => {
+    const row = document.createElement("tr");
+    const productTotal = product.rate * product.qty;
+
+    row.innerHTML = `
+      <td>${product.name}</td>
+      <td>${product.qty}</td>
+      <td>${product.rate}</td>
+      <td>${productTotal.toFixed(2)}</td>
+    `;
+
+    totalAmount += productTotal;
+    tableBody.appendChild(row);
+  });
+
+  document.getElementById("grand-total").textContent = totalAmount.toFixed(2);
+  function downloadInvoice() {
+    const invoice = document.getElementById("invoice");
+    html2pdf().from(invoice).save("Invoice.pdf");
+  }
+</script>
+</body>
+</html>

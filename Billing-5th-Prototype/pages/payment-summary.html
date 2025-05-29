@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment-summary</title>
+    <link rel="stylesheet" href="../css/payment-summary.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Boldonse&family=Cookie&family=Creepster&family=Engagement&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Outline&family=Londrina+Shadow&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Rochester&family=Rubik+Mono+One&family=Rubik+Wet+Paint&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sacramento&family=Special+Gothic+Condensed+One&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-col1">
+            <div class="col-1-content">
+                <div class="col1-item">
+                    <img
+                        src="../Assets/Images/vibrant-outdoor-farmers-market-with-fresh-fruits-and-vegetables-in-rustic-village-setting-on-sunny-day-photo.jpg">
+                </div>
+                <div class="col1-item2"> Vetri Super Market</div>
+            </div>
+            <div class="navs">
+                <nav>
+                    <a href="../index.html"><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="#" style="color: #F8BE55;"><i class="fa-solid fa-shapes"></i> Products</a>
+                </nav>
+            </div>
+        </div>
+        <div class="container-col2">
+            <div class="summary-container">
+                <div class="top-section">
+                    <div>
+                        <p><i class="fa-regular fa-calendar-days"></i> <strong>DATE:</strong> <span id="date"></span>
+                        </p>
+                        <p><i class="fa-regular fa-clock"></i> <strong>TIME:</strong> <span id="time"></span></p>
+                        <p><i class="fa-solid fa-receipt"></i> <strong>BILL NO:</strong> <span id="billNo"></span></p>
+
+                    </div>
+                    <button class="draft-btn"><i class="fa-solid fa-file"></i> Draft</button>
+                </div>
+
+                <div class="amount-section">
+                    <div class="collected"> Collected Amount<br><strong>130</strong></div>
+                    <div class="balance"> Balance <br> <strong>0.00</strong></div>
+                </div>
+
+                <div class="payment-methods">
+                    <button class="pay-btn selected"><i class="fa-solid fa-money-bill-wave"></i> CASH</button>
+                    <button class="pay-btn"><i class="fa-solid fa-credit-card"></i> CARD</button>
+                    <div class="received-box">
+                        <label><i class="fa-solid fa-wallet"></i> Received Amount</label>
+                        <input type="text" value="150.00" readonly />
+                    </div>
+                </div>
+
+                <div class="bill-breakdown">
+                    <p>Sub Total <span id="total"></span></p>
+                    <p>Tax <span id="tax"></span></p>
+                    <p>Round Off <span id="roundOff"></span></p>
+                    <hr />
+                    <p class="total"> Total <span id="grandTotal"></span></p>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn save"><i class="fa-regular fa-floppy-disk"></i> Save</button>
+                    <button class="btn pay"><i class="fa-solid fa-money-check-dollar"></i> Payment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="../js/payment-summary.js"></script>
+</body>
+
+</html>

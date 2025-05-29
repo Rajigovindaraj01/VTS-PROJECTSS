@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home-page</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Boldonse&family=Cookie&family=Creepster&family=Engagement&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Outline&family=Londrina+Shadow&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Rochester&family=Rubik+Mono+One&family=Rubik+Wet+Paint&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sacramento&family=Special+Gothic+Condensed+One&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-col1">
+            <div class="col-1-content">
+                <div class="col1-item">
+                    <img
+                        src="./Assets/Images/vibrant-outdoor-farmers-market-with-fresh-fruits-and-vegetables-in-rustic-village-setting-on-sunny-day-photo.jpg">
+                </div>
+                <div class="col1-item2"> Vetri Super Market</div>
+            </div>
+            <div class="navs">
+                <nav>
+                    <a href="#" style="color: #F8BE55;"><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="./pages/products.html"><i class="fa-solid fa-shapes"></i> Products</a>
+                </nav>
+            </div>
+        </div>
+        <div class="container-col2">
+            <div class="Product-container">
+                <h1>Customer Details</h1>
+                <div class="customer-details">
+                    <div class="customer-details-item">
+                        <div>
+                            <label>CUSTOMER NAME</label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label>ADDRESS</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="customer-details-item">
+                        <div>
+                            <label>CUSTOMER NUMBER</label>
+                            <input type="number">
+                        </div>
+                        <div>
+                            <label>DATE<br></label>
+                            <input type="date">
+                        </div>
+                    </div>
+                    <div class="customer-details-item">
+                        <div>
+                            <button><i class="fa-solid fa-user-pen"></i></button>
+                        </div>
+                        <div>
+                            <button><i class="fa-solid fa-trash"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="seaching-adding">
+                    <div class="for-search">
+                        <div><span class="searching"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="search" placeholder="search"></div>
+                        <div>
+                            <span><i class="fa-solid fa-barcode"></i></span>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-microphone"></i></span>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="./pages/products.html" class="add-item"><i class="fa-solid fa-plus" style="color: white;"></i> Add Item</a>
+                    </div>
+                </div>
+
+
+                <div class="table-head">
+                    <div class="table-head-item">ITEM DETAILS</div>
+                    <div class="table-head-item">QUANTITY</div>
+                    <div class="table-head-item">RATE</div>
+                    <div class="table-head-item">TAX</div>
+                    <div class="table-head-item">AMOUNT</div>
+                </div>
+
+                <div id="cart-items-container"></div>
+            </div>
+
+            <div>
+                <button class="next-button">Next</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

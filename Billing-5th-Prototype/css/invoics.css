@@ -1,0 +1,155 @@
+body {
+  font-family: "Outfit", sans-serif;
+  margin: 3% 20%;
+}
+
+.invoice-container {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.address,
+.order-info {
+  width: 48%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,
+th {
+  border: 2px solid lightgreen;
+  text-align: center;
+}
+
+th,
+td {
+  border-right: 2px solid lightgreen;
+  padding: 20px;
+}
+
+.total {
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.download-btn {
+  display: block;
+  margin: 30px auto 0;
+  padding: 10px 20px;
+  background-color: #f26a2e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.highlight {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.sold-by {
+  margin-top: 20px;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  body {
+    margin: 5% 5%;
+  }
+
+  .details {
+    flex-direction: column;
+  }
+
+  .address,
+  .order-info {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .total {
+    font-size: 16px;
+  }
+
+  .highlight {
+    font-size: 16px;
+  }
+
+  .download-btn {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1020px) {
+  body {
+    margin: 5% 10%;
+  }
+
+  th,
+  td {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .highlight {
+    font-size: 18px;
+  }
+
+  .download-btn {
+    width: 50%;
+  }
+}
+
+
+@media (min-width: 1021px) and (max-width: 1024px) {
+  body {
+    margin: 3% 15%;
+  }
+
+  th,
+  td {
+    padding: 18px;
+    font-size: 17px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .highlight {
+    font-size: 20px;
+  }
+
+  .download-btn {
+    width: auto;
+  }
+}

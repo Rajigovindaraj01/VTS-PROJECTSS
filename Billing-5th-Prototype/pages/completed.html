@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Completed</title>
+  <link rel="stylesheet" href="../css/completed.css">
+  <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Boldonse&family=Cookie&family=Creepster&family=Engagement&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Outline&family=Londrina+Shadow&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Rochester&family=Rubik+Mono+One&family=Rubik+Wet+Paint&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sacramento&family=Special+Gothic+Condensed+One&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <body>
+  <div class="completed-container">
+    <img src="../Assets/Images/completed.png" alt="Order Completed" />
+    <h1>Your Order Completed</h1>
+    <p>Thank you. Your order has been received</p>
+
+    <div class="order-summary">
+      <span><strong>Order ID</strong><br><span id="orderId"></span></span>
+      <span><strong>Name</strong><br><span id="customerName"></span></span>
+      <span><strong>Phone Number</strong><br><span id="customerPhone"></span></span>
+      <span><strong>Email ID</strong><br><span id="customerEmail"></span></span>
+      <button class="invoice-btn" onclick="downloadInvoice()">Download Invoice</button>
+    </div>
+  </div>
+
+  <script src="../js/completed.js"> </script>
+</body>
+</body>
+</html>

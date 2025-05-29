@@ -1,0 +1,399 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+.container{
+    width: 98vw;
+    height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.container-col1{
+    background-color: #007bff70;
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    padding: 10px;
+}
+.col-1-content{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 10%;
+}
+.col1-item{
+    border-radius: 50%;
+}
+.col1-item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.col1-item2{
+    margin-top: 10%;
+}
+.navs nav{
+    display: grid;
+    margin-left: 10%;
+    gap: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.container-col2{
+    padding: 50px;
+}
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .container {
+    display: block;
+    width: 100vw;
+    height: auto;
+  }
+
+  .container-col1 {
+    height: 30vh;
+    padding: 20px;
+  }
+
+  .col-1-content {
+    grid-template-columns: 1fr 2fr;
+    height: auto;
+  }
+
+  .col1-item img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .col1-item2 {
+    margin-top: 10%;
+    font-size: 14px;
+  }
+
+  .navs nav {
+    margin-left: 0;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-col2 {
+    padding: 20px;
+  }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1020px) {
+  .container {
+    grid-template-columns: 1fr 3fr;
+    width: 100vw;
+    height: auto;
+  }
+
+  .container-col1 {
+    height: auto;
+    padding: 15px;
+  }
+
+  .col-1-content {
+    height: auto;
+  }
+   .col1-item2 {
+    margin-top: 20%;
+    font-size: 15px;
+  }
+
+  .navs nav {
+    margin-top: 20%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .container-col2 {
+    padding: 30px;
+  }
+}
+
+
+@media only screen and (min-width: 1021px) and (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr 4fr;
+    width: 100vw;
+    height: auto;
+  }
+
+  .container-col1 {
+    height: auto;
+    padding: 20px;
+  }
+
+  .col-1-content {
+    height: 12vh;
+  }
+   .col1-item2 {
+    margin-top: 10%;
+    font-size: 14px;
+  }
+
+  .navs nav {
+    margin-left: 0;
+    gap: 10px;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-col2 {
+    padding: 40px;
+  }
+}
+.summary-container {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.top-section {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.top-section p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  color: #333;
+  margin-top: 10%;
+}
+
+.draft-btn {
+  background-color: #ffce00;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #222;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.amount-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+.collected{
+    background-color: #ffce00;
+    text-align: center;
+}
+.balance{
+    background-color: thistle;
+    text-align: center;
+}
+
+.amount-section div {
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  width: 48%;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 15px;
+}
+
+.payment-methods {
+  margin: 1.5rem 0;
+}
+
+.pay-btn {
+  background: #e0e0e0;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  margin-right: 0.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pay-btn.selected {
+  background-color: #5cb85c;
+  color: #fff;
+}
+
+.received-box {
+  margin-top: 1rem;
+}
+
+.received-box label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  color: #333;
+}
+
+.received-box input {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  font-size: 1rem;
+}
+
+.bill-breakdown {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+.bill-breakdown p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.bill-breakdown hr {
+  margin: 1rem 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.bill-breakdown .total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.btn {
+  flex: 1;
+  padding: 0.75rem;
+  margin: 0 0.3rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn.save {
+  background-color: #ffce00;
+  color: white;
+}
+
+.btn.pay {
+  background-color:#007bff70;
+  color: white;
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .summary-container {
+    padding: 1rem;
+    max-width: 95%;
+  }
+
+  .btn {
+    flex-direction: column;
+    font-size: 0.9rem;
+  }
+
+  .pay-btn {
+    margin-bottom: 0.5rem;
+  }
+
+  .amount-section {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .amount-section div {
+    width: 100%;
+  }
+
+  .top-section {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    margin: 0.3rem 0;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1020px) {
+  .summary-container {
+    padding: 1.5rem;
+    max-width: 80%;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  .amount-section {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .amount-section div {
+    width: 48%;
+  }
+
+  .top-section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .action-buttons {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1021px) and (max-width: 1440px) {
+  .summary-container {
+    max-width: 500px;
+    padding: 2rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  .amount-section div {
+    font-size: 1rem;
+  }
+}

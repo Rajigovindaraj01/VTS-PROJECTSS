@@ -1,0 +1,205 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+.containers{
+    background-image: url('https://img.freepik.com/premium-photo/vintage-blurred-bokeh-pink-orange-spring-pastel-background_44161-206.jpg');
+    height: 100vh;
+    width: 98vw;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.img-container{
+    height: 75vh;
+    width: 35vw;
+    margin-top: 15%;
+}
+.containers img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  width: 400px;
+  margin-top: 20%;
+  height: 55vh;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+    background: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px !important;
+  border: 1px solid black;
+  padding-left: 40px;
+}
+
+.input-group .username,.pass-icon-lock{
+    position: absolute;
+    top: 25%;
+    left: 3%;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.forgot {
+  text-align: right;
+  font-size: 12px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #f8c400;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #d9aa00;
+}
+
+@media (min-width:300px) and (max-width:600px) {
+    .containers{
+    background-image: url('https://img.freepik.com/premium-photo/vintage-blurred-bokeh-pink-orange-spring-pastel-background_44161-206.jpg');
+    height: 200vh;
+    width: 98vw;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.img-container{
+    width: 90vw;
+}
+
+.containers img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  width: 90vw;
+  margin-top: 10%;
+  height: 60vh;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+    background: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px !important;
+  border: 1px solid black;
+  padding-left: 40px;
+}
+
+.input-group .username,.pass-icon-lock{
+    position: absolute;
+    top: 25%;
+    left: 3%;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.forgot {
+  text-align: right;
+  font-size: 12px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #f8c400;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #d9aa00;
+}
+}
+
+@media (min-width:601px) and (max-width:1020px) {
+    .login-container {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  width: 40vw;
+  margin-top: 20%;
+  height: 70vh;
+}
+}
+@media (min-width:1021px) and (max-width:1024px) {
+    .login-container {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  width: 40vw;
+  margin-top: 20%;
+  height: 70vh;
+}
+}

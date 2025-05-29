@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll</title>
+    <link rel="stylesheet" href="../css/payroll.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Boldonse&family=Cookie&family=Creepster&family=Engagement&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Outline&family=Londrina+Shadow&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Rochester&family=Rubik+Mono+One&family=Rubik+Wet+Paint&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sacramento&family=Special+Gothic+Condensed+One&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="containers">
+        <div class="container1">
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+            <nav id="side-nav">
+                <a href="../pages/home.html"><i class="fa-solid fa-palette"></i> Overview</a>
+                <a href="#" style="color: #F8CC14;"><i class="fa-solid fa-scroll"></i> Payroll</a>
+                <a href="../pages/payslip.html"><i class="fa-regular fa-file"></i> Payslip</a>
+            </nav>
+        </div>
+        <div class="container2">
+            <div class="top-contents">
+                <div class="payroll">Payroll Details</div>
+                <div class="top-buttons">
+                    <div>
+                        <button class="this-month"> This Month</button>
+                    </div>
+                    <div>
+                        <button class="download">Download</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <form id="payrollForm">
+                    <div class="form-group">
+                        <label>Employee Name</label>
+                        <input type="text" id="name" required />
+
+                        <label>Date</label>
+                        <input type="date" id="date" required />
+
+                        <label>No of Working Days</label>
+                        <input type="number" id="workingDays" required />
+
+                        <label>Additions</label>
+                        <input type="number" id="additions" />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Employee Role</label>
+                        <input type="text" id="role" required />
+
+                        <label>Basic Salary</label>
+                        <input type="number" id="basicSalary" required />
+
+                        <label>Total Present Days</label>
+                        <input type="number" id="presentDays" required />
+
+                        <label>Deductions</label>
+                        <input type="number" id="deductions" />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Employee ID</label>
+                        <input type="text" id="employeeId" required />
+
+                        <label>Total Salary</label>
+                        <input type="number" id="totalSalary" required />
+
+                        <label>Total Leave Days</label>
+                        <input type="number" id="leaveDays" />
+                    </div>
+
+                    <div class="buttons">
+                        <button type="submit" class="submit">Submit Payroll</button>
+                        <button type="reset" class="cancel">Cancel</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script src="../js/payroll.js"></script>
+</body>
+
+</html>

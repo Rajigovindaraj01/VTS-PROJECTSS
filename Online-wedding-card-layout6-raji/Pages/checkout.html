@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../Css/checkout.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Boldonse&family=Cookie&family=Creepster&family=Engagement&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Outline&family=Londrina+Shadow&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Rochester&family=Rubik+Mono+One&family=Rubik+Wet+Paint&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sacramento&family=Special+Gothic+Condensed+One&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <div class="section1-container">
+            <div class="container">
+                <div class="container-item1">
+                    <div class="col1-content1">
+                        <div class="col1-content1-item">
+                            <img src="../Assets/Images/card.png">
+                        </div>
+                        <div class="col1-content1-item">
+                            <img src="../Assets/Images/visa.png">
+                        </div>
+                        <div class="col1-content1-item">
+                            <img src="../Assets/Images/paypal.png">
+                        </div>
+                        <div class="col1-content1-item">
+                            <img src="../Assets/Images/cashless-payment.png">
+                        </div>
+                    </div>
+                    <div class="col1-content2-item">
+                        <div class="item1">
+                            <div class="item1-1"></div>
+                            <div class="item1-2">Paytm</div>
+                            <div class="item1-3"><img src="../Assets/Images/paytm.png"></div>
+                        </div>
+                        <div class="item1">
+                            <div class="item1-1"></div>
+                            <div class="item1-2">Gpay</div>
+                            <div class="item1-3"><img src="../Assets/Images/google-pay.png"></div>
+                        </div>
+                        <div class="item1">
+                            <div class="item1-1"></div>
+                            <div class="item1-2">Phonepe</div>
+                            <div class="item1-3"><img src="../Assets/Images/icons8-phone-pe-144.png"></div>
+                        </div>
+                        <div class="item1">
+                            <div class="item1-1"></div>
+                            <div class="item1-2">Bhim Upi</div>
+                            <div class="item1-3"><img src="../Assets/Images/icons8-bhim-upi-100.png"></div>
+                        </div>
+                        <div class="item6">
+                            <div class="item6-1"><i class="fa-solid fa-money-bills"></i></div>
+                            <div class="item6-2">Cash On Delivery</div>
+                            <div class="item6-3"><i class="fa-solid fa-chevron-down"></i></div>
+                        </div>
+                    </div>
+                    <div class="paras">
+                        <p><i class="fa-solid fa-circle-info" style="color: #007BFF; font-size: 24px;"
+                                title="More Info"></i> Credit card payments may take up to 24 hours to be processed!</p>
+                        <p>✅ Save my payments details for future purchase</p>
+                    </div>
+                </div>
+                <div class="container-item2">
+                    <div class="summary-container">
+                        <h2>Order Summary</h2>
+
+                        <div class="row">
+                            <div>Date:</div>
+                            <div id="order-date"></div>
+                        </div>
+                        <div class="row">
+                            <div>Time:</div>
+                            <div id="order-time"></div>
+                        </div>
+
+                        <hr>
+
+                        <div class="section-title">Products</div>
+                        <div class="row">
+                            <div id="product-name">Product Name</div>
+                            <div id="product-qty">1</div>
+                        </div>
+                        <div class="row">
+                            <div>Added Compliment</div>
+                            <div>Hold Bag</div>
+                        </div>
+
+                        <div class="coupon-row">
+                            <span>MAR0057</span>
+                            <span>Coupon Applied</span>
+                        </div>
+
+                        <div class="row price-row">
+                            <div>Subtotal</div>
+                            <div id="product-price">Rs. 0.00</div>
+                        </div>
+                        <div class="row price-row">
+                            <div>Shipping</div>
+                            <div>0.00 <span class="shipping-badge">Free</span></div>
+                        </div>
+
+                        <button class="btn-pay" id="pay-btn">Pay Rs. <span id="total-price">0.00</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="foooter-container">
+            <div class="footer-col1">
+                <div class="footer-logo">
+                    <img src="../Assets/Images/ChatGPT Image Jul 19, 2025, 02_07_31 PM.png">
+                </div>
+                <div class="footer-col1-para">
+                    Largest Wedding Cards Collections in Chennai
+                </div>
+            </div>
+            <div class="footer-col2">
+                <div>
+                    <h1>Information</h1>
+                </div>
+                <div>
+                    <a href="../Pages/aboutus.html">About Us</a>
+                </div>
+                <div>
+                    <a href="../Pages/Contactus.html">Contact Us</a>
+                </div>
+                <div>
+                    <a href="../Pages/faq.html">FAQ</a>
+                </div>
+                <div>
+                    <a href="../Pages/howtoorder.html">How to order wedding invitation online?</a>
+                </div>
+            </div>
+            <div class="footer-col3">
+                <div>
+                    <h1>Quick Access</h1>
+                </div>
+                <div>
+                    <a href="../index.html">Home</a>
+                </div>
+                <div>
+                    <a href="../Pages/WeddingInvitations.html">Wedding Cards</a>
+                </div>
+                <div>
+                    <a href="../Pages/hinduweddingcards.html">Hindu Wedding Cards</a>
+                </div>
+            </div>
+            <div class="footer-col4">
+                <div>
+                    <h1>Contact Us</h1>
+                </div>
+                <div>
+                    <p><i class="fa-solid fa-phone"></i> +91 9876543210</p>
+                </div>
+                <div>
+                    <p><i class="fas fa-envelope"></i> wedtype@weddingcards.com</p>
+                </div>
+                <div>
+                    <p>Operating hours:10.00Am to 10.00pm</p>
+                </div>
+                <div>
+                    <h3>Monday - sunday</h3>
+                </div>
+            </div>
+        </div>
+        <div class="footer-socialmedia">
+            <div>
+                <h4>Follow Us On</h4>
+            </div>
+            <div class="socialmedia-images">
+                <img src="../Assets/Images/instagram (1).png">
+            </div>
+            <div class="socialmedia-images">
+                <img src="../Assets/Images/facebook (1).png">
+            </div>
+            <div class="socialmedia-images">
+                <img src="../Assets/Images/youtube (1).png">
+            </div>
+            <div class="socialmedia-images">
+                <img src="../Assets/Images/whatsapp.png">
+            </div>
+        </div>
+        <div class="footer-content">
+            <p>© Wed Knot craft India Private Limited. All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+
+    <script src="../Js/checkout.js"></script>
+</body>
+
+</html>

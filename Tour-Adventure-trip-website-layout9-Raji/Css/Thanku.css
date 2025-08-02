@@ -1,0 +1,722 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+.offer-nav{
+    text-align: center;
+    background-color: #16404D;
+    color: white;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.offer-nav span{
+    text-decoration: underline;
+}
+@media (min-width:300px) and (max-width:400px) {
+    .offer-nav{
+    font-size: 8px;
+}
+}
+@media (min-width:401px) and (max-width:576px) {
+    .offer-nav{
+    font-size: 10px;
+}
+}
+@media (min-width:577px) and (max-width:768px) {
+    .offer-nav{
+    font-size: 13px;
+}
+}
+@media (min-width:769px) and (max-width:992px) {
+    .offer-nav{
+    font-size: 15px;
+}
+}
+@media (min-width:993px) and (max-width:1200px) {
+    .offer-nav{
+    font-size: 18px;
+}
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    width: 70vw;
+    height: 12vh;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 5%;
+   
+}
+.nav-bar-col1{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3%;
+    height: 100%;
+    width: 90%;
+    align-items: center;
+    justify-items: center;
+    background-color: #E0F2FF;
+    border-radius: 20px;
+}
+.logo a{
+    font-size: 40px;
+    font-family: "Dokdo", system-ui;
+}
+.nav-lists{
+    height: 100%;
+    width: 100%;
+   display: flex;
+   flex-direction: row;
+   gap: 5%;
+   align-items: center;
+   justify-items: center;
+   justify-content: center;
+}
+.nav-lists a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+}
+.nav-bar-col2{
+    height: 100%;
+    width: 10%;
+    align-items: center;
+    justify-items: center;
+    background-color: #E0F2FF;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+@media (min-width:300px) and (max-width:400px) {
+    .nav-bar{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 40vh;
+    margin-top: 10%;
+}
+.nav-bar-col1{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3%;
+    height: 50vh;
+    width: 95%;
+}
+.logo a{
+    font-size: 30px;
+}
+.nav-lists{
+    height: 100%;
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 5%;
+}
+.nav-lists a{
+    font-size: 13px;
+}
+.nav-bar-col2{
+    height: 30vh;
+    width: 20%;
+}
+}
+@media (min-width:401px) and (max-width:576px) {
+        .nav-bar{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 40vh;
+    margin-top: 10%;
+}
+.nav-bar-col1{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3%;
+    height: 50vh;
+    width: 95%;
+}
+.logo a{
+    font-size: 30px;
+}
+.nav-lists{
+    height: 100%;
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 5%;
+}
+.nav-lists a{
+    font-size: 13px;
+}
+.nav-bar-col2{
+    height: 30vh;
+    width: 20%;
+}
+}
+@media (min-width:577px) and (max-width:768px) {
+    .nav-bar{
+    width: 90vw;
+    height: 12vh;
+}
+.logo a{
+    font-size: 30px;
+}
+.nav-lists a{
+    font-size: 20px;
+}
+}
+@media (min-width:769px) and (max-width:992px) {
+        .nav-bar{
+    width: 80vw;
+    height: 12vh;
+}
+.logo a{
+    font-size: 35px;
+}
+.nav-lists a{
+    font-size: 20px;
+}
+}
+@media (min-width:993px) and (max-width:1200px) {
+        .nav-bar{
+    width: 70vw;
+    height: 12vh;
+}
+.logo{
+    font-size: 40px;
+}
+.nav-lists a{
+    font-size: 25px;
+}
+}
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.section1{
+    width: 50vw;
+    height: 70vh;
+    margin: auto;
+    position: relative;
+    margin-top: 5%;
+}
+.section1 img{
+    height: 100%;
+    width: 100%;
+}
+@media (min-width:300px) and (max-width:400px) {
+    .section1{
+    width: 80vw;
+    height: 30vh;
+    margin: auto;
+    position: relative;
+    margin-top: 5%;
+}
+.section1 img{
+    height: 100%;
+    width: 100%;
+}
+}
+@media (min-width:401px) and (max-width:576px) {
+    .section1{
+    width: 90vw;
+    height: 50vh;
+    margin: auto;
+    position: relative;
+    margin-top: 5%;
+}
+.section1 img{
+    height: 100%;
+    width: 100%;
+}
+}
+@media (min-width:577px) and (max-width:768px) {
+    .section1{
+    width: 70vw;
+    height: 70vh;
+    margin: auto;
+    position: relative;
+    margin-top: 5%;
+}
+.section1 img{
+    height: 100%;
+    width: 100%;
+}
+}
+@media (min-width:769px) and (max-width:992px) {
+    .section1{
+    width: 80vw;
+    height: 70vh;
+    margin: auto;
+    position: relative;
+    margin-top: 5%;
+}
+.section1 img{
+    height: 100%;
+    width: 100%;
+}
+}
+@media (min-width:993px) and (max-width:1200px) {
+    .section1{
+    width: 70vw;
+    height: 70vh;
+    margin: auto;
+    position: relative;
+    margin-top: 5%;
+}
+.section1 img{
+    height: 100%;
+    width: 100%;
+}
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+footer{
+    width: 98vw;
+    height: 120vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../Assests/Images/footer\ image.png');
+}
+.footer-container{
+    height: 60vh;
+    width: 85vw;
+    margin: auto;
+    position: relative;
+    top: 40%;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+}
+.footer-col1{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    align-items: center;
+}
+.foot-col1-1 a{
+    font-family: "Dokdo", system-ui;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+}
+.foot-col1-2{
+    font-size: 20px;
+}
+.footer-col2{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer-col2 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.footer-col3{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer-col3 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.copyright{
+    width: 85vw;
+    margin: auto;
+    position: relative;
+    margin-top: 15%;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+@media (min-width:300px) and (max-width:400px) {
+    footer{
+    width: 98vw;
+    height: 120vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../Assests/Images/footer\ image.png');
+    position: relative;
+    margin-top: 40%;
+}
+.footer-container{
+    height: auto;
+    width: 85vw;
+    margin: auto;
+    position: relative;
+    top: 20%;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10%;
+    justify-items: center;
+    align-content: center;
+}
+.footer-col1{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+.foot-col1-1 a{
+    font-family: "Dokdo", system-ui;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+}
+.foot-col1-2{
+    font-size: 20px;
+}
+.footer-col2{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.footer-col2 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.footer-col3{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.footer-col3 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.copyright{
+    width: 85vw;
+    margin: auto;
+    position: relative;
+    margin-top:60%;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+}
+@media (min-width:401px) and (max-width:576px) {
+    footer{
+    width: 98vw;
+    height: 140vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../Assests/Images/footer\ image.png');
+    position: relative;
+    margin-top: 30%;
+}
+.footer-container{
+    height: auto;
+    width: 85vw;
+    margin: auto;
+    position: relative;
+    top: 20%;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10%;
+    justify-items: center;
+    align-content: center;
+}
+.footer-col1{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+.foot-col1-1 a{
+    font-family: "Dokdo", system-ui;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+}
+.foot-col1-2{
+    font-size: 20px;
+}
+.footer-col2{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.footer-col2 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.footer-col3{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.footer-col3 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.copyright{
+    width: 85vw;
+    margin: auto;
+    position: relative;
+    margin-top:50%;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+}
+@media (min-width:577px) and (max-width:768px) {
+    footer{
+    width: 98vw;
+    height: 100vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../Assests/Images/footer\ image.png');
+    position: relative;
+    margin-top: 10%;
+}
+.footer-container{
+    height: 60vh;
+    width: 85vw;
+    margin: auto;
+    position: relative;
+    top: 40%;
+    color: white;
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr 2fr;
+}
+.footer-col1{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    align-items: center;
+}
+.foot-col1-1 a{
+    font-family: "Dokdo", system-ui;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+.foot-col1-2{
+    font-size: 10px;
+}
+.footer-col2{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    font-size: 15px;
+    font-weight: bold;
+}
+.footer-col2 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.footer-col3{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    font-size: 15px;
+    font-weight: bold;
+}
+.footer-col3 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.copyright{
+    width: 85vw;
+    margin: auto;
+    position: relative;
+    margin-top: 15%;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+}
+@media (min-width:769px) and (max-width:992px) {
+    footer{
+    width: 98vw;
+    height: 120vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../Assests/Images/footer\ image.png');
+}
+.footer-container{
+    height: 60vh;
+    width: 85vw;
+    margin: auto;
+    position: relative;
+    top: 40%;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 2fr;
+}
+.footer-col1{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    align-items: center;
+}
+.foot-col1-1 a{
+    font-family: "Dokdo", system-ui;
+    font-size: 35px;
+    text-decoration: none;
+    color: white;
+}
+.foot-col1-2{
+    font-size: 15px;
+}
+.footer-col2{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    font-size: 15px;
+    font-weight: bold;
+}
+.footer-col2 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.footer-col3{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    font-size: 15px;
+    font-weight: bold;
+}
+.footer-col3 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.copyright{
+    width: 85vw;
+    margin: auto;
+    position: relative;
+    margin-top: 15%;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+}
+@media (min-width:993px) and (max-width:1200px) {
+    footer{
+    width: 98vw;
+    height: 120vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../Assests/Images/footer\ image.png');
+}
+.footer-container{
+    height: 60vh;
+    width: 85vw;
+    margin: auto;
+    position: relative;
+    top: 40%;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+}
+.footer-col1{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    align-items: center;
+}
+.foot-col1-1 a{
+    font-family: "Dokdo", system-ui;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+}
+.foot-col1-2{
+    font-size: 20px;
+}
+.footer-col2{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    font-size: 18px;
+    font-weight: bold;
+}
+.footer-col2 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.footer-col3{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    font-size: 18px;
+    font-weight: bold;
+}
+.footer-col3 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.copyright{
+    width: 85vw;
+    margin: auto;
+    position: relative;
+    margin-top: 15%;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+}

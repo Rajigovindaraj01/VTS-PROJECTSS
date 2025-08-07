@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing-Page</title>
+    <link rel="stylesheet" href="../Css/billing.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Boldonse&family=Cookie&family=Creepster&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dokdo&family=Engagement&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Outline&family=Londrina+Shadow&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Rochester&family=Rubik+Mono+One&family=Rubik+Wet+Paint&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sacramento&family=Special+Gothic+Condensed+One&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="header-col1">
+            <div class="logo">
+                <img src="../Assets/Images/logo-.png">
+            </div>
+            <div class="searching">
+                <input type="search" placeholder="Search..." id="searchIcon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="icons">
+                <div id="cartIcon"><i class="fa-solid fa-cart-shopping"></i>
+                <span id="cartCount">0</span>
+                </div>
+                <div><i class="fa-solid fa-user" id="loginsign"></i></div>
+            </div>
+        </div>
+        <div class="header-col2">
+            <a href="../index.html">Home</a>
+            <a href="../Html/Catalog.html">Catalog</a>
+            <a href="../Html/plansPricing.html">Plans & Pricing</a>
+            <a href="../Html/online-degree.html">Online Degrees</a>
+            <a href="../Html/aboutus.html">About Us</a>
+        </div>
+    </header>
+    <main>
+                <!-- login -->
+        <div class="login-signup-container" class="login-signup-container" id="loginSignupBox">
+            <i class="fa-solid fa-xmark" id="closeBtn"></i>
+            <div class="l1">
+                <div id="loginTab" style="border-bottom: 3px solid salmon;">Login</div>
+                <div id="signupTab">SignUp</div>
+            </div>
+            <div id="loginContainer" class="login-container">
+                <div class="l2">Welcome Back! Please login to your account</div>
+                <div class="form-container">
+                    <div class="l3">
+                        <label>Username</label><br>
+                        <input type="text">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="l4">
+                        <label>Password</label><br>
+                        <input type="password">
+                        <i class="fa-solid fa-lock"></i>
+
+                    </div>
+                    <div class="l5">
+                        <div><input type="checkbox"> Remember Me</div>
+                        <div>Forgot Password?</div>
+                    </div>
+                    <div class="l6">Login</div>
+                    <div class="l7">New User? <strong>Sign Up</strong></div>
+                </div>
+            </div>
+
+            <!-- signup -->
+            <div id="signupContainer" class="signup-container">
+                <div class="s2">Welcome Back! Please login to your account</div>
+                <div class="form-container">
+                    <div class="s3">
+                        <label>Username</label><br>
+                        <input type="text">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="s4">
+                        <label>Last name</label><br>
+                        <input type="text">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="s5">
+                        <label>Email</label><br>
+                        <input type="email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="s6" class="password-wrapper">
+                        <label>Password</label><br>
+                        <input type="password" class="password-input">
+                        <i class="fa-solid fa-eye toggle-password" style="cursor: pointer;"></i>
+                    </div>
+                    <div class="s7" class="password-wrapper">
+                        <label>Confirm Password</label><br>
+                        <input type="password" class="password-input">
+                        <i class="fa-solid fa-eye toggle-password" style="cursor: pointer;"></i>
+                    </div>
+                    <div class="s8">Sign Up</div>
+                    <div class="l7">Already have an account? <strong>Login</strong></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- /cart-displaysss -->
+        <div class="add-to-cart-container" id="cartPopup" style="display: none;">
+        <div class="cart-col1">
+            <div class="cart-item1">
+                <img src="../Assets/Images/financial.png">
+                <div class="cart-img-overlay">
+                    <img src="../Assets/Images/download-removebg-preview (2).png">
+                </div>
+            </div>
+            <div class="cart-item2">
+                <div class="course-title" id="courseTitle">-</div>
+                <div class="course-descrip" id="courseDesc">-</div>
+                <div class="course-rating">
+                    <div class="rating1" id="courseRating">-</div>
+                    <div class="rating2" id="courseExercises">-</div>
+                </div>
+                <div class="course-price">
+                    <div>Original Price:</div>
+                    <div id="originalPrice"> Rs. 0 0</div>
+                </div>
+                <div class="course-discount">
+                    <div>Discount (83% off):</div>
+                    <div id="discountAmount">-Rs. 0 0</div>
+                </div>
+                <hr>
+                <div class="course-total">
+                    <div>Total:</div>
+                    <div id="finalPrice">Rs. 00</div>
+                </div>
+            </div>
+        </div>
+        <div class="proceed-checkout" id="checkoutBtn">Proceed Checkout</div>
+        </div>
+
+
+
+        <div class="section1">
+            <h1>Billing Address & Payment Method</h1>
+            <div class="section1-container">
+                <div class="section1-col1">
+                    <div class="p1">Billing Address</div>
+                    <div class="p2">
+                        <div class="p2-1"><input type="text" placeholder="Name"></div>
+                        <div class="p2-2"><input type="number" placeholder="Mobile Number"></div>
+                    </div>
+                    <div class="p3">
+                        <input type="text" placeholder="Address">
+                    </div>
+                    <div class="p4">
+                        <div><input type="email" placeholder="Email"></div>
+                        <div></div>
+                    </div>
+                    <hr>
+                    <div class="p1">Shipping Address</div>
+                    <div class="p2">
+                        <div class="p2-1"><input type="text" placeholder="Name"></div>
+                        <div class="p2-2"><input type="number" placeholder="Mobile Number"></div>
+                    </div>
+                    <div class="p3">
+                        <input type="text" placeholder="Address">
+                    </div>
+                    <div class="p4">
+                        <div><input type="email" placeholder="Email"></div>
+                        <div></div>
+                    </div>
+                    <hr>
+                    <div class="p5">
+                        <div class="p6"><input type="radio"> Card</div>
+                        <div class="p7">
+                            <label>Card Number</label><br>
+                            <input type="number">
+                        </div>
+                        <div class="p8">
+                            <img src="../Assets/Images/pay-icons.png">
+                        </div>
+                        <div class="p9">
+                            <div>
+                                <label>Expiry Date</label><br>
+                                <input type="month" placeholder="MM/YY">
+                            </div>
+                            <div>
+                                <label>CVC/CVV</label><br>
+                                <input type="month" placeholder="MM/YY">
+                            </div>
+                        </div>
+                        <div class="p7">
+                            <label>Name on Card</label><br>
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="p10">
+                            <input type="checkbox"> Save my Details for next use
+                        </div>
+                        <div class="p11">
+                            <input type="radio"> UPI Payments
+                        </div>
+                        <div class="p12">
+                            <input type="radio"> Net Banking
+                        </div>
+                    </div>
+                </div>
+                <div class="section1-col2">
+                    <div class="p13">Order Summary</div>
+                    <div class="p14">
+                        <div >Original Price:</div>
+                        <div><span id="originalPrice">Rs.10,447</span></div>
+                    </div>
+                    <div class="p15">
+                        <div>Discount (83% off):</div>
+                        <div><span id="discountAmount">-Rs.8.710</span></div>
+                    </div>
+                    <hr>
+                    <div class="p16">
+                        <div>Total:</div>
+                        <div><span id="finalPrice">Rs.1776</span></div>
+                    </div>
+                    <div class="p17">By Completing your purchase, you agree to these Terms of Use</div>
+                    <div class="p18" id="payNowBtn">Pay Rs.<span id="payAmount"></span></div>
+                    <div class="p19">30-Day Money Back Guarantee</div>
+                    <div class="p20">Not satisfied? Get Full refund with 30 Days</div>
+                    <div class="p21">Simple and Straightforward!</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot-container">
+            <div class="foot-col1">
+                <img src="../Assets/Images/logo-.png">
+            </div>
+            <div class="foot-col2">
+                <div class="col2-head">Quick Access</div>
+                <div class="col2-content"><a href="../index.html">Home</a></div>
+                <div class="col2-content"><a href="../Html/Catalog.html">Catalog</a></div>
+                <div class="col2-content"><a href="../Html/plansPricing.html">Plans & Pricing</a></div>
+                <div class="col2-content"><a href="../Html/aboutus.html">About Us</a></div>
+            </div>
+            <div class="foot-col3">
+                <div class="col3-head">Catalog</div>
+                <div class="col3-content"><a href="../Html/course-detail.html">Data Analyst</a></div>
+                <div class="col3-content"><a href="../Html/online-degree.html">Online Degrees</a></div>
+            </div>
+            <div class="foot-col4">
+                <div class="col4-head">Contact Us</div>
+                <div class="col4-content"><i class="fa-solid fa-envelope"></i> Email: support@yourplatform.com</div>
+                <div class="col4-content"><i class="fa-solid fa-phone"></i> Phone: +1 (123) 456-7890</div>
+                <div class="col4-content"><i class="fa-solid fa-clock"></i> Suppport Hours: Mon-Fri, 9 AM to 6 PM (IST)</div>
+                <div class="col4-content">Follow With Us</div>
+                <div class="social-media">
+                    <div class="social-items">
+                        <img src="../Assets/Images/instagram (2).png">
+                    </div>
+                    <div class="social-items">
+                        <img src="../Assets/Images/communication.png">
+                    </div>
+                    <div class="social-items">
+                        <img src="../Assets/Images/logo.png">
+                    </div>
+                    <div class="social-items">
+                        <img src="../Assets/Images/youtube (1).png">
+                    </div>
+                    <div class="social-items">
+                        <img src="../Assets/Images/linkedin (1).png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="../Javascript/billing.js"></script>
+</body>
+</html>

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-page</title>
+    <link rel="stylesheet" href="./Css/index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Boldonse&family=Cookie&family=Creepster&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dokdo&family=Engagement&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Outline&family=Londrina+Shadow&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Rochester&family=Rubik+Mono+One&family=Rubik+Wet+Paint&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sacramento&family=Special+Gothic+Condensed+One&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="header-col1">
+            <div class="logo">
+                <img src="./Assets/Images/logo-.png">
+            </div>
+            <div class="searching">
+                <input type="search" placeholder="Search..." id="searchIcon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="icons">
+                <div id="cartIcon"><i class="fa-solid fa-cart-shopping" ></i>
+                <span id="cartCount">0</span>
+                </div>
+                <div><i class="fa-solid fa-user" id="loginsign"></i></div>
+            </div>
+        </div>
+        <div class="header-col2">
+            <a href="./index.html">Home</a>
+            <a href="./Html/Catalog.html">Catalog</a>
+            <a href="./Html/plansPricing.html">Plans & Pricing</a>
+            <a href="./Html/online-degree.html">Online Degrees</a>
+            <a href="./Html/aboutus.html">About Us</a>
+        </div>
+    </header>
+    <main>
+        <!-- login -->
+        <div class="login-signup-container" class="login-signup-container" id="loginSignupBox">
+            <i class="fa-solid fa-xmark" id="closeBtn"></i>
+            <div class="l1">
+                <div id="loginTab" style="border-bottom: 3px solid salmon;">Login</div>
+                <div id="signupTab">SignUp</div>
+            </div>
+            <div id="loginContainer" class="login-container">
+                <div class="l2">Welcome Back! Please login to your account</div>
+                <div class="form-container">
+                    <div class="l3">
+                        <label>Username</label><br>
+                        <input type="text">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="l4">
+                        <label>Password</label><br>
+                        <input type="password">
+                        <i class="fa-solid fa-lock"></i>
+
+                    </div>
+                    <div class="l5">
+                        <div><input type="checkbox"> Remember Me</div>
+                        <div>Forgot Password?</div>
+                    </div>
+                    <div class="l6">Login</div>
+                    <div class="l7">New User? <strong>Sign Up</strong></div>
+                </div>
+            </div>
+
+            <!-- signup -->
+            <div id="signupContainer" class="signup-container">
+                <div class="s2">Welcome Back! Please login to your account</div>
+                <div class="form-container">
+                    <div class="s3">
+                        <label>Username</label><br>
+                        <input type="text">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="s4">
+                        <label>Last name</label><br>
+                        <input type="text">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="s5">
+                        <label>Email</label><br>
+                        <input type="email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="s6" class="password-wrapper">
+                        <label>Password</label><br>
+                        <input type="password" class="password-input">
+                        <i class="fa-solid fa-eye toggle-password" style="cursor: pointer;"></i>
+                    </div>
+                    <div class="s7" class="password-wrapper">
+                        <label>Confirm Password</label><br>
+                        <input type="password" class="password-input">
+                        <i class="fa-solid fa-eye toggle-password" style="cursor: pointer;"></i>
+                    </div>
+                    <div class="s8">Sign Up</div>
+                    <div class="l7">Already have an account? <strong>Login</strong></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section1">
+            <img src="./Assets/Images/home-profile.jpeg">
+            <div class="section1-overlay">
+                <div class="home-overlay-1">Learn Anytime, Anywhere. Your Future Starts Here.</div>
+                <div class="home-overlay-2">Unlock new skills, transform your career, and achieve your dreams with
+                    flexible, expert-led online courses.</div>
+                <div class="home-overlay-3">
+                    <a href="./Html/Catalog.html">Start Learning Today</a>
+                    <a href="./Html/Catalog.html">Browse Courses</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section2">
+            <div class="section2-topic">We Collaborate with <span> 250+ leading universities and companies</span></div>
+            <div class="sec2-img-grids">
+                <div class="grid-img-items">
+                    <img src="./Assets/Images/Logo_Design_Template-removebg-preview.png">
+                </div>
+                <div class="grid-img-items">
+                    <img src="./Assets/Images/Chapbooks__Definition_and_Origins-removebg-preview.png">
+                </div>
+                <div class="grid-img-items">
+                    <img src="./Assets/Images/codator_com-removebg-preview.png">
+                </div>
+                <div class="grid-img-items">
+                    <img
+                        src="./Assets/Images/MCQ_Group_-_Contractor_Branding_+_Web_development_and_design-removebg-preview.png">
+                </div>
+                <div class="grid-img-items">
+                    <img src="./Assets/Images/1995__MSN__Microsoft__MSN__L20332_-removebg-preview.png">
+                </div>
+                <div class="grid-img-items">
+                    <img
+                        src="./Assets/Images/Clemson_University_Logo___01_-_PNG_Logo_Vector_Brand_Downloads__SVG__EPS_-removebg-preview.png">
+                </div>
+                <div class="grid-img-items">
+                    <img src="./Assets/Images/Oregon_State_University_Logo-removebg-preview.png">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="section3">
+            <h1>Ready to reShape your professional path ?</h1>
+            <div class="section3-categories">
+                <div class="section3-items" data-category="all">Beginner</div>
+                <span>|</span>
+                <div class="section3-items" style="background-color: gray;color: white;" data-category="popular">Popular
+                </div>
+                <div class="section3-items" data-category="software">Software Engineer & IT</div>
+                <div class="section3-items" data-category="business">Business</div>
+                <div class="section3-items" data-category="data">Data Science & Analytics</div>
+                <div class="section3-items" data-category="healthcare">Healthcare</div>
+            </div>
+
+            <div class="course-details-container">
+                <div class="c1" data-category="data popular">
+                    <div class="c1-1">
+                        <img src="./Assets/Images/financial.png">
+                        <div class="img-overflow">
+                            <img src="./Assets/Images/download-removebg-preview (2).png">
+                        </div>
+                    </div>
+                    <div class="c2">Become a Skilled <span>Data Analyst</span></spa>
+                    </div>
+                    <div class="c3">Master data collection, analysis, and visualization. Learn tools like Excel,SQL,
+                        Python and Tableau to drive data-driven decisions and launch a high-demand career.</div>
+                    <div class="c4"><strong>25,000+</strong> Jobs available</div>
+                    <div class="c5">Credentials</div>
+                    <div class="c6">Data Cleaning & Exploration</div>
+                    <div class="c7">SQL Querying & Data Management</div>
+                    <div class="c8">Data Visualization(Tableau, Power BI)</div>
+                </div>
+
+                <div class="c1" data-category="data popular">
+                    <div class="c1-1">
+                        <img src="./Assets/Images/Prabhu_Ramachandran-removebg-preview.png">
+                        <div class="img-overflow">
+                            <img src="./Assets/Images/empower.png">
+                        </div>
+                    </div>
+                    <div class="c2">Become a Certified <span>Data Scientist</span></spa>
+                    </div>
+                    <div class="c3">Learn how to extract insights, build predictive models, and make data-driven
+                        decisions using Python, Machine Learning, SQL and Big Data technologies. Earn a globally
+                        recognized credential to launch your high-demand career.</div>
+                    <div class="c4"><strong>26,899+</strong> Jobs available</div>
+                    <div class="c5">Credentials</div>
+                    <div class="c6">Data Mining and Predictive Analytics</div>
+                    <div class="c7">Python for Data Science</div>
+                    <div class="c8">Big Data Technologies (Hadoop, Spark)</div>
+                </div>
+
+                <div class="c1" data-category="software data popular">
+                    <div class="c1-1">
+                        <img src="./Assets/Images/__Scale_Faster_with_Automation-removebg-preview.png">
+                        <div class="img-overflow">
+                            <img src="./Assets/Images/indian-guy.png">
+                        </div>
+                    </div>
+                    <div class="c2">Become a Skilled <span>ML Engineer</span></div>
+                    <div class="c3">Master the art of building intelligent systems, Learn Python, Deep Learning, AI
+                        frameworks and deploy real-world machine learning models. Get certified and fast-track your
+                        career in one of the fastest-growing tech fields.</div>
+                    <div class="c4"><strong>20,436+</strong> Jobs available</div>
+                    <div class="c5">Credentials</div>
+                    <div class="c6">Supervised and Unsupervised Learning</div>
+                    <div class="c7">Neural Networks & Deep Learning (TensorFlow, PyTorch)</div>
+                    <div class="c8"></div>
+                </div>
+
+                <div class="c1" data-category="software">
+                    <div class="c1-1">
+                        <img src="./Assets/Images/3d_Layout-removebg-preview.png">
+                        <div class="img-overflow">
+                            <img src="./Assets/Images/premium.png">
+                        </div>
+                    </div>
+                    <div class="c2">Become a Certified <span>ML Engineer</span></div>
+                    <div class="c3">Master the art of building intelligent systems, Learn Python, Deep Learning, AI
+                        frameworks and deploy real-world machine learning models. Get certified and fast-track your
+                        career in one of the fastest-growing tech fields.</div>
+                    <div class="c4"><strong>15,700+</strong> Jobs available</div>
+                    <div class="c5">Credentials</div>
+                    <div class="c6">Wireframing and Prototyping (Figma,Adobe XD)</div>
+                    <div class="c7">Visual Design Principles and Branding</div>
+                    <div class="c8"></div>
+                </div>
+
+                <div class="c1" data-category="data">
+                    <div class="c1-1">
+                        <img src="./Assets/Images/step-by-step.png">
+                        <div class="img-overflow">
+                            <img src="./Assets/Images/download__1_-removebg-preview.png">
+                        </div>
+                    </div>
+                    <div class="c2">Become a Skilled <span>SQL for Data Analysis</span></div>
+                    <div class="c3">Master SQL queries, joins, aggregations, and subqueries to extract and analyze data
+                        from databases.</div>
+                    <div class="c4"><strong>25,000+</strong> Jobs available</div>
+                    <div class="c5">Credentials</div>
+                    <div class="c6">SQL Query Builder</div>
+                    <div class="c7">Relational Data Explorer</div>
+                    <div class="c8"></div>
+                </div>
+
+                <div class="c1" data-category="business">
+                    <div class="c1-1">
+                        <img src="./Assets/Images/free.png">
+                        <div class="img-overflow">
+                            <img src="./Assets/Images/download__2_-removebg-preview.png">
+                        </div>
+                    </div>
+                    <div class="c2">Become a Certified<span>Advanced Excel for Professionals</span></div>
+                    <div class="c3">Learn pivot tables, dashboards, VLOOKUP, Power Query and advanced Excel analytics.
+                    </div>
+                    <div class="c4"><strong>26,899</strong> Jobs available</div>
+                    <div class="c5">Credentials</div>
+                    <div class="c6">Excel Power User</div>
+                    <div class="c7">Spreadsheet Data Analyst</div>
+                    <div class="c8"></div>
+                </div>
+
+                <div class="c1" data-category="data">
+                    <div class="c1-1">
+                        <img src="./Assets/Images/top10.png">
+                        <div class="img-overflow">
+                            <img src="./Assets/Images/oo.png">
+                        </div>
+                    </div>
+                    <div class="c2">Become a Skilled <span>Python for Data Science</span></div>
+                    <div class="c3">Explore python basics, libraries like Numpy,Pandas and use them for data analysis
+                        and visualization</div>
+                    <div class="c4"><strong>20,436</strong> Jobs available</div>
+                    <div class="c5">Credentials</div>
+                    <div class="c6">Python Data Wrangler</div>
+                    <div class="c7">Data Analysis with Pandas</div>
+                    <div class="c8">Data Visualization(Tableau, Power BI)</div>
+                </div>
+
+                <div class="c1" data-category="business">
+                    <div class="c1-1">
+                        <img src="./Assets/Images/premium-vect.png">
+                        <div class="img-overflow">
+                            <img src="./Assets/Images/lst.png">
+                        </div>
+                    </div>
+                    <div class="c2">Become a Certified <span>Buisness Analytics</span></div>
+                    <div class="c3">Learn to make data-driven business decisions using KPIs, dashboards and case
+                        studies.</div>
+                    <div class="c4"><strong>15,700+</strong> Jobs available</div>
+                    <div class="c5">Credentials</div>
+                    <div class="c6">Business Data Analyst</div>
+                    <div class="c7">KPI Insights Specialist</div>
+                    <div class="c8"></div>
+                </div>
+            </div>
+            <h1 class="section3-content1">Choose your Role</h1>
+            <div class="section3-content2">Gain the knowledge and skills you need to advance.</div>
+            <a href="./Html/Catalog.html" class="section3-content3">Explore All Roles</a>
+        </div>
+
+
+        <div class="section4">
+            <h1>Learn From the <span>Experts</span> Who Shape the Future</h1>
+            <div class="section4-contents">
+                <div class="sec4-item1">
+                    <div class="sec4-item1-1">
+                        <img src="./Assets/Images/prof1.jpeg">
+                    </div>
+                    <div class="sec4-item1-2">Dr.Daniel Mark</div>
+                    <div class="sec4-item1-3">Data Science & Educator and Researcher with two PHD's</div>
+                </div>
+                <div class="sec4-item1">
+                    <div class="sec4-item1-1">
+                        <img src="./Assets/Images/3.jpeg">
+                    </div>
+                    <div class="sec4-item1-2">Myra</div>
+                    <div class="sec4-item1-3">Data Science Educator & Mentor</div>
+                </div>
+                <div class="sec4-item1">
+                    <div class="sec4-item1-1">
+                        <img src="./Assets/Images/prof2.jpeg">
+                    </div>
+                    <div class="sec4-item1-2">Vihaan</div>
+                    <div class="sec4-item1-3">AI and MAchine Learning Specialist</div>
+                </div>
+                <div class="sec4-item1">
+                    <div class="sec4-item1-1">
+                        <img src="./Assets/Images/prof3.jpeg">
+                    </div>
+                    <div class="sec4-item1-2">Ishaan</div>
+                    <div class="sec4-item1-3">Cloud Engineer and Big Data Instructor</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section5">
+            <h1>Join More Than <span>2,50,000 Learners</span> Countrywide</h1>
+            <a href="./Html/Catalog.html">Start Learning Free</a>
+        </div>
+
+
+        <div class="section6">
+            <h1>With our Subscription, Get Access To;</h1>
+            <div class="section6-content">
+                <div class="section6-item">
+                    <div class="sec6-item1-1"><i class="fa-regular fa-circle-check"></i></div>
+                    <div class="sec6-item1-2">
+                        <div class="cont1">Join a Thriving Learning Community</div>
+                        <div class="cont2">Subscribe to connect with mentors, peers, and industry experts - learn,
+                            collaborate and grow together.</div>
+                    </div>
+                </div>
+                <div class="section6-item">
+                    <div class="sec6-item1-1"><i class="fa-regular fa-circle-check"></i></div>
+                    <div class="sec6-item1-2">
+                        <div class="cont1">Work on Real-World Projects</div>
+                        <div class="cont2">Gain hands-on experience! Subscribe now to access project-based courses
+                            designed to build real-world skills.</div>
+                    </div>
+                </div>
+                <div class="section6-item">
+                    <div class="sec6-item1-1"><i class="fa-regular fa-circle-check"></i></div>
+                    <div class="sec6-item1-2">
+                        <div class="cont1">Earn Certificates That Matter</div>
+                        <div class="cont2">Showcase your skills with verified certificates. Subscribe today and start
+                            building a portfolio that stands out.</div>
+                    </div>
+                </div>
+                <div class="section6-item">
+                    <div class="sec6-item1-1"><i class="fa-regular fa-circle-check"></i></div>
+                    <div class="sec6-item1-2">
+                        <div class="cont1">Access Expert-Curated Courses</div>
+                        <div class="cont2">Learn from the best in the industry. Subscribe to explore a rich library of
+                            courses tailored for your success.</div>
+                    </div>
+                </div>
+                <div class="section6-item">
+                    <div class="sec6-item1-1"><i class="fa-regular fa-circle-check"></i></div>
+                    <div class="sec6-item1-2">
+                        <div class="cont1">Get Personalized Mentorship</div>
+                        <div class="cont2">Unlock mentorship sessions with experts who guide your learning journey.
+                            Subscribe and take your skills higher!</div>
+                    </div>
+                </div>
+                <div class="section6-item">
+                    <div class="sec6-item1-1"><i class="fa-regular fa-circle-check"></i></div>
+                    <div class="sec6-item1-2">
+                        <div class="cont1">Turn Learning into Career Growth</div>
+                        <div class="cont2">Don't just learn - grow your career. Subscribe for full access to skill
+                            paths, Certifications and Job-ready projects.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section7">
+            <div class="sec7-item1">
+                <h1>Why Choose Us ?</h1>
+                <div><strong>Expert Mentors:</strong> Learn from industry professionals with real-world experience</div>
+                <div><strong>Hands-On Learning:</strong> Practice with real projects, case studies and assessments</div>
+                <div><strong>Flexible Scheduling:</strong> Learn anytime, anywhere, at your own pace</div>
+                <div><strong>Career-Focused Curriculum:</strong> Skills that match today's job market</div>
+                <div><strong>Mentor Support: </strong> Get weekly 1-on-1 guidance to stay on track</div>
+                <div><strong>Track Progress: </strong> Personalized dashboards to monitor your growth</div>
+                <div><strong>Certification & Job Support: </strong> Earn certificates and prepare for top tech roles
+                </div>
+            </div>
+            <div class="sec7-item2">
+                <img src="./Assets/Images/Career Counselling.jpg">
+            </div>
+        </div>
+
+
+        <div class="section8">
+            <div class="sec8-col1">
+                <img src="./Assets/Images/explain.jpg">
+                <div class="speech speech1">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" class="user-icon">
+                    <span>Thanks! For Explaining that Clearly.</span>
+                </div>
+                <div class="speech speech2">
+                    <img src="https://randomuser.me/api/portraits/men/45.jpg" class="user-icon">
+                    <span>Great! It's Clear to me now.</span>
+                </div>
+            </div>
+            <div class="sec8-col2">
+                <div class="sec8-1">Personalized Guidance from Industry Experts</div>
+                <div class="sec8-2">Get personalized guidance from industry experts who have mastered their
+                    fields.<br>Learn directly from mentors who understand your goals and help you achieve real-world
+                    success.</div>
+                <div class="sec8-3">What Makes Our Instructors Exceptional :</div>
+                <div class="sec8-4"><span><i class="fa-regular fa-circle-check"></i></span> Proven Industry Experience
+                </div>
+                <div class="sec8-4"><span><i class="fa-regular fa-circle-check"></i></span> Personalized Mentorship
+                </div>
+                <div class="sec8-4"><span><i class="fa-regular fa-circle-check"></i></span> Updated and Practical
+                    Knowledge</div>
+                <div class="sec8-4"><span><i class="fa-regular fa-circle-check"></i></span> Passion for Teaching</div>
+                <div class="sec8-4"><span><i class="fa-regular fa-circle-check"></i></span> Global Perspective</div>
+            </div>
+        </div>
+
+
+        <div class="section9">
+            <h1>From The <span>EDU<strong>LIFT</strong></span> Community</h1>
+            <h1>10+ million people have already joined EDULIFT</h1>
+            <div class="testimonials-section">
+                <div class="testimonials-text">
+                    <h2>Hear What Our Learners Are Saying</h2>
+                    <p>Our students' success stories speak for themselves.<br>
+                        See how personalized learning and expert mentorship have transformed their careers and lives.
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <img src="./Assets/Images/men1.jpeg" class="testimonial-image" alt="Rohit">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <div class="testimonial-content">
+                        <p>The one-on-one mentorship sessions were a game-changer. I got clear guidance, project
+                            reviews, and career advice directly from an expert who genuinely cared about my success.</p>
+                        <div class="testimonial-name">Rohit S.<span class="stars">★★★★★</span></div>
+                        <div class="testimonial-title">Data Analyst</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <img src="./Assets/Images/men2.jpeg" class="testimonial-image" alt="Nehan">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <div class="testimonial-content">
+                        <p>The personalized feedback from my mentor completely changed my learning journey with Edulift.
+                            Instead of just theory, so I planned to got a real-world insights that helped me land my
+                            dream job in tech.</p>
+                        <div class="testimonial-name">Nehan P.<span class="stars">★★★★★</span></div>
+                        <div class="testimonial-title">Software Developer</div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <img src="./Assets/Images/women3.jpeg" class="testimonial-image" alt="Aradhya">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <div class="testimonial-content">
+                        <p>Learning from someone who's actually worked in the industry made all the difference. My
+                            instructor didn't just teach — they coached me and helped me grow faster than I ever
+                            expected.</p>
+                        <div class="testimonial-name">Aradhya V.<span class="stars">★★★★★</span></div>
+                        <div class="testimonial-title">Digital Marketing Specialist</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot-container">
+            <div class="foot-col1">
+                <img src="./Assets/Images/logo-.png">
+            </div>
+            <div class="foot-col2">
+                <div class="col2-head">Quick Access</div>
+                <div class="col2-content"><a href="./index.html">Home</a></div>
+                <div class="col2-content"><a href="./Html/Catalog.html">Catalog</a></div>
+                <div class="col2-content"><a href="./Html/plansPricing.html">Plans & Pricing</a></div>
+                <div class="col2-content"><a href="./Html/aboutus.html">About Us</a></div>
+            </div>
+            <div class="foot-col3">
+                <div class="col3-head">Catalog</div>
+                <div class="col3-content"><a href="./Html/course-detail.html">Data Analyst</a></div>
+                <div class="col3-content"><a href="./Html/online-degree.html">Online Degrees</a></div>
+            </div>
+            <div class="foot-col4">
+                <div class="col4-head">Contact Us</div>
+                <div class="col4-content"><i class="fa-solid fa-envelope"></i> Email: support@yourplatform.com</div>
+                <div class="col4-content"><i class="fa-solid fa-phone"></i> Phone: +1 (123) 456-7890</div>
+                <div class="col4-content"><i class="fa-solid fa-clock"></i> Suppport Hours: Mon-Fri, 9 AM to 6 PM (IST)</div>
+                <div class="col4-content">Follow With Us</div>
+                <div class="social-media">
+                    <div class="social-items">
+                        <img src="./Assets/Images/instagram (2).png">
+                    </div>
+                    <div class="social-items">
+                        <img src="./Assets/Images/communication.png">
+                    </div>
+                    <div class="social-items">
+                        <img src="./Assets/Images/logo.png">
+                    </div>
+                    <div class="social-items">
+                        <img src="./Assets/Images/youtube (1).png">
+                    </div>
+                    <div class="social-items">
+                        <img src="./Assets/Images/linkedin (1).png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="add-to-cart-container" id="cartPopup" style="display: none;">
+        <div class="cart-col1">
+            <div class="cart-item1">
+                <img src="./Assets/Images/financial.png">
+                <div class="cart-img-overlay">
+                    <img src="./Assets/Images/download-removebg-preview (2).png">
+                </div>
+            </div>
+            <div class="cart-item2">
+                <div class="course-title" id="courseTitle">-</div>
+                <div class="course-descrip" id="courseDesc">-</div>
+                <div class="course-rating">
+                    <div class="rating1" id="courseRating">-</div>
+                    <div class="rating2" id="courseExercises">-</div>
+                </div>
+                <div class="course-price">
+                    <div>Original Price:</div>
+                    <div id="originalPrice"> Rs. 0 0</div>
+                </div>
+                <div class="course-discount">
+                    <div>Discount (83% off):</div>
+                    <div id="discountAmount">-Rs. 0 0</div>
+                </div>
+                <hr>
+                <div class="course-total">
+                    <div>Total:</div>
+                    <div id="finalPrice">Rs. 00</div>
+                </div>
+            </div>
+        </div>
+        <div class="proceed-checkout" id="checkoutBtn">Proceed Checkout</div>
+    </div>
+
+
+
+    <script src="./Javascript/index.js"></script>
+</body>
+</html>

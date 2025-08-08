@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plans-and-pricing</title>
+    <link rel="stylesheet" href="../Css/planspricing.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Boldonse&family=Cookie&family=Creepster&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dokdo&family=Engagement&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Outline&family=Londrina+Shadow&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Rochester&family=Rubik+Mono+One&family=Rubik+Wet+Paint&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sacramento&family=Special+Gothic+Condensed+One&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="header-col1">
+            <div class="logo">
+                <img src="../Assets/Images/logo-.png">
+            </div>
+            <div class="searching">
+                <input type="search" placeholder="Search..." id="searchIcon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="icons">
+                <div id="cartIcon"><i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cartCount">0</span>
+                </div>
+                <div><i class="fa-solid fa-user" id="loginsign"></i></div>
+            </div>
+        </div>
+        <div class="header-col2">
+            <a href="../index.html">Home</a>
+            <a href="../Html/Catalog.html">Catalog</a>
+            <a href="../Html/plansPricing.html">Plans & Pricing</a>
+            <a href="../Html/online-degree.html">Online Degrees</a>
+            <a href="../Html/aboutus.html">About Us</a>
+        </div>
+    </header>
+    <main>
+        <!-- login -->
+        <div class="login-signup-container" class="login-signup-container" id="loginSignupBox">
+            <i class="fa-solid fa-xmark" id="closeBtn"></i>
+            <div class="l1">
+                <div id="loginTab" style="border-bottom: 3px solid salmon;">Login</div>
+                <div id="signupTab">SignUp</div>
+            </div>
+            <div id="loginContainer" class="login-container">
+                <div class="l2">Welcome Back! Please login to your account</div>
+                <div class="form-container">
+                    <div class="l3">
+                        <label>Username</label><br>
+                        <input type="text">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="l4">
+                        <label>Password</label><br>
+                        <input type="password">
+                        <i class="fa-solid fa-lock"></i>
+
+                    </div>
+                    <div class="l5">
+                        <div><input type="checkbox"> Remember Me</div>
+                        <div>Forgot Password?</div>
+                    </div>
+                    <div class="l6">Login</div>
+                    <div class="l7">New User? <strong>Sign Up</strong></div>
+                </div>
+            </div>
+
+            <!-- signup -->
+            <div id="signupContainer" class="signup-container">
+                <div class="s2">Welcome Back! Please login to your account</div>
+                <div class="form-container">
+                    <div class="s3">
+                        <label>Username</label><br>
+                        <input type="text">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="s4">
+                        <label>Last name</label><br>
+                        <input type="text">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="s5">
+                        <label>Email</label><br>
+                        <input type="email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="s6" class="password-wrapper">
+                        <label>Password</label><br>
+                        <input type="password" class="password-input">
+                        <i class="fa-solid fa-eye toggle-password" style="cursor: pointer;"></i>
+                    </div>
+                    <div class="s7" class="password-wrapper">
+                        <label>Confirm Password</label><br>
+                        <input type="password" class="password-input">
+                        <i class="fa-solid fa-eye toggle-password" style="cursor: pointer;"></i>
+                    </div>
+                    <div class="s8">Sign Up</div>
+                    <div class="l7">Already have an account? <strong>Login</strong></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="add-to-cart-container" id="cartPopup" style="display: none;">
+            <div class="cart-col1">
+                <div class="cart-item1">
+                    <img src="../Assets/Images/financial.png">
+                    <div class="cart-img-overlay">
+                        <img src="../Assets/Images/download-removebg-preview (2).png">
+                    </div>
+                </div>
+                <div class="cart-item2">
+                    <div class="course-title" id="courseTitle">-</div>
+                    <div class="course-descrip" id="courseDesc">-</div>
+                    <div class="course-rating">
+                        <div class="rating1" id="courseRating">-</div>
+                        <div class="rating2" id="courseExercises">-</div>
+                    </div>
+                    <div class="course-price">
+                        <div>Original Price:</div>
+                        <div id="originalPrice"> Rs. 0 0</div>
+                    </div>
+                    <div class="course-discount">
+                        <div>Discount (83% off):</div>
+                        <div id="discountAmount">-Rs. 0 0</div>
+                    </div>
+                    <hr>
+                    <div class="course-total">
+                        <div>Total:</div>
+                        <div id="finalPrice">Rs. 00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="proceed-checkout" id="checkoutBtn">Proceed Checkout</div>
+        </div>
+
+
+
+        <div class="section1">
+            <h1 class="z1">Choose a Plan For Success</h1>
+            <p class="z2">Dont'want to buy courses one by one ? Pick a plan to help you, your team or your organization
+                achieve outcomes faster.</p>
+            <h2 class="z3">Unlock Your Learning Journey</h2>
+            <p class="z4">Subscribe now and enjoy full access to everything you need to succeed:</p>
+            <ul class="z5">
+                <li>Weekly 1-on-1 Mentor Meetings for personalized guidance</li>
+                <li>Unlimited Access to Course Materials until your subscription ends</li>
+                <li>Exclusive Video Sessions, Notes & Practice Files</li>
+                <li>Stay on track with a customized learning plan</li>
+                <li>Learn anytime,anywhere-on any device</li>
+            </ul>
+            <p class="z6">Choose your plan and start learning with experts support today !</p>
+        </div>
+
+
+        <div class="section2">
+            <div class="section-column">
+                <div class="sect2-row1">
+                    <div class="x1">Personal Plan</div>
+                    <div class="x2">For You</div>
+                    <div class="x3"><i class="fa-regular fa-user"></i> Individual</div>
+                </div>
+                <div class="sect2-row2">
+                    <div class="x4">Basic Plan</div>
+                    <div class="x5">Starting at Rs.499 Per Month</div>
+                    <div class="x6">Billed monthly or annually. Cancel Anytime</div>
+                </div>
+                <div class="sect2-row3">
+                    <div class="x7"><span><i class="fa-regular fa-circle-check"></i></span> Access to limited courses
+                        (Starter library)</div>
+                    <div class="x7"><span><i class="fa-regular fa-circle-check"></i></span> Community access (discussion
+                        forums only)</div>
+                    <div class="x7"><span><i class="fa-regular fa-circle-check"></i></span> Monthly learning challenges
+                    </div>
+                    <div class="x7"><span><i class="fa-regular fa-circle-check"></i></span> No Certificates</div>
+                </div>
+                <div class="sect2-row4">Start Subscription</div>
+            </div>
+            <div class="section-column">
+                <div class="sect2-row1">
+                    <div class="x1">Team Plan</div>
+                    <div class="x2">For Your Team</div>
+                    <div class="x3"><i class="fa-solid fa-user-group"></i> 2 To 20 People</div>
+                </div>
+                <div class="sect2-row2">
+                    <div class="x4">Pro Plan</div>
+                    <div class="x5">Rs.1,499 a Month Per User</div>
+                    <div class="x6">Billed annually. Cancel Anytime</div>
+                </div>
+                <div class="sect2-row3">
+                    <div class="x7"><span><i class="fa-regular fa-circle-check"></i></span> Unlimited access to all
+                        courses</div>
+                    <div class="x7"><span><i class="fa-regular fa-circle-check"></i></span> Access to real-world
+                        projects</div>
+                    <div class="x7"><span><i class="fa-regular fa-circle-check"></i></span> Certificate of Completion
+                        for each course</div>
+                    <div class="x7"><span><i class="fa-regular fa-circle-check"></i></span> Community + Mentor
+                        interaction</div>
+                    <div class="x7"><span><i class="fa-regular fa-circle-check"></i></span> Monthly webinars and expert
+                        Q&A sessions</div>
+                </div>
+                <div class="sect2-row4">Start Subscription</div>
+            </div>
+            <div class="section-column">
+                <div class="sect2-row1">
+                    <div class="x1">Enterprise Plan</div>
+                    <div class="x2">For Your Whole Organization</div>
+                    <div class="x3"> <i class="fa-solid fa-user-group"></i> More Than 20 People</div>
+                </div>
+                <div class="sect2-row2">
+                    <div class="x4">Elite Plan</div>
+                    <div class="x5">Contact sales for pricing</div>
+                    <div class="x6"></div>
+                </div>
+                <div class="sect2-row3">
+                    <div class="x7"><span><i class="fa-regular fa-circle-check"></i></span> Everything in pro plan</div>
+                    <div class="x7"><span><i class="fa-regular fa-circle-check"></i></span> Personalized mentorship (1:1
+                        session every month)</div>
+                    <div class="x7"><span><i class="fa-regular fa-circle-check"></i></span> Career roadmap planning
+                    </div>
+                    <div class="x7"><span><i class="fa-regular fa-circle-check"></i></span> Priority support</div>
+                    <div class="x7"><span><i class="fa-regular fa-circle-check"></i></span> Early access to new courses
+                        & features</div>
+                    <div class="x7"><span><i class="fa-regular fa-circle-check"></i></span> Premium certificates
+                        (industry verified)</div>
+                </div>
+                <div class="sect2-row4">Start Subscription</div>
+            </div>
+        </div>
+
+
+
+
+
+        <h1 class="title">See What Others are achieving Through Learning</h1>
+        <div class="testimonial-container">
+            <div class="card">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p class="text">
+                    From landing dream jobs to launching successful businesses, our learners are proving that knowledge
+                    truly is power. With every course completed, they're building skills, confidence, and a future they
+                    believe in.
+                </p>
+                <div class="user-info">
+                    <div class="avatar">DB</div>
+                    <span class="name">Diwahar B</span>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p class="text">
+                    Through expert-led courses and real-world projects, learners are advancing their careers, earning
+                    promotions, and mastering in-demand skills.<br>
+                    Education with us isn't just learning — it's achieving measurable, life-changing results.
+                </p>
+                <div class="user-info">
+                    <div class="avatar">BR</div>
+                    <span class="name">Babu R</span>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p class="text">
+                    Thousands of learners are taking the next big step — mastering new skills, earning certifications,
+                    and chasing their passions.<br>
+                    Your success story could be next. Start learning, start achieving!
+                </p>
+                <div class="user-info">
+                    <div class="avatar">DM</div>
+                    <span class="name">David M</span>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <p class="text">
+                    Thousands of learners are taking the next big step — mastering new skills, earning certifications,
+                    and chasing their passions.<br>
+                    Your success story could be next. Start learning, start achieving!
+                </p>
+                <div class="user-info">
+                    <div class="avatar">DM</div>
+                    <span class="name">David M</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot-container">
+            <div class="foot-col1">
+                <img src="../Assets/Images/logo-.png">
+            </div>
+            <div class="foot-col2">
+                <div class="col2-head">Quick Access</div>
+                <div class="col2-content"><a href="../index.html">Home</a></div>
+                <div class="col2-content"><a href="../Html/Catalog.html">Catalog</a></div>
+                <div class="col2-content"><a href="../Html/plansPricing.html">Plans & Pricing</a></div>
+                <div class="col2-content"><a href="../Html/aboutus.html">About Us</a></div>
+            </div>
+            <div class="foot-col3">
+                <div class="col3-head">Catalog</div>
+                <div class="col3-content"><a href="../Html/course-detail.html">Data Analyst</a></div>
+                <div class="col3-content"><a href="../Html/online-degree.html">Online Degrees</a></div>
+            </div>
+            <div class="foot-col4">
+                <div class="col4-head">Contact Us</div>
+                <div class="col4-content"><i class="fa-solid fa-envelope"></i> Email: support@yourplatform.com</div>
+                <div class="col4-content"><i class="fa-solid fa-phone"></i> Phone: +1 (123) 456-7890</div>
+                <div class="col4-content"><i class="fa-solid fa-clock"></i> Suppport Hours: Mon-Fri, 9 AM to 6 PM (IST)
+                </div>
+                <div class="col4-content">Follow With Us</div>
+                <div class="social-media">
+                    <div class="social-items">
+                        <img src="../Assets/Images/instagram (2).png">
+                    </div>
+                    <div class="social-items">
+                        <img src="../Assets/Images/communication.png">
+                    </div>
+                    <div class="social-items">
+                        <img src="../Assets/Images/logo.png">
+                    </div>
+                    <div class="social-items">
+                        <img src="../Assets/Images/youtube (1).png">
+                    </div>
+                    <div class="social-items">
+                        <img src="../Assets/Images/linkedin (1).png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="../Javascript/planspricing.js"></script>
+</body>
+
+</html>

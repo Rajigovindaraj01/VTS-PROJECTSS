@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online-Degrees</title>
+    <link rel="stylesheet" href="../Css/online-degree.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Boldonse&family=Cookie&family=Creepster&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dokdo&family=Engagement&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Outline&family=Londrina+Shadow&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Rochester&family=Rubik+Mono+One&family=Rubik+Wet+Paint&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sacramento&family=Special+Gothic+Condensed+One&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="header-col1">
+            <div class="logo">
+                <img src="../Assets/Images/logo-.png">
+            </div>
+            <div class="searching">
+                <input type="search" placeholder="Search..." id="searchIcon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="icons">
+                <div id="cartIcon"><i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cartCount">0</span>
+                </div>
+                <div><i class="fa-solid fa-user" id="loginsign"></i></div>
+            </div>
+        </div>
+        <div class="header-col2">
+            <a href="../index.html">Home</a>
+            <a href="../Html/Catalog.html">Catalog</a>
+            <a href="../Html/plansPricing.html">Plans & Pricing</a>
+            <a href="../Html/online-degree.html">Online Degrees</a>
+            <a href="../Html/aboutus.html">About Us</a>
+        </div>
+    </header>
+    <main>
+        <!-- login -->
+        <div class="login-signup-container" class="login-signup-container" id="loginSignupBox">
+            <i class="fa-solid fa-xmark" id="closeBtn"></i>
+            <div class="l1">
+                <div id="loginTab" style="border-bottom: 3px solid salmon;">Login</div>
+                <div id="signupTab">SignUp</div>
+            </div>
+            <div id="loginContainer" class="login-container">
+                <div class="l2">Welcome Back! Please login to your account</div>
+                <div class="form-container">
+                    <div class="l3">
+                        <label>Username</label><br>
+                        <input type="text">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="l4">
+                        <label>Password</label><br>
+                        <input type="password">
+                        <i class="fa-solid fa-lock"></i>
+
+                    </div>
+                    <div class="l5">
+                        <div><input type="checkbox"> Remember Me</div>
+                        <div>Forgot Password?</div>
+                    </div>
+                    <div class="l6">Login</div>
+                    <div class="l7">New User? <strong>Sign Up</strong></div>
+                </div>
+            </div>
+
+            <!-- signup -->
+            <div id="signupContainer" class="signup-container">
+                <div class="s2">Welcome Back! Please login to your account</div>
+                <div class="form-container">
+                    <div class="s3">
+                        <label>Username</label><br>
+                        <input type="text">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="s4">
+                        <label>Last name</label><br>
+                        <input type="text">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="s5">
+                        <label>Email</label><br>
+                        <input type="email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="s6" class="password-wrapper">
+                        <label>Password</label><br>
+                        <input type="password" class="password-input">
+                        <i class="fa-solid fa-eye toggle-password" style="cursor: pointer;"></i>
+                    </div>
+                    <div class="s7" class="password-wrapper">
+                        <label>Confirm Password</label><br>
+                        <input type="password" class="password-input">
+                        <i class="fa-solid fa-eye toggle-password" style="cursor: pointer;"></i>
+                    </div>
+                    <div class="s8">Sign Up</div>
+                    <div class="l7">Already have an account? <strong>Login</strong></div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="add-to-cart-container" id="cartPopup" style="display: none;">
+            <div class="cart-col1">
+                <div class="cart-item1">
+                    <img src="../Assets/Images/financial.png">
+                    <div class="cart-img-overlay">
+                        <img src="../Assets/Images/download-removebg-preview (2).png">
+                    </div>
+                </div>
+                <div class="cart-item2">
+                    <div class="course-title" id="courseTitle">-</div>
+                    <div class="course-descrip" id="courseDesc">-</div>
+                    <div class="course-rating">
+                        <div class="rating1" id="courseRating">-</div>
+                        <div class="rating2" id="courseExercises">-</div>
+                    </div>
+                    <div class="course-price">
+                        <div>Original Price:</div>
+                        <div id="originalPrice"> Rs. 0 0</div>
+                    </div>
+                    <div class="course-discount">
+                        <div>Discount (83% off):</div>
+                        <div id="discountAmount">-Rs. 0 0</div>
+                    </div>
+                    <hr>
+                    <div class="course-total">
+                        <div>Total:</div>
+                        <div id="finalPrice">Rs. 00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="proceed-checkout" id="checkoutBtn">Proceed Checkout</div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="card">
+                <img src="../Assets/Images/heritage.png" alt="Heritage" />
+                <h3>Heritage International School, ALIGARH</h3>
+                <p>Established in 2004, Heritage International School is a co-educational English medium institution
+                    affiliated with the CBSE. It offers education from Nursery to Class 12 and is managed by the
+                    Brajdham Educational and Welfare Society.</p>
+                <p class="due">Application Due May 18, 2025</p>
+            </div>
+
+            <div class="card">
+                <img src="../Assets/Images/indian-weseley.webp" alt="Indian Wesleyan" />
+                <h3>Indian Wesleyan University</h3>
+                <p>Founded in 1890, Indiana Wesleyan University (IWU) is a private evangelical Christian university
+                    located in Marion, Indiana. It is affiliated with the Wesleyan Church and is the largest private
+                    university in Indiana.</p>
+                <p class="due">Application Due May 18, 2025</p>
+            </div>
+            <div class="card">
+                <img src="../Assets/Images/addis-ababa-university-logo-png_seeklogo-553967.png" alt="Adarsh" />
+                <h3>Adarsh Group of University, BENGALURU</h3>
+                <p>Established in 1971, Adarsh Group of Institutions (AGI) comprises four institutions offering
+                    education in Commerce, Management, and Information Technology. It is ISO-certified and approved by
+                    NAAC with a "B+" grade.</p>
+                <p class="due">Application Due May 18, 2025</p>
+            </div>
+            <div class="card">
+                <img src="../Assets/Images/federal.jpg" alt="Federal" />
+                <h3>Federal University, NDUFU-ALIKE IKWO</h3>
+                <p>Established in 2011, this Nigerian higher institution is located in Ebonyi State. It was renamed in
+                    2018 after the late Vice President of Nigeria, Dr. Alex Ekwueme. The university spans 438 hectares
+                    and has approximately 10,000 students.</p>
+                <p class="due">Application Due May 18, 2025</p>
+            </div>
+
+            <div class="card">
+                <img src="../Assets/Images/addis-ababa-university-logo-png_seeklogo-553967.png" alt="Addis Ababa" />
+                <h3>Addis Ababa University</h3>
+                <p>Founded in 1950, Addis Ababa University is Ethiopia's oldest and most prestigious national
+                    university. It has thirteen campuses, twelve in Addis Ababa and one in Bishoftu, and is known for
+                    its research institutions, including the Institute of Ethiopian Studies.</p>
+                <p class="due">Application Due May 18, 2025</p>
+            </div>
+
+            <div class="card">
+                <img src="../Assets/Images/chicago.png" alt="Chicago" />
+                <h3>The University of Chicago</h3>
+                <p>Established in 1890, the University of Chicago is a private research university known for its
+                    rigorous academic programs and commitment to free and open inquiry. It has alumni in various
+                    influential initiatives and programs on a global scale.</p>
+                <p class="due">Application Due May 18, 2025</p>
+            </div>
+
+            <div class="card">
+                <img src="../Assets/Images/princento.png" alt="Rinceto" />
+                <h3>PRINCETO UNIVERSIT (USA)</h3>
+                <p>Founded in 1746, Rinceto University is a private Ivy League research university located in Princeton,
+                    New Jersey. It is the fourth-oldest institution of higher education in the United States and is
+                    renowned for its commitment to undergraduate learning.</p>
+                <p class="due">Application Due May 18, 2025</p>
+            </div>
+
+            <div class="card">
+                <img src="../Assets/Images/brown.png" alt="Brown" />
+                <h3>BROWN UNIVERSITY (USA)</h3>
+                <p>Established in 1764, Brown University is a private Ivy League research university in Providence,
+                    Rhode Island. It is the seventh-oldest institution of higher education in the U.S. and is known for
+                    its flexible curriculum and commitment to student-centered learning.</p>
+                <p class="due">Application Due May 18, 2025</p>
+            </div>
+        </div>
+
+
+
+        <h2 class="title">Browse By Catagory</h2>
+
+        <div class="category-container">
+            <div class="category-card">Business and MBA Degrees</div>
+            <div class="category-card">Computer Science Degrees</div>
+            <div class="category-card">Data Science Degrees</div>
+            <div class="category-card">Public Health Degrees</div>
+            <div class="category-card">Data Analytics Degrees</div>
+            <div class="category-card">Top European Degrees</div>
+            <div class="category-card">BE Degrees</div>
+            <div class="category-card">Top Indian Degrees</div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot-container">
+            <div class="foot-col1">
+                <img src="../Assets/Images/logo-.png">
+            </div>
+            <div class="foot-col2">
+                <div class="col2-head">Quick Access</div>
+                <div class="col2-content"><a href="../index.html">Home</a></div>
+                <div class="col2-content"><a href="../Html/Catalog.html">Catalog</a></div>
+                <div class="col2-content"><a href="../Html/plansPricing.html">Plans & Pricing</a></div>
+                <div class="col2-content"><a href="../Html/aboutus.html">About Us</a></div>
+            </div>
+            <div class="foot-col3">
+                <div class="col3-head">Catalog</div>
+                <div class="col3-content"><a href="../Html/course-detail.html">Data Analyst</a></div>
+                <div class="col3-content"><a href="../Html/online-degree.html">Online Degrees</a></div>
+            </div>
+            <div class="foot-col4">
+                <div class="col4-head">Contact Us</div>
+                <div class="col4-content"><i class="fa-solid fa-envelope"></i> Email: support@yourplatform.com</div>
+                <div class="col4-content"><i class="fa-solid fa-phone"></i> Phone: +1 (123) 456-7890</div>
+                <div class="col4-content"><i class="fa-solid fa-clock"></i> Suppport Hours: Mon-Fri, 9 AM to 6 PM (IST)
+                </div>
+                <div class="col4-content">Follow With Us</div>
+                <div class="social-media">
+                    <div class="social-items">
+                        <img src="../Assets/Images/instagram (2).png">
+                    </div>
+                    <div class="social-items">
+                        <img src="../Assets/Images/communication.png">
+                    </div>
+                    <div class="social-items">
+                        <img src="../Assets/Images/logo.png">
+                    </div>
+                    <div class="social-items">
+                        <img src="../Assets/Images/youtube (1).png">
+                    </div>
+                    <div class="social-items">
+                        <img src="../Assets/Images/linkedin (1).png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="../Javascript/onlinedegree.js"></script>
+</body>
+
+</html>

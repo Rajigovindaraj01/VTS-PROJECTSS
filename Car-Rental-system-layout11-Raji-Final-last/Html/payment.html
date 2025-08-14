@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment-page</title>
+    <link rel="stylesheet" href="../Css/payment.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Boldonse&family=Cookie&family=Creepster&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dokdo&family=Engagement&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Outline&family=Londrina+Shadow&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Rochester&family=Rubik+Mono+One&family=Rubik+Wet+Paint&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sacramento&family=Special+Gothic+Condensed+One&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo-img">
+        <img src="../Assets/Images/small-logo.png" />
+      </div>
+      <div class="navi">
+        <nav>
+          <a href="../index.html">Home</a>
+          <div class="dropdown">
+            <a href="#" class="dropbtn" data-target="cars-menu">Cars</a>
+            <div id="cars-menu" class="dropdown-content">
+              <a href="../Html/pickupCars.html" class="droplist1"
+                >Pickup Cars</a
+              >
+              <a href="../Html/Vancars.html" class="droplist2">Van Cars</a>
+              <a href="../Html/SaloonCars.html" class="droplist3"
+                >Saloon Cars</a
+              >
+              <a href="../Html/offRoadcars.html" class="droplist4"
+                >Off Road Cars</a
+              >
+              <a href="../Html/Sports.html" class="droplist5">Sports Cars</a>
+            </div>
+          </div>
+
+          <a href="../Html/Pricing.html">Pricing</a>
+          <a href="../Html/Contact.html">About</a>
+          <a href="../Html/about.html">Contact</a>
+        </nav>
+      </div>
+      <div class="header-icons">
+       <div><a href="../Html/Filter.html" style="text-decoration: none; color: black;"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+        <div><a href="../Html/booking.html" style="text-decoration: none; color: black;"><i class="fa-solid fa-cart-shopping"></i></a></div>
+         <div><a href="../Html/login.html" style="text-decoration: none;color: black;"><i class="fa-regular fa-user"></i></a></div>
+      </div>
+    </header>
+    <main>
+      <div class="section1-container">
+        <div>Booking > Payments</div>
+        <div class="filter">
+          <a
+            href="../Html/Filter.html"
+            style="text-decoration: none; color: black"
+            >Filter <i class="fa-solid fa-filter"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="section2-container">
+        <div class="sec2-col1">
+          <div class="col1-item">
+            <div class="c1">
+              <div class="c1-1">Contact Details</div>
+              <div class="c1-2">Change</div>
+            </div>
+            <div class="c1-3">
+              <input type="text" />
+            </div>
+          </div>
+          <div class="col1-item">
+            <div class="c1">
+              <div class="c1-1">Delivery Address</div>
+              <div class="c1-2">Change</div>
+            </div>
+            <div class="c1-3">
+              <input type="text" />
+            </div>
+          </div>
+          <div class="col1-item">
+            <div class="c1-1">Payment Method</div>
+            <div class="c2-4">
+              <div class="c1-img1">
+                <img src="../Assets/Images/visa.png" />
+              </div>
+              <div class="c1-img1">
+                <img src="../Assets/Images/card.png" />
+              </div>
+              <div class="c1-img1">
+                <img src="../Assets/Images/paypal.png" />
+              </div>
+              <div class="c1-img1">
+                <img src="../Assets/Images/apple-pay.png" />
+              </div>
+              <div class="c1-img1">
+                <img src="../Assets/Images/google-pay (1).png" />
+              </div>
+            </div>
+            <div class="c1-5">
+              <div class="c1-1">Enter Card Number*</div>
+              <div class="c1-3">
+                <input type="number" placeholder="Number" />
+              </div>
+              <div class="c1-6">
+                <div class="c1-3">
+                  <div>Validity Date</div>
+                  <input type="number" placeholder="Number" />
+                </div>
+                <div class="c1-3">
+                  <div>CVV*</div>
+                  <input type="number" placeholder="Number" />
+                </div>
+              </div>
+            </div>
+            <div class="c1-7">
+              Your card details would be securedly save for fast payment, CVV
+              will be not stored<span>*</span>
+            </div>
+            <div class="c1-8">Conform Your Booking</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="col2-items">
+            <div class="col1-images">
+            <div class="col1-image1">
+              <img src="../Assets/Images/Frame 427319100.png" />
+            </div>
+            <div class="col1-image2">-</div>
+            <div class="col1-image1">
+              <img src="../Assets/Images/img1.png" />
+            </div>
+          </div>
+            <div class="dots">
+                <div><i class="fa-solid fa-circle"></i></div>
+                <div><i class="fa-solid fa-circle"></i></div>
+                <div><i class="fa-solid fa-diamond"></i></div>
+                <div><i class="fa-solid fa-circle"></i></div>
+                <div><i class="fa-solid fa-circle"></i></div>
+            </div>
+           <div class="col2-grids">
+            <div class="col2-grids-items">
+              <div class="iconss">
+                <span class="iconify" data-icon="mdi:car-shift-pattern"></span>
+              </div>
+              <div class="titless">Gear Box</div>
+              <div class="desc">-</div>
+            </div>
+            <div class="col2-grids-items">
+              <div class="iconss"><i class="fa-solid fa-gas-pump"></i></div>
+              <div class="titless">Fuel</div>
+              <div class="desc">-</div>
+            </div>
+            <div class="col2-grids-items">
+              <div class="iconss">
+                <span
+                  class="iconify"
+                  data-icon="mdi:car-door"
+                  style="font-size: 24px"
+                ></span>
+              </div>
+              <div class="titless">Doors</div>
+              <div class="desc">-</div>
+            </div>
+            <div class="col2-grids-items">
+              <div class="iconss"><i class="material-icons">ac_unit</i></div>
+              <div class="titless">Air Conditioner</div>
+              <div class="desc">Yes</div>
+            </div>
+            <div class="col2-grids-items">
+              <div class="iconss">
+                <span
+                  class="iconify"
+                  data-icon="ph:seat"
+                  style="font-size: 20px"
+                ></span>
+              </div>
+              <div class="titless">Seats</div>
+              <div class="desc">-</div>
+            </div>
+            <div class="col2-grids-items">
+              <div class="iconss"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="titless">Distance</div>
+              <div class="desc">-</div>
+            </div>
+          </div>
+          </div>
+          <div class="col2-items">
+            <div class="c1-1">Booking Summary</div>
+            <div class="c2-1">
+                <div>-</div>
+                <div>-</div>
+            </div>
+            <div class="c2-2">
+                <div>Tax & Gst <span>?</span></div>
+                <div>400</div>
+            </div>
+          </div>
+          <div class="col2-items">
+            <div class="c2-3">
+                <div>Total</div>
+                <div>-</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+    <div class="foot-row1">
+        <div>
+            <div class="foot-head">KNOW</div>
+            <div class="foot-body">About Us</div>
+            <div class="foot-body">About FlexiCar</div>
+            <div class="foot-body">Bulk Order & Booking Events</div>
+        </div>
+        <div>
+            <div class="foot-head">TERMS & CONDITIONS</div>
+            <div class="foot-body">FAQ's</div>
+            <div class="foot-body">Privacy Policy</div>
+            <div class="foot-body">Delivery & Return Policies</div>
+        </div>
+        <div>
+            <div class="foot-head">CONTACT US</div>
+            <div class="foot-body">For Sale: FlexiCar@co.in</div>
+            <div class="foot-body">For Complaints:1800 2421 2421</div>
+            <div class="foot-body">Chat Time:Our Team is Available From Monday to Saturday from 9.00 AM to 8.00 PM</div>
+            <div class="foot-body">For Complaints: Flexicc.com</div>
+        </div>
+        <div>
+            <div class="foot-head">DOWNLOAD APP</div>
+            <div class="downlogo">
+                <img src="../Assets/Images/png-clipart-google-play-app-store-apple-apple-text-rectangle-removebg-preview.png">
+            </div>
+        </div>
+        <div>
+            <div class="foot-head">FOLLOW Us</div>
+            <div class="social-media-icons">
+                <div><i class="fa-brands fa-instagram"></i></div>
+                <div><i class="fa-brands fa-facebook"></i></div>
+                <div><i class="fa-brands fa-twitter"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="hr"><hr></div>
+    <div class="foot-row2">Copyright © 2025 All Rights Reserved.</div>
+    </footer>
+
+    <script src="../Javascript/payment.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  </body>
+</html>

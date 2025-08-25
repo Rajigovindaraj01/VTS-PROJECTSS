@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile-page</title>
+    <link rel="stylesheet" href="../Css/Profile.css">
+</head>
+<body>
+    <div class="p1">CREATE YOUR PLAYER PROFILE</div>
+    <hr>
+    <div class="profile-container">
+        <div class="prof1">
+            <img src="../Assets/Images/profile.png">
+        </div>
+        <div class="prof2">
+            <label>Full Name</label><br>
+            <input type="text" placeholder="Name">
+        </div>
+        <div class="prof2">
+            <label>Email Address</label><br>
+            <input type="text" placeholder="E-Mail">
+        </div>
+        <div class="prof2">
+            <label>Phone Number</label><br>
+            <input type="text" placeholder="Phone Number">
+        </div>
+        <div class="prof2">
+            <label>Date Of Birth</label><br>
+            <input type="month" placeholder="DOB">
+        </div>
+        <div class="prof2">
+            <label>Username</label><br>
+            <input type="text" placeholder="Username">
+        </div>
+        <div class="prof2">
+            <label>Set A Secure Password</label><br>
+            <input type="password" placeholder="Password">
+        </div>
+        <div class="prof3">Select Your Tournament</div>
+    </div>
+
+    <script>
+    const click = document.querySelector('.prof3');
+    click.addEventListener('click', function () {
+    window.location.href = '../Html/ProfileAdded.html';
+    });
+    </script>
+
+</body>
+</html>

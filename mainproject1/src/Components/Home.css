@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Onest:wght@300;600&family=Roboto:wght@400;700&family=Rye&family=Pompiere&display=swap');
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+
+body{
+    background:linear-gradient(135deg,rgb(197, 253, 255),rgb(1, 240, 81));
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Onest", sans-serif;
+}
+.container1{
+    width: 90vw;
+    margin: auto;
+    position: relative;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    box-shadow: 0 0 10px black;
+}
+.container1-col1{
+    background-color: black;
+    color: aquamarine;
+}
+
+.name{
+    font-family: "Cookie", cursive;
+    font-size: 30px;
+    text-align: center;
+}
+.col1-conten1{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.description{
+    text-align: center;
+}
+.prof-img{
+    box-shadow: 0 0 50px aquamarine;
+    height: 18vh;
+    width: 8vw;
+    border-radius: 50%;
+    background: linear-gradient(135deg,aquamarine,white);
+}
+.prof-img img{
+    height: 100%;
+    width: 100%;
+}
+.prof-links{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    font-size: 20px;
+}
+
+nav{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.nav-item{
+    margin-top: 5%;
+    text-decoration: none;
+    color: white;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    transition: font-size 0.5s ease-in-out;
+}
+.nav-item:hover{
+    color: aquamarine;
+    font-size: 20px;
+}
+.categories{
+    margin-top: 5%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: bold;
+}
+.categories div{
+    font-weight: normal;
+    list-style-type: circle;
+    font-size: 18px;
+    margin-top: 3%;
+}
+.app.light {
+    width: 90vw;
+    margin: auto;
+  background-color: #f2f7fa;
+  color: #222;
+}
+
+.app.dark {
+     width: 90vw;
+    margin: auto;
+  background-color: #121212;
+  color: #fff;
+}
+
+.container1{
+  transition: background-color 2s, color 0.4s;
+}
+
+
+.app.light .container1-col2{
+  background-color: white;
+  color: #222;
+}
+
+.app.dark .container1-col2{
+  background-color: #333;
+  color: #fff;
+}
+.theme-toggle-btn {
+  margin: 15px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+/* ------------------------------ */
+.container1-col2{
+    background-color: white;
+    padding: 20px;
+}
+.col2-content1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-input input{
+    padding: 20px;
+    width: 30vw;
+    border: 3px solid aquamarine;
+    box-shadow: 0 0 10px aquamarine;
+    background:none;
+}
+.search-input input::placeholder{
+    color: gainsboro;
+    font-size: 20px;
+}
+hr{
+    border: 3px solid aquamarine;
+    margin-top: 5%;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.home-img{
+    margin-top: 5%;
+    aspect-ratio: 4 / 3;
+    position: relative;
+}
+.home-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.overlay{
+    width: 50vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 20px;
+    background: linear-gradient(135deg,rgba(26, 216, 159, 0.705),rgba(72, 226, 58, 0.658));
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: inset 0 0 10px black, 0 0 20px black;
+}
+.welcome{
+    font-size: 40px;
+    font-family: "Rye", serif;
+}
+.im{
+    font-size: 30px;
+    font-weight: bold;
+}
+.myname{
+     font-family: "Cookie", cursive;
+     font-size: 50px;
+     text-shadow: 3px 3px 5px gray;
+}
+.blog-para{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Cookie", cursive;
+}
+
+.blogs{
+    margin-top: 5%;
+}
+.category-name{
+    margin-top: 5%;
+}
+.post-card{
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 5%;
+     transition: transform 0.2s ease-in-out;
+    background: linear-gradient(135deg,rgba(26, 216, 159, 0.705),rgba(72, 226, 58, 0.658));
+}
+.post-card:hover{
+    transform: translateY(-20px);
+}
+.blogs-image{
+    width: 100%;
+    aspect-ratio: 4 / 2;
+}
+.blogs-image img{
+    height: 100%;
+    width: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+.post-date{
+    margin-top: 2%;
+    color: gray;
+    font-weight: bold;
+}
+.post-title{
+    margin-top: 5px;
+    font-size: 23px;
+    font-weight: bold;
+}
+.post-descrip{
+    margin-top: 5px;
+    font-size: 23px;   
+    font-weight: bold;
+    font-family: "Pompiere", sans-serif;
+}
+.comments{
+    margin-top: 2%;
+    color: gray;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.arrow{
+    margin-top: 2%;
+    padding: 5px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0 10px black;
+}
+.arrow:hover{
+    cursor: pointer;
+    background-color: darkgray;
+}
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------Blog-posts------------------------- */
+form{
+    position: relative;
+    margin-top: 5%;
+    box-shadow: 0 0 20px aquamarine;
+    border: 5px solid aquamarine;
+    padding: 10px;
+}
+form input,textarea{
+    width: 100%;
+    position: relative;
+    margin-top: 5%;
+    box-shadow: 0 0 20px aquamarine;
+    border: 5px solid aquamarine;
+    padding: 10px;
+}
+.addpost{
+    margin-top: 5%;
+    padding: 10px 30px;
+    border: none;
+    background-color: #121212;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 0 20px aquamarine;
+}
+.addpost:hover{
+    cursor: pointer;
+    box-shadow:inset 0 0 10px aquamarine;
+}
+/* -------------------------------------------------------------------------------------------------------------------------------------- */

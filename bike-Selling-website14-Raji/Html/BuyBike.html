@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy-Bike</title>
+    <link rel="stylesheet" href="../Css/BuyBike.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Boldonse&family=Cookie&family=Creepster&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dokdo&family=Engagement&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Outline&family=Londrina+Shadow&family=Mea+Culpa&family=Onest:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rochester&family=Rubik+Mono+One&family=Rubik+Wet+Paint&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sacramento&family=Special+Gothic+Condensed+One&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo-img">
+        <img src="../Assets/Images/logo.png" />
+      </div>
+      <div class="header-links">
+        <a href="../index.html">Home</a>
+        <a href="../Html/BuyBike.html" style="color: rgb(97, 197, 176)"
+          >Buy Bike</a
+        >
+        <a href="../Html/SellBike.html">Sell Bike</a>
+        <a href="../Html/Aboutus.html">About Us</a>
+        <a href="../Html/Contactus.html">Contact Us</a>
+      </div>
+      <div class="header-col3">
+        <div class="login-btn"><a href="../Html/Login.html" style="text-decoration: none; color:white;">Login</a></div>
+        <div><a href="../Html/BuyBike.html"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+      </div>
+    </header>
+    <main>
+      <div class="section1-container">
+        <div class="sec1-col1">
+          <h1>Filter</h1>
+          <hr />
+
+          <div class="sec1-col1-items">
+            <div class="sec1-col1-items-head">
+              <div>Budget</div>
+              <div><i class="fa-solid fa-caret-down"></i></div>
+            </div>
+            <div class="sec1-col1-items-body">
+              <div class="body1">
+                <div><input type="number" /></div>
+                <div>-</div>
+                <div><input type="number" /></div>
+              </div>
+              <div class="body2">
+                <input
+                  type="range"
+                  id="budgetRange"
+                  min="10000"
+                  max="500000"
+                  step="1000"
+                  value="100000"
+                />
+                <span id="rangeValue">100000</span>
+              </div>
+              <div class="body3">
+                <div>Minimum</div>
+                <div>Maximum</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sec1-col1-items">
+            <div class="sec1-col1-items-head">
+              <div>Categories</div>
+              <div><i class="fa-solid fa-caret-down"></i></div>
+            </div>
+            <div class="sec1-col1-items-body">
+              <div class="body4">
+                <div>
+                  <div>🛵</div>
+                  <div>Scooty</div>
+                </div>
+                <div>
+                  <div>🏍️</div>
+                  <div>Motor bike</div>
+                </div>
+                <div>
+                  <div>🔌</div>
+                  <div>EVs</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sec1-col1-items">
+            <div class="sec1-col1-items-head">
+              <div>Brand</div>
+              <div><i class="fa-solid fa-caret-down"></i></div>
+            </div>
+            <div class="sec1-col1-items-body">
+              <div>TVS</div>
+              <div>Honda</div>
+              <div>Bajaj</div>
+              <div>Hero</div>
+              <div>Royal Enfield</div>
+            </div>
+          </div>
+
+          <div class="sec1-col1-items">
+            <div class="sec1-col1-items-head">
+              <div>Year</div>
+              <div><i class="fa-solid fa-caret-down"></i></div>
+            </div>
+            <div class="sec1-col1-items-body">
+              <div>
+                <div class="body1">
+                  <div><input type="number" /></div>
+                  <div>-</div>
+                  <div><input type="number" /></div>
+                </div>
+                <div class="body2">
+                  <input
+                    type="range"
+                    min="2000"
+                    max="2025"
+                    value="2015"
+                    id="yearRange"
+                  />
+                </div>
+                <div class="body3">
+                  <div>Minimum</div>
+                  <div>Maximum</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sec1-col1-items">
+            <div class="sec1-col1-items-head">
+              <div>Kilometers</div>
+              <div><i class="fa-solid fa-caret-down"></i></div>
+            </div>
+            <div class="sec1-col1-items-body">
+              <div>
+                <div>
+                  <input
+                    type="number"
+                    id="kmInput"
+                    min="0"
+                    max="100"
+                    value="0"
+                  />
+                  KM
+                </div>
+              </div>
+              <div>
+                <div>
+                  <input
+                    type="range"
+                    id="kmRange"
+                    min="0"
+                    max="100"
+                    value="0"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sec1-col1-items">
+            <div class="sec1-col1-items-head">
+              <div>EngineTrim CC</div>
+              <div><i class="fa-solid fa-caret-down"></i></div>
+            </div>
+            <div class="sec1-col1-items-body">
+              <div>Below 100 CC</div>
+              <div>Below 200 CC</div>
+              <div>Below 300 CC</div>
+              <div>Below 400 CC</div>
+            </div>
+          </div>
+
+          <div class="sec1-col1-items">
+            <div class="sec1-col1-items-head">
+              <div>Fuel Type</div>
+              <div><i class="fa-solid fa-caret-down"></i></div>
+            </div>
+            <div class="sec1-col1-items-body">
+              <div>Petrol</div>
+              <div>Diesel</div>
+              <div>Electric</div>
+            </div>
+          </div>
+
+          <div class="sec1-col1-items">
+            <div class="sec1-col1-items-head">
+              <div>Color</div>
+              <div><i class="fa-solid fa-caret-down"></i></div>
+            </div>
+            <div class="sec1-col1-items-body">
+              <div><input type="color" /></div>
+            </div>
+          </div>
+          <div class="apply-btn">Apply</div>
+        </div>
+
+        <div class="sec1-col2">
+          <div class="sec1-col2-content1">
+            <div class="col2-cont1-1">72 Bikes In Tamilnadu</div>
+            <div class="col2-cont1-2">
+              <div class="sorto">Sort By</div>
+              <div class="sorthead">
+                <div class="sort-by-container">
+                  <div>Newest First</div>
+                  <div><i class="fa-solid fa-caret-down"></i></div>
+                </div>
+                <div class="sortby-body">
+                  <div>Newest First</div>
+                  <div>Price - Low to High</div>
+                  <div>Price - High to Low</div>
+                  <div>KM Driven - Low to High</div>
+                  <div>KM Driven - High to Low</div>
+                  <div>Year - old to New</div>
+                  <div>Year - New to Old</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section4-container">
+            <div class="sec4-items">
+              <div class="sec4-item-1">
+                <img src="../Assets/Images/image 83.png" />
+                <div class="sec4-item1-overlay1">
+                  <img src="../Assets/Images/MT15.webp" />
+                </div>
+                <div class="sec4-item1-overlay2">
+                  <img src="../Assets/Images/logo1.png" />
+                </div>
+              </div>
+              <div class="sec4-body">
+                <div class="sec4-item-2">2023 | Yamaha MT 15 | 150CC BS6</div>
+                <div class="sec4-item-3">
+                  <i class="fa-solid fa-gauge"></i> 8700 Km . Petrol . 1st Owner
+                </div>
+                <div class="sec4-item-4">₹ 1, 15, 000</div>
+                <div class="sec4-item-5">
+                  <i class="fa-solid fa-location-dot"></i> Thirunelveli
+                </div>
+              </div>
+            </div>
+
+            <div class="sec4-items">
+              <div class="sec4-item-1">
+                <img src="../Assets/Images/image 83.png" />
+                <div class="sec4-item1-overlay1">
+                  <img src="../Assets/Images/1-500x500-removebg-preview.png" />
+                </div>
+                <div class="sec4-item1-overlay2">
+                  <img src="../Assets/Images/logo1.png" />
+                </div>
+              </div>
+              <div class="sec4-body">
+                <div class="sec4-item-2">
+                  2013 | Susuki Access | 125 CC | No 1
+                </div>
+                <div class="sec4-item-3">
+                  <i class="fa-solid fa-gauge"></i> 2600 Km . Petrol . 2nd Owner
+                </div>
+                <div class="sec4-item-4">₹ 30, 000</div>
+                <div class="sec4-item-5">
+                  <i class="fa-solid fa-location-dot"></i> Kanchipuram
+                </div>
+              </div>
+            </div>
+
+            <div class="sec4-items">
+              <div class="sec4-item-1">
+                <img src="../Assets/Images/image 83.png" />
+                <div class="sec4-item1-overlay1">
+                  <img src="../Assets/Images/images-removebg-preview.png" />
+                </div>
+                <div class="sec4-item1-overlay2">
+                  <img src="../Assets/Images/logo1.png" />
+                </div>
+              </div>
+              <div class="sec4-body">
+                <div class="sec4-item-2">
+                  2020 | Royal Enfield-Himalayan | 410CC FTS
+                </div>
+                <div class="sec4-item-3">
+                  <i class="fa-solid fa-gauge"></i> 23700 Km . Petrol . 1st
+                  Owner
+                </div>
+                <div class="sec4-item-4">₹ 2, 50, 000</div>
+                <div class="sec4-item-5">
+                  <i class="fa-solid fa-location-dot"></i> Karur
+                </div>
+              </div>
+            </div>
+
+            <div class="sec4-items">
+              <div class="sec4-item-1">
+                <img src="../Assets/Images/image 83.png" />
+                <div class="sec4-item1-overlay1">
+                  <img src="../Assets/Images/olas1.webp" />
+                </div>
+                <div class="sec4-item1-overlay2">
+                  <img src="../Assets/Images/logo1.png" />
+                </div>
+              </div>
+              <div class="sec4-body">
+                <div class="sec4-item-2">2022 | OLA s1 Pro</div>
+                <div class="sec4-item-3">
+                  <i class="fa-solid fa-gauge"></i> 2100 Km . Electric . 1st
+                  Owner
+                </div>
+                <div class="sec4-item-4">₹ 90, 000</div>
+                <div class="sec4-item-5">
+                  <i class="fa-solid fa-location-dot"></i> Chennai
+                </div>
+              </div>
+              <div class="booked">Booked</div>
+            </div>
+
+            <div class="sec4-items">
+              <div class="sec4-item-1">
+                <img src="../Assets/Images/image 83.png" />
+                <div class="sec4-item1-overlay1">
+                  <img
+                    src="../Assets/Images/pulsar-135-std_red_hot_1525076006-removebg-preview.png"
+                  />
+                </div>
+                <div class="sec4-item1-overlay2">
+                  <img src="../Assets/Images/logo1.png" />
+                </div>
+              </div>
+              <div class="sec4-body">
+                <div class="sec4-item-2">2020 | Bajaj Pulsar LS | 135</div>
+                <div class="sec4-item-3">
+                  <i class="fa-solid fa-gauge"></i> 9000 Km . Petrol . 3rd Owner
+                </div>
+                <div class="sec4-item-4">₹ 25, 000</div>
+                <div class="sec4-item-5">
+                  <i class="fa-solid fa-location-dot"></i> Dindugal
+                </div>
+              </div>
+            </div>
+
+            <div class="sec4-items">
+              <div class="sec4-item-1">
+                <img src="../Assets/Images/image 83.png" />
+                <div class="sec4-item1-overlay1">
+                  <img
+                    src="../Assets/Images/aprilia_sxr_160_inner_banner_red.webp"
+                  />
+                </div>
+                <div class="sec4-item1-overlay2">
+                  <img src="../Assets/Images/logo1.png" />
+                </div>
+              </div>
+              <div class="sec4-body">
+                <div class="sec4-item-2">2020 | Aprilia SXR | 125CC</div>
+                <div class="sec4-item-3">
+                  <i class="fa-solid fa-gauge"></i> 8700 Km . Petrol . 1st Owner
+                </div>
+                <div class="sec4-item-4">₹ 1, 05, 000</div>
+                <div class="sec4-item-5">
+                  <i class="fa-solid fa-location-dot"></i> Madurai
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="foot-col1">
+        <div class="foot-col1-row1">
+          <img src="../Assets/Images/logo1.png" />
+        </div>
+        <div class="foot-col1-row2">
+          <div class="foot-col1-row2-1">Get in touch</div>
+          <div class="foot-col1-row2-2">
+            <img src="../Assets/Images/whatsapp.png" />
+          </div>
+          <div class="foot-col1-row2-2">
+            <img src="../Assets/Images/youtube (1).png" />
+          </div>
+          <div class="foot-col1-row2-2">
+            <img src="../Assets/Images/facebook (1).png" />
+          </div>
+          <div class="foot-col1-row2-2">
+            <img src="../Assets/Images/instagram (2).png" />
+          </div>
+        </div>
+      </div>
+      <div class="foot-col2">
+        <a href="../index.html">Home</a>
+        <a href="../Html/Aboutus.html">About us</a>
+        <a href="../Html/Contactus.html">Contact us</a>
+        <a href="../Html/BuyBike.html">Buy Bike</a>
+        <a href="../Html/SellBike.html">Sell Bike</a>
+      </div>
+      <div class="foot-col3">
+        <div>Electric Two-Wheelers</div>
+        <div>Motorcycles</div>
+        <div>Scooters</div>
+        <div>Mopeds</div>
+        <div>ATV</div>
+        <div>Custom Bikes</div>
+      </div>
+      <div class="foot-col4">
+        <img src="../Assets/Images/contact us (3).png" />
+      </div>
+      <div class="foot-col5">
+        <div>Address:</div>
+        <div>
+          51, Rajaji Street, <br />
+          GST Road, <br />
+          Chengalpattu-603104
+        </div>
+        <div>WWW.DriveRp.in</div>
+        <div>+91 987 952 1234</div>
+      </div>
+    </footer>
+
+    <script src="../Javascript/BuyBike.js"></script>
+  </body>
+</html>

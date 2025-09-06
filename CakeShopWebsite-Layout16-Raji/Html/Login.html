@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../Css/Login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Boldonse&family=Cookie&family=Creepster&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dokdo&family=Engagement&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Outline&family=Londrina+Shadow&family=Mea+Culpa&family=Onest:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Pompiere&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rochester&family=Rubik+Mono+One&family=Rubik+Wet+Paint&family=Rubik:ital,wght@0,300..900;1,300..900&family=Rye&family=Sacramento&family=Special+Gothic+Condensed+One&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="head-row1">Welcome To Our Shop.Kindly Note,Currently We Delivery To all Locations! Thanks for you
+            love and Support</div>
+        <div class="heaad-row2">
+            <div class="head-logo-img">
+                <img src="../Assets/Images/cake-logo.png">
+            </div>
+            <div class="head-logo-links">
+                <a href="../index.html">PRODUCTS</a>
+                <a href="../Html/About.html">ABOUT US</a>
+                <a href="../Html/SpecialCakes.html">SPECIAL CAKES</a>
+                <a href="../Html/Snacks.html">SNACKS</a>
+                <a href="../Html/Contact.html">CONTACT US</a>
+            </div>
+            <div class="head-search">
+                <input type="search" id="searchInput" placeholder="Search">
+                <div class="head-search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+            <div class="head-icon-links">
+                <a href="../Html/Login.html"><i class="fa-solid fa-circle-user"></i></a>
+                <a href="../Html/Cartpage.html" class="cart-icon">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="section1">
+            <div class="sec1-col1">
+                <img src="../Assets/Images/login.png">
+            </div>
+            <div>
+                <div class="login-container">
+                    <h1>Login</h1>
+                    <p class="signup-text">New To This Site? <a href="../Html/Signup.html">Sign Up</a></p>
+
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                            <div id="emailError" class="error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" required>
+                            <div id="passwordError" class="error"></div>
+                        </div>
+
+                        <div class="forgot-password">
+                            <a href="../Html/Signup.html">forgot password?</a>
+                        </div>
+
+                        <button type="submit">Login</button>
+                    </form>
+
+                    <div class="divider">
+                        <hr><span>or login with</span>
+                        <hr>
+                    </div>
+
+                    <div class="social-login">
+                        <i class="fab fa-google" style="color:#4285F4;"></i>
+                        <i class="fab fa-facebook" style="color:#1877F2;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="../Javascript/Login.js"></script>
+</body>
+
+</html>

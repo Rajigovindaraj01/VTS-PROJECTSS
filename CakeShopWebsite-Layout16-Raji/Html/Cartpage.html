@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cartpage</title>
+    <link rel="stylesheet" href="../Css/Cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Boldonse&family=Cookie&family=Creepster&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dokdo&family=Engagement&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Outline&family=Londrina+Shadow&family=Mea+Culpa&family=Onest:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Pompiere&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rochester&family=Rubik+Mono+One&family=Rubik+Wet+Paint&family=Rubik:ital,wght@0,300..900;1,300..900&family=Rye&family=Sacramento&family=Special+Gothic+Condensed+One&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="head-row1">
+        Welcome To Our Shop.Kindly Note,Currently We Delivery To all Locations!
+        Thanks for you love and Support
+      </div>
+      <div class="heaad-row2">
+        <div class="head-logo-img">
+          <img src="../Assets/Images/cake-logo.png" />
+        </div>
+        <div class="head-logo-links">
+          <a href="../index.html">PRODUCTS</a>
+          <a href="../Html/About.html">ABOUT US</a>
+          <a href="../Html/SpecialCakes.html">SPECIAL CAKES</a>
+          <a href="../Html/Snacks.html">SNACKS</a>
+          <a href="../Html/Contact.html">CONTACT US</a>
+        </div>
+        <div class="head-search">
+          <input type="search" id="searchInput" placeholder="Search" />
+          <div class="head-search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="head-icon-links">
+          <a href="../Html/Login.html"><i class="fa-solid fa-circle-user"></i></a>
+          <a href="../Html/Cartpage.html" class="cart-icon">
+            <i class="fa-solid fa-cart-plus"></i>
+            <span id="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="cart-container">
+        <h2>Shopping Cart</h2>
+        <button id="removeAll" class="remove-all">Remove All</button>
+        <div id="cart-items"></div>
+
+        <div class="cart-footer">
+          <p>Sub-Total: <span id="subtotal">Rs.0</span></p>
+          <div class="cart-actions">
+            <button class="continue" id="continue">Continue Shopping</button>
+            <button class="checkout" id="check">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+        <div class="foot-row1">
+            <div class="foot-row1-col1">
+                <img src="../Assets/Images/cake-logo.png">
+            </div>
+            <div class="foot-row1-col2">
+                <h2>ONLINE SHOPPING</h2>
+                <a href="../index.html">Home</a>
+                <a href="../index.html">Products</a>
+                <a href="../Html/About.html">About us</a>
+                <a href="../Html/SpecialCakes.html">Special Cake</a>
+                <a href="../Html/Snacks.html">Snacks</a>
+                <a href="../Html/Contact.html">Contact</a>
+            </div>
+            <div class="foot-row1-col3">
+                <h2>USEFUL LINKS</h2>
+                <div>T & C</div>
+                <div>Booking</div>
+                <div>Cancellation</div>
+                <div>Privacy Policy</div>
+                <div>Return / Refunds</div>
+                <div>Payments</div>
+            </div>
+            <div class="foot-row1-col4">
+                <h2>CONTACT US</h2>
+                <div><i class="fa-solid fa-location-dot"></i> Manek Ratna<br>3rd Floor,Block No.304,<br>Ryna Arcade, Zakeria Road,Malad(West),<br>Maharastra,Mumbai,Pincode:400064</div>
+                <div><i class="fa-solid fa-phone"></i> +91 8879438031</div>
+                <div><i class="fa-solid fa-envelope"></i> info@cakeshop.com</div>
+            </div>
+        </div>
+        <div class="foot-row2"></div>
+        <div class="foot-row3">
+            <div></div>
+            <div class="foot-row3-2">2021-2025 www.Cakeshop.Com All Rights Reserved.</div>
+            <div class="foot-row3-3">
+                <div class="facebook"><i class="fa-brands fa-facebook"></i></div>
+                <div class="insta"><i class="fa-brands fa-instagram"></i></div>
+                <div class="whats"><i class="fa-brands fa-whatsapp"></i></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../Javascript/Cart.js"></script>
+  </body>
+</html>

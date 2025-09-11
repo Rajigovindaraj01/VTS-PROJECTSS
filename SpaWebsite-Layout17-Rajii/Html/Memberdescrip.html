@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membership-description</title>
+    <link rel="stylesheet" href="../Css/Memberdescrip.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Boldonse&family=Cookie&family=Creepster&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dokdo&family=Engagement&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Outline&family=Londrina+Shadow&family=Mea+Culpa&family=Onest:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Pompiere&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rochester&family=Rubik+Mono+One&family=Rubik+Wet+Paint&family=Rubik:ital,wght@0,300..900;1,300..900&family=Rye&family=Sacramento&family=Special+Gothic+Condensed+One&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="head-col1">
+        <div class="head-col1-1">
+          <img src="../Assets/Images/shopease-logo.png" />
+        </div>
+        <div class="head-col1-2">SpaEase</div>
+      </div>
+      <div class="head-col2">
+        <a href="../index.html">Home</a>
+        <a href="../Html/Services.html">Services</a>
+        <a href="../Html/Aboutus.html">About us</a>
+        <a href="../Html/Contactus.html">Contact</a>
+        <a href="../Html/Membership.html" style="color: white">Membership</a>
+      </div>
+      <div class="head-col3">
+        <input type="search" id="searchBox" placeholder="Search here...." />
+        <div class="head-col3-overlay">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+      <div class="head-col4">
+        <div class="head-col4-1">
+          <a href="../Html/Login.html"><i class="fa-regular fa-user"></i></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="section1">
+        <img src="../Assets/Images/sec5-7.jpg" />
+      </div>
+
+      <div class="section2">
+        <div class="sec2-col1">
+          <img src="" />
+        </div>
+        <div class="sec2-col2">
+          <div class="sec2-col2-1">
+            <h1 class="membername"></h1>
+            <div class="sec2-col2-1-1">
+              <div>Pay</div>
+              <div class="price">-</div>
+            </div>
+            <div class="sec2-col2-1-1">
+              <div>Validity</div>
+              <div class="validity">-</div>
+            </div>
+            <div class="sec2-col2-1-1">
+              <div>Services Included</div>
+              <div class="services">-</div>
+            </div>
+            <div class="sec2-col2-1-1">
+              <div>Access Days</div>
+              <div>Monday to Thursday</div>
+            </div>
+            <div class="sec2-col2-1-1">
+              <div>Access Hours</div>
+              <div>10.00 AM - 8.00 PM</div>
+            </div>
+            <div class="sec2-col2-1-1">
+              <div>Reservation Support</div>
+              <div>hello@spaease.com</div>
+            </div>
+          </div>
+          <div class="paynow">Pay Now</div>
+          <div class="payment-method">
+            <div><input type="radio" name="payment" /> 💰 EMI</div>
+            <div><input type="radio" name="payment" /> 🆙 UPI</div>
+            <div><input type="radio" name="payment" /> 💳 Debit Card</div>
+            <div><input type="radio" name="payment" /> 💳 Credit Card</div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal"
+        style="
+          display: none !important;
+          position: fixed;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.6);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 1000;
+        "
+      >
+        <div
+          style="
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            width: 300px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 10001;
+          "
+        >
+          <h2>Payment Successful</h2>
+          <button
+            class="closeModal"
+            style="
+              margin-top: 15px;
+              padding: 8px 16px;
+              border: none;
+              background: #007bff;
+              color: #fff;
+              border-radius: 5px;
+              cursor: pointer;
+            "
+          >
+            Close
+          </button>
+        </div>
+      </div>
+
+
+      <div class="section6">
+        <h1>Why Choose SpaEase Membership?</h1>
+        <div class="sec6-content-container">
+          <div class="sec6-items" style="background-color: darksalmon;">
+            <div class="sec6-item1">
+                <img src="../Assets/Images/1.png">
+            </div>
+            <div class="sec6-item2">EMI OPTIONS AVAILABLE</div>
+            <div class="sec6-item3">
+              Spread membership fee payments with ease. Enjoy wellness with 100%
+              upfront payments with our flexible EMI options from multiple
+              banks.
+            </div>
+          </div>
+          <div class="sec6-items" style="background-color: skyblue;">
+            <div class="sec6-item1">
+                <img src="../Assets/Images/2.png">
+            </div>
+            <div class="sec6-item2">EXCLUSIVE CUSTOMER SERVICE DESK SUPPORT</div>
+            <div class="sec6-item3">
+              Enjoy seamless spa experiences. with dedicated staff. From inquiries to reservations, we prioritize your needs.
+            </div>
+          </div>
+          <div class="sec6-items" style="background-color: pink;">
+            <div class="sec6-item1">
+                <img src="../Assets/Images/3.png">
+            </div>
+            <div class="sec6-item2">SIGNIFICANT SAVINGS</div>
+            <div class="sec6-item3">
+              Spread membership fee payments with ease. Enjoy wellness with 100%
+              upfront payments with our flexible EMI options from multiple
+              banks.
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="section7">
+        <div class="sec7-1">Customer Testimonial</div>
+        <div class="sec7-2">Relaxation is not a Luxury-it's a <br> necessity for the soul.</div>
+        <div class="sec7-3"><img src="../Assets/Images/women-prof.webp"></div>
+        <div class="sec7-4">SpaEase is my go-to escape from everyday stress. The staff is incredibly warm and the treatments always leave me feeling refreshed and renewed. I tried the Basic Plan and it was pure bliss from start to finish!</div>
+        <div class="sec7-5">Neha S</div>
+        <div class="sec7-6">Regular Client</div>
+      </div>
+
+
+      <div class="section11">
+        <div class="sec11-1">
+          <img src="../Assets/Images/shopease-logo.png" />
+        </div>
+        <div class="sec11-2">
+          <h1>SPAEASE</h1>
+          <div>2025 SpaEase Limited</div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <div class="foothead">Company</div>
+        <div class="footbody">About us</div>
+        <div class="footbody">MagicPage Corporate</div>
+        <div class="footbody">Careers</div>
+        <div class="footbody">Team</div>
+      </div>
+      <div>
+        <div class="foothead">Contact us</div>
+        <div class="footbody">Help & Support</div>
+        <div class="footbody">Partner with us</div>
+        <div class="footbody">Ride with us</div>
+      </div>
+      <div>
+        <div class="foothead">Available in</div>
+        <div class="footbody">Coimbatore</div>
+        <div class="footbody">Bengaluru</div>
+        <div class="footbody">Chennai</div>
+        <div class="footbody">Kolkata</div>
+      </div>
+      <div>
+        <div class="foothead">Legal</div>
+        <div class="footbody">Terms & Conditions</div>
+        <div class="footbody">Cookie Policy</div>
+        <div class="footbody">Privacy Policy</div>
+      </div>
+      <div>
+        <div class="foothead">Information</div>
+        <div class="footbody">Location</div>
+        <div class="footbody">Email</div>
+        <div class="footbody">Social Media</div>
+        <div class="social-media-logos">
+          <div>
+            <img src="../Assets/Images/instagram (1).png" />
+          </div>
+          <div>
+            <img src="../Assets/Images/facebook (1).png" />
+          </div>
+          <div>
+            <img src="../Assets/Images/whatsapp.png" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-logos">
+      <div class="footer-logos1">
+        For better experience, download the app now
+      </div>
+      <div class="footer-logos2">
+        <img
+          src="../Assets/Images/google.webp"
+        />
+      </div>
+      <div class="footer-logos3">
+        <img
+          src="../Assets/Images/app.webp"
+        />
+      </div>
+    </div>
+
+    <script src="../Javascript/Memberdescrip.js"></script>
+  </body>
+</html>

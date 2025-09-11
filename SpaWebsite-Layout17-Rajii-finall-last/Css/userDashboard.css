@@ -1,0 +1,610 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+header{
+    background-color: #9747FF;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr 1fr;
+    gap: 5%;
+    padding: 10px;
+    align-items: center;
+}
+.head-col1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    align-items: center;
+}
+.head-col1-1{
+    border-radius: 50%;
+    width: 100%;
+    aspect-ratio: 4 / 4;
+}
+.head-col1-1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.head-col1-2{
+    font-size: 20px;
+}
+/* ------------------- */
+.head-col2{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+.head-col2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+/* ---------------------- */
+.head-col3{
+    width: 100%;
+    position: relative;
+}
+.head-col3 input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+}
+.head-col3-overlay{
+    position: absolute;
+    right: 10%;
+    top: 25%;
+}
+/* ---------------------- */
+.head-col4{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    justify-content: center;   
+}
+.head-col4-1{
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media (min-width:300px) and (max-width:400px) {
+header{
+    grid-template-columns: 1fr;
+    gap: 3%;
+    
+}
+.head-col1{
+    flex-direction: column;
+    gap: 5%;
+    align-items: center;
+}
+.head-col1-1{
+    width: 10%;
+    border-radius: 50%;
+    aspect-ratio: 4 / 4;
+}
+.head-col1-1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.head-col1-2{
+    font-size: 20px;
+}
+/* ------------------- */
+.head-col2{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+}
+.head-col2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+/* ---------------------- */
+.head-col3{
+    width: 100%;
+    position: relative;
+}
+.head-col3 input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+}
+.head-col3-overlay{
+    position: absolute;
+    right: 10%;
+    top: 25%;
+}
+/* ---------------------- */
+.head-col4{
+    margin-bottom: 5%;   
+}
+.head-col4-1{
+    font-size: 15px;
+}
+}
+
+@media (min-width:401px) and (max-width:576px) {
+header{
+    grid-template-columns: 1fr;
+    gap: 3%;
+    
+}
+.head-col1{
+    flex-direction: column;
+    gap: 5%;
+    align-items: center;
+}
+.head-col1-1{
+    width: 10%;
+    border-radius: 50%;
+    aspect-ratio: 4 / 4;
+}
+.head-col1-1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.head-col1-2{
+    font-size: 20px;
+}
+/* ------------------- */
+.head-col2{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+}
+.head-col2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+/* ---------------------- */
+.head-col3{
+    width: 100%;
+    position: relative;
+}
+.head-col3 input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+}
+.head-col3-overlay{
+    position: absolute;
+    right: 10%;
+    top: 25%;
+}
+/* ---------------------- */
+.head-col4{
+    margin-bottom: 5%;   
+}
+.head-col4-1{
+    font-size: 15px;
+}
+}
+@media (min-width:577px) and (max-width:768px) {
+header{
+    grid-template-columns:2fr 4fr 2fr 1fr;
+    gap: 3%;
+    
+}
+.head-col1{
+    flex-direction: row;
+    gap: 5%;
+    align-items: center;
+}
+.head-col1-1{
+    width: 10%;
+    border-radius: 50%;
+    aspect-ratio: 4 / 4;
+}
+.head-col1-1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.head-col1-2{
+    font-size: 15px;
+}
+/* ------------------- */
+.head-col2{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+.head-col2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
+/* ---------------------- */
+.head-col3{
+    width: 100%;
+    position: relative;
+}
+.head-col3 input{
+    padding: 3px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+}
+.head-col3 input::placeholder{
+    font-size: 10px;
+}
+.head-col3-overlay{
+    position: absolute;
+    right: 10%;
+    top: 25%;
+    font-size: 10px;
+}
+/* ---------------------- */
+.head-col4{
+    margin-bottom: 5%;   
+}
+.head-col4-1{
+    font-size: 15px;
+}
+}
+
+@media (min-width:769px) and (max-width:992px) {
+header{
+    grid-template-columns: 2fr 4fr 2fr 1fr;
+    gap: 3%;
+    
+}
+.head-col1{
+    flex-direction: row;
+    gap: 5%;
+    align-items: center;
+}
+.head-col1-1{
+    width: 10%;
+    border-radius: 50%;
+    aspect-ratio: 4 / 4;
+}
+.head-col1-1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.head-col1-2{
+    font-size: 18px;
+}
+/* ------------------- */
+.head-col2{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+.head-col2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+/* ---------------------- */
+.head-col3{
+    width: 100%;
+    position: relative;
+}
+.head-col3 input{
+    padding: 5px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+}
+.head-col3-overlay{
+    position: absolute;
+    right: 10%;
+    top: 25%;
+}
+/* ---------------------- */
+.head-col4{
+    margin-bottom: 5%;   
+}
+.head-col4-1{
+    font-size: 16px;
+}
+}
+@media (min-width:993px) and (max-width:1200px) {
+header{
+    grid-template-columns: 2fr 4fr 2fr 1fr;
+    gap: 3%;
+    
+}
+.head-col1{
+    flex-direction: row;
+    gap: 5%;
+    align-items: center;
+}
+.head-col1-1{
+    width: 10%;
+    border-radius: 50%;
+    aspect-ratio: 4 / 4;
+}
+.head-col1-1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.head-col1-2{
+    font-size: 20px;
+}
+/* ------------------- */
+.head-col2{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+.head-col2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+/* ---------------------- */
+.head-col3{
+    width: 100%;
+    position: relative;
+}
+.head-col3 input{
+    padding: 5px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+}
+.head-col3-overlay{
+    position: absolute;
+    right: 10%;
+    top: 25%;
+}
+/* ---------------------- */
+.head-col4{
+    margin-bottom: 5%;   
+}
+.head-col4-1{
+    font-size: 18px;
+}
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.section1{
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+}
+.active {
+    display: block !important;
+}
+
+.sec1-col1{
+    width: 100%;
+    aspect-ratio: 4 / 6;
+    background-color: #9747FF;
+}
+.sec1-col1-1{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+    padding: 20px;
+}
+.sec1-col1-1-img{
+    box-shadow: 0 0 3px black;
+    width: 5vw;
+    aspect-ratio: 4/4;
+    border-radius: 50%;
+}
+.sec1-col1-1-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.sec1-col1-profile-bar{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.right{
+    font-size: 20px;
+    padding: 20px;
+}
+.right:hover{
+    background-color: gray;
+    cursor: pointer;
+    color: white;
+}
+/* ----------------------------------------------------------------- */
+.reservation-detail-container{
+    width: 40vw;
+    margin: auto;
+    position: relative;
+    margin-top: 5%;
+}
+.reservation-detail-container h2{
+    text-align: center;
+}
+.reserve-detail{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.spaease{
+    width: 60vw;
+    margin: auto;
+    position: relative;
+    margin-top: 5%;
+}
+.spaease img{
+    height: 100%;
+    width: 100%;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+.cancellation-container{
+    width: 50vw;
+    margin: auto;
+    position: relative;
+    margin-top: 5%;
+}
+.cancel-row1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    margin-top: 5%;
+}
+.cancel-row1-1 label{
+    font-size: 25px;
+    font-weight: 500;
+}
+.cancel-row1-1 input{
+    background-color: #9747ff85;
+    border: none;
+    padding: 20px;
+    width: 100%;
+    margin-top: 3%;
+    border-radius: 10px;
+}
+.cancel-row1-1 input::placeholder{
+    color: black;
+    font-size: 18px;
+}
+.cancel{
+    margin-top: 5%;
+    background-color: #9747ff85;
+    width: fit-content;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 5px 30px;
+    border-radius: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cancel:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px #9747FF;
+}
+.Logout-container{
+    width: 50vw;
+    margin: auto;
+    position: relative;
+    margin-top: 5%;
+}
+
+
+
+
+
+@media (min-width:300px) and (max-width:400px) {
+  .section1 {
+    grid-template-columns: 1fr; /* single column */
+  }
+
+  .sec1-col1 {
+    aspect-ratio: auto;
+  }
+
+  .sec1-col1-1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sec1-col1-1-img {
+    width: 30vw;
+  }
+
+  .sec1-col1-profile-bar {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .reservation-detail-container,
+  .cancellation-container,
+  .Logout-container,
+  .spaease {
+    width: 90vw;
+  }
+
+  .reserve-detail {
+    font-size: 16px;
+  }
+
+  .cancel-row1 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -------------------- 📱 401 - 576 -------------------- */
+@media (min-width:401px) and (max-width:576px) {
+  .section1 {
+    grid-template-columns: 1fr;
+  }
+  .sec1-col1{
+    aspect-ratio: 4/ 4;
+  }
+  .sec1-col1-1 {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .sec1-col1-1-img {
+    width: 20vw;
+  }
+
+  .sec1-col1-profile-bar {
+    font-size: 18px;
+  }
+
+  .reservation-detail-container,
+  .cancellation-container,
+  .Logout-container,
+  .spaease {
+    width: 85vw;
+  }
+
+  .reserve-detail {
+    font-size: 18px;
+  }
+
+  .cancel-row1 {
+    grid-template-columns: 1fr;
+  }
+}
+

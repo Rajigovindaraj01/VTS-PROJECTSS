@@ -1,0 +1,42 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Hanuman", serif;
+}
+.section1{
+    width: 60vw;
+    margin: auto;
+    position: relative;
+    margin-top: 5%;
+}
+.sec1-1{
+    width: 20vw;
+    margin: auto;
+    aspect-ratio: 4/2;
+}
+.sec1-1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.section1 h2{
+    text-align: center;
+    position: relative;
+    margin-top: 5%;
+}
+.pay-btn{
+    position: relative;
+    margin-top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}

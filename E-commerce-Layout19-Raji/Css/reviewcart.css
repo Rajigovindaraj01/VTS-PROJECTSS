@@ -1,0 +1,338 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5%;
+    padding: 30px;
+    align-items: center;
+    background-color: white;
+}
+.head-logo{
+    width: 8vw;
+    aspect-ratio: 4/4;
+}
+.head-logo img{
+    height: 100%;
+    width: 100%;
+}
+.head-content{
+    display: flex;
+    font-size: 23px;
+    gap: 5%;
+}
+.head-content1 span{
+    background-color: #53B3C9;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50%;
+}
+.head-content1 strong{
+    color: green;
+}
+.head-content2 span{
+    color: green;
+    border: 1px solid green;
+    padding: 10px 20px;
+    border-radius: 50%;
+}
+.head-content2 strong{
+    color: green;
+}
+.head-content3 span{
+    color: black;
+    background-color: rgb(211, 210, 210);
+    padding: 10px 20px;
+    border-radius: 50%;
+}
+.head-content2 strong{
+    color: green;
+}
+
+@media (min-width:300px) and (max-width:576px) {
+header{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5%;
+    padding: 30px;
+    align-items: center;
+    justify-items: center;
+}
+.head-logo{
+    width: 20vw;
+    aspect-ratio: 4/4;
+}
+.head-logo img{
+    height: 100%;
+    width: 100%;
+}
+.head-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 23px;
+    gap: 5%;
+}
+.head-content div{
+    margin-top: 10%;
+}
+.head-content1 span{
+    background-color: #53B3C9;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50%;
+}
+.head-content1 strong{
+    color: green;
+}
+.head-content2 span{
+    background-color:green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50%;
+}
+.head-content2 strong{
+    color: green;
+}
+.head-content3 span{
+    color: black;
+    background-color: rgb(211, 210, 210);
+    padding: 10px 20px;
+    border-radius: 50%;
+}
+
+}
+
+@media (min-width:577px) and (max-width:768px) {
+    header{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    gap: 5%;
+    padding: 30px;
+    align-items: center;
+}
+.head-logo{
+    width: 8vw;
+    aspect-ratio: 4/4;
+}
+.head-logo img{
+    height: 100%;
+    width: 100%;
+}
+.head-content{
+    display: flex;
+    font-size: 18px;
+    gap: 5%;
+}
+.head-content1 span{
+    background-color: #53B3C9;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50%;
+}
+.head-content1 strong{
+    color: green;
+}
+.head-content2 span{
+    background-color:green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50%;
+}
+.head-content2 strong{
+    color: green;
+}
+.head-content3 span{
+    color: black;
+    background-color: rgb(211, 210, 210);
+    padding: 10px 20px;
+    border-radius: 50%;
+}
+
+}
+
+
+@media (min-width:769px) and (max-width:992px) {
+    header{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 5%;
+    padding: 30px;
+    align-items: center;
+}
+.head-logo{
+    width: 8vw;
+    aspect-ratio: 4/4;
+}
+.head-logo img{
+    height: 100%;
+    width: 100%;
+}
+.head-content{
+    display: flex;
+    font-size: 18px;
+    gap: 5%;
+}
+.head-content1 span{
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50%;
+}
+.head-content1 strong{
+    color: green;
+}
+.head-content2 span{
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50%;
+}
+.head-content2 strong{
+    color: green;
+}
+.head-content3 span{
+    color: black;
+    background-color: rgb(211, 210, 210);
+    padding: 10px 20px;
+    border-radius: 50%;
+}
+
+}
+
+
+
+@media (min-width:993px) and (max-width:1200px) {
+    header{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 5%;
+    padding: 30px;
+    align-items: center;
+}
+.head-logo{
+    width: 8vw;
+    aspect-ratio: 4/4;
+}
+.head-logo img{
+    height: 100%;
+    width: 100%;
+}
+.head-content{
+    display: flex;
+    font-size: 18px;
+    gap: 5%;
+}
+.head-content1 span{
+    background-color: #53B3C9;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50%;
+}
+.head-content1 strong{
+    color: green;
+}
+.head-content2 span{
+    background-color: #53B3C9;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50%;
+}
+.head-content2 strong{
+    color: green;
+}
+.head-content3 span{
+    color: black;
+    background-color: rgb(211, 210, 210);
+    padding: 10px 20px;
+    border-radius: 50%;
+}
+.head-content2 strong{
+    color: #53B3C9;
+}
+}
+
+body{
+    background-color: #e4f6fa;
+}
+    .container {
+        width: 90vw;
+        margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+      position: relative;
+      margin-top: 5%;
+    }
+    .left, .right {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .payment-option {
+      display: none;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #fdfdfd;
+    }
+
+    label,input,p{
+        position: relative;
+        margin-top: 5% !important;
+    }
+    button{
+        color: #fff;
+      text-align: center;
+      padding: 12px;
+      border-radius: 8px;
+      margin-top: 15px;
+      cursor: pointer;
+      font-weight: bold;
+      border: none;
+    background: linear-gradient(90deg, #DE7C47 0%, #F2585B 75%);
+    }
+    .left input{
+        margin-top: 5%;
+    }
+    .active {
+      display: block;
+    }
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      margin: 8px 0;
+    }
+    .place-order {
+      background: linear-gradient(90deg, #DE7C47 0%, #F2585B 75%);
+      color: #fff;
+      text-align: center;
+      padding: 12px;
+      border-radius: 8px;
+      margin-top: 15px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+@media (min-width:300px) and (max-width:576px) {
+        .container {
+        width: 90vw;
+        margin: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      position: relative;
+      margin-top: 5%;
+    }
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */

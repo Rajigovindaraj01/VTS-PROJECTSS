@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile-and-more</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Boldonse&family=Cookie&family=Creepster&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dokdo&family=Engagement&family=Hanuman:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Outline&family=Londrina+Shadow&family=Mea+Culpa&family=Onest:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Pompiere&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rochester&family=Rubik+Mono+One&family=Rubik+Wet+Paint&family=Rubik:ital,wght@0,300..900;1,300..900&family=Rye&family=Special+Gothic+Condensed+One&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Css/mobilesandmore.css" />
+  </head>
+  <body>
+    <header>
+      <div class="head-row1">
+        <a href="../Html/Aboutus.html">About Us</a> | <a href="../Html/Contactus.html">Contact Us</a> |
+        <a href="#">Download App</a>
+      </div>
+      <div class="head-row2">
+        <div class="head-row2-1">
+          <img src="../Assets/Images/image-removebg-preview.png" />
+        </div>
+        <div class="head-row2-2">
+          <input type="search" placeholder="What's On your mind today?" />
+          <i
+            class="bi bi-search"
+            style="
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              margin-left: 3%;
+            "
+          ></i>
+          <button>Search</button>
+        </div>
+        <div class="head-row2-3">
+          <div id="location-text">Share Location</div>
+          <div><i class="fa-solid fa-location-dot"></i></div>
+          <div id="overlay"></div>
+          <div id="map-container">
+            <button id="close-map">X</button>
+            <div id="map"></div>
+          </div>
+        </div>
+        <div class="head-row-4">
+          <i class="bi bi-bell"></i>
+          <span>0</span>
+        </div>
+        <div class="head-row-4">
+           <a href="../Html/wishlistpage.html" style="text-decoration: none;color: black;"><i class="fa-regular fa-heart"></i></a>
+          <span id="wishlist-count">0</span>
+        </div>
+        <div class="head-row-4">
+          <a href="../Html/Cart.html" style="text-decoration: none; color: black;"><i class="bi bi-cart3"></i></a>
+          <span id="cart-count">0</span>
+        </div>
+        <div class="head-row-5" id="signin-open"><a href="#">SIGN IN</a></div>
+        <div class="login-regis-container">
+          <div class="login-regis-content">
+            <div class="login-regis-head">
+              <a href="#" id="login-reg-active"
+                ><i class="bi bi-person-circle"></i> LOGIN / REGISTER</a
+              >
+            </div>
+            <div><i class="bi bi-list-ol"></i> My Orders</div>
+            <div><i class="bi bi-chat-left-text"></i> My Returns</div>
+            <div><i class="bi bi-heart"></i> Wishlist</div>
+            <div><i class="bi bi-person"></i> My Profile</div>
+            <div><i class="bi bi-chat-left-text"></i> My Chat</div>
+            <div><i class="bi bi-coin"></i> My CLuesBucks</div>
+            <div><i class="bi bi-coin"></i> My CluesBucks</div>
+            <div><i class="bi bi-pencil-square"></i> My Feedback</div>
+            <div><i class="bi bi-headset"></i> Help & Support</div>
+          </div>
+        </div>
+
+        <div class="login-regis-containers" id="login-regis-containers">
+          <div class="login-register-container-to-login-or-register">
+            <div class="log-reg-col1">
+              <div class="log-reg-col1-items">
+                <div class="log-reg-col1-items-1">
+                  <img src="../Assets/Images/save-money.png" />
+                </div>
+                <div class="log-reg-col1-items-2">Loyalty Points</div>
+                <div class="log-reg-col1-items-3">
+                  Earn CluesBucks on prepaid orders
+                </div>
+              </div>
+              <div class="log-reg-col1-items">
+                <div class="log-reg-col1-items-1">
+                  <img src="../Assets/Images/shopping-cart.png" />
+                </div>
+                <div class="log-reg-col1-items-2">Instant Checkout</div>
+                <div class="log-reg-col1-items-3">
+                  Hassle-Free Payment Everytime
+                </div>
+              </div>
+              <div class="log-reg-col1-items">
+                <div class="log-reg-col1-items-1">
+                  <img src="../Assets/Images/discount (1).png" />
+                </div>
+                <div class="log-reg-col1-items-2">Exclusive Offers</div>
+                <div class="log-reg-col1-items-3">
+                  For special offers & value deals
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="register-container">
+                <div class="register-container-1">
+                  <div>LOGIN</div>
+                  <div>REGISTER</div>
+                </div>
+                <div class="register-container-2">
+                  <input placeholder="ENTER MAIL ID" type="email" />
+                </div>
+                <div class="register-container-2">
+                  <input placeholder="ENTER MOBILE NUMBER" type="number" />
+                </div>
+                <div class="register-container-2">
+                  <input placeholder="ENTER PASSWORD" type="password" />
+                </div>
+                <div class="register-btn">Register</div>
+              </div>
+              <div class="login-container">
+                <div class="register-container-1">
+                  <div>LOGIN</div>
+                  <div>REGISTER</div>
+                </div>
+                <div class="register-container-2">
+                  <input placeholder="ENTER YOUR MOBILE NO OR MAIL ID" />
+                </div>
+                <div class="login-containers-2">LOGIN VIA OTP</div>
+                <div class="login-containers-3">OR</div>
+                <div class="login-containers-4">
+                  <div class="login-containers-4-1">
+                    <img src="../Assets/Images/google.png" />
+                  </div>
+                  <div class="login-containers-4-2">
+                    LOGIN WITH GOOGLE ACCOUNT
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar">
+        <div class="nav-top">
+          <div class="navbar-img-logo">
+            <img src="../Assets/Images/image 1dd.png" />
+          </div>
+          <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </div>
+
+        <div class="menu-items">
+          <div id="mobile-and-more">MOBILES & MORE</div>
+          <div id="men">MEN</div>
+          <div id="women">WOMEN</div>
+          <div>HOME & KITCHEN</div>
+          <div>APPLIANCES</div>
+          <div>SPORTS & MORE</div>
+          <div>ESSENTIALS</div>
+          <div>OFFERS</div>
+          <div>GLOBAL SHIPPING</div>
+        </div>
+
+        <div class="navbar-overlay" id="navbar-overlay1">
+          <div>
+            <h5>Smartphones & Tablets</h5>
+            <a href="../Html/mobilesandmore.html">I KALL</a>
+            <a href="../Html/mobilesandmore.html">Mi</a>
+            <a href="../Html/mobilesandmore.html">Realme</a>
+            <a href="../Html/mobilesandmore.html">Samsung</a>
+            <a href="../Html/mobilesandmore.html">Vivo</a>
+            <a href="../Html/mobilesandmore.html">Oppo</a>
+            <a href="../Html/mobilesandmore.html">Apple</a>
+            <a href="../Html/mobilesandmore.html">Techno</a>
+            <a href="../Html/mobilesandmore.html">Infinix</a>
+            <a href="../Html/mobilesandmore.html">Micromax</a>
+            <a href="../Html/mobilesandmore.html">Refurbished Smartphones</a>
+            <a href="../Html/mobilesandmore.html">Refurbished Feature Phones</a>
+          </div>
+          <div>
+            <h5>Feature Phones</h5>
+            <a href="#">Micromax</a>
+            <a href="#">I Kall</a>
+            <a href="#">Nokia</a>
+            <a href="#">MTR</a>
+            <a href="#">Heemax</a>
+            <a href="#">Karbonn</a>
+            <a href="#">Kechaoda</a>
+            <a href="#">Gfive</a>
+            <a href="#">Blackbear</a>
+            <a href="#">Samsung</a>
+            <a href="#">Gaming Consoles</a>
+            <a href="#">Gaming Titles</a>
+            <a href="#">Gaming Accessories</a>
+          </div>
+          <div>
+            <h5>Bestsellers in Accessories</h5>
+            <a href="#">Top Rated Accessories</a>
+            <a href="#">Combos</a>
+            <a href="#">Power Banks</a>
+            <a href="#">Cases & Covers</a>
+            <a href="#">Mobile Holders</a>
+            <a href="#">Cables</a>
+            <a href="#">Adapter & Chargers</a>
+            <a href="#">Selfie Sticks</a>
+            <a href="#">Storage Devices</a>
+            <a href="#">Selfie Sticks</a>
+            <a href="#">Storage Devices</a>
+            <a href="#">Memory Cards</a>
+            <a href="#">Pen Drives</a>
+            <a href="#">External Hard disks</a>
+          </div>
+          <div>
+            <h5>Branded Accessories</h5>
+            <a href="#">Foxin</a>
+            <a href="#">Gionee</a>
+            <a href="#">AXL</a>
+            <a href="#">Hammer</a>
+            <a href="#">Lenovo</a>
+            <a href="#">zebronics</a>
+            <a href="#">Hi-plus</a>
+            <a href="#">Syska</a>
+            <a href="#">Tecsox</a>
+          </div>
+          <div class="navbar-overlaylast">
+            <h5>Audio Store</h5>
+            <a href="#">Headphones & Earphones</a>
+            <a href="#">Bluetooth Earphones</a>
+            <a href="#">Bluetooth Speakers</a>
+            <a href="#">Laptops</a>
+            <a href="#">HP</a>
+            <a href="#">lenovo</a>
+            <a href="#">Asus</a>
+            <a href="#">Acer</a>
+            <a href="#">Coconics</a>
+            <a href="#">Refurbished Laptops</a>
+            <a href="#">Laptop Accessories</a>
+            <a href="#">Mouse</a>
+            <a href="#">Keyboards</a>
+            <a href="#">Laptop Badge</a>
+            <a href="#">Laptop Skins</a>
+          </div>
+        </div>
+
+        <div class="navbar-overlay" id="navbar-overlay2">
+          <div>
+            <h5>Mens Clothing</h5>
+            <a href="#">T-shirt</a>
+            <a href="#">Shirt</a>
+            <a href="#">Jeans</a>
+            <a href="#">Cargos</a>
+            <a href="#">Trousers</a>
+            <a href="#">Tracks Pants</a>
+            <a href="#">Shorts & 3/4th</a>
+            <a href="#">Jackets</a>
+            <a href="#">Ethnic Wear</a>
+            <a href="#">Winter Wear</a>
+            <a href="#">Inner Wear</a>
+            <a href="#">Inner & Sleepwear</a>
+            <a href="#">29K Store</a>
+            <a href="#">Sportswear</a>
+            <a href="#">Footwear</a>
+          </div>
+          <div>
+            <h5>Speciality Footwear</h5>
+            <a href="#">Shoe Care Kit & Accessories</a>
+            <a href="#">Top selling Brands</a>
+
+            <h5>Men's Watches</h5>
+            <a href="#">Watch Combos</a>
+            <a href="#">Couple Watches</a>
+            <a href="#">Fastrack, Sonata & More</a>
+            <a href="#">Budget Watches</a>
+            <a href="#">Smart Watches</a>
+            <a href="#">Men's Jewellery</a>
+            <a href="#">Fashion Jewellery</a>
+          </div>
+          <div>
+            <h5>Grooming</h5>
+            <a href="#">Beard & Moustache Care</a>
+            <a href="#">Men's Shaving</a>
+            <a href="#">Grooming Appliances</a>
+            <a href="#">Bath Essentials</a>
+            <a href="#">Oral Care</a>
+            <a href="#">Skin Care</a>
+            <a href="#">Hair Care</a>
+            <a href="#">Eyewear</a>
+            <a href="#">Sunglasses</a>
+            <a href="#">Spectacle Frames</a>
+          </div>
+          <div>
+            <h5>Fashion Accessories</h5>
+            <a href="#">Wallets</a>
+            <a href="#">Belts</a>
+            <a href="#">Socks</a>
+            <a href="#">Caps</a>
+            <a href="#">Winter Accessories</a>
+            <a href="#">Men's Accessories Gift</a>
+            <a href="#">Sets</a>
+            <a href="#">Bags & Luggage</a>
+            <a href="#">Bags</a>
+            <a href="#">Gym Bags</a>
+            <a href="#">Trolleys & Duffle Bags</a>
+            <a href="#">Travel Accessories</a>
+            <a href="#">Messenger Bags</a>
+          </div>
+        </div>
+
+        <div class="navbar-overlay" id="navbar-overlay3">
+          <div>
+            <h5>Ethnic Wear</h5>
+            <a href="#">Sarees</a>
+            <a href="#">Kurtas & Kurtis</a>
+            <a href="#">Lehenga & Party Gowns</a>
+            <a href="#">Dress Material</a>
+            <a href="#">Leggins & Churidar</a>
+            <a href="#">Meia Store</a>
+            <a href="#">Western Wear</a>
+            <a href="#">Tops & Tees</a>
+            <a href="#">Dresses</a>
+            <a href="#">Jeans & Jeggins</a>
+            <a href="#">Pants & Trousers</a>
+            <a href="#">Skirts</a>
+            <a href="#">Code Yellow Store</a>
+            <a href="#">Lingerie</a>
+          </div>
+          <div>
+            <h5>Footwear</h5>
+            <a href="#">Casual Shoes</a>
+            <a href="#">Flats & Sandals</a>
+            <a href="#">Women's Heels</a>
+            <a href="#">Pumps</a>
+            <a href="#">Women Sports Shoes</a>
+            <a href="#">Wedges</a>
+
+            <h5>Women's Bellies</h5>
+            <a href="#">Flip Flops & Slippers</a>
+            <a href="#">All Jewellery</a>
+            <a href="#">Fashion Jewellery</a>
+            <a href="#">Pendant & Necklace</a>
+            <a href="#">Sets</a>
+            <a href="#">Mangalsutra</a>
+            <a href="#">Bangles</a>
+          </div>
+          <div>
+            <h5>women Watches</h5>
+            <a href="#">Casual Wear Watches</a>
+            <a href="#">Office Wear Watches</a>
+            <a href="#">Branded Watches</a>
+            <a href="#">Budget Watches</a>
+            <a href="#">Couple Watches</a>
+            <a href="#">Beauty & Perfumes</a>
+          </div>
+          <div>
+            <h5>Skin Care</h5>
+            <a href="#">Make-Up</a>
+            <a href="#">Hair care</a>
+            <a href="#">Personal Care & Grooming</a>
+          </div>
+          <div>
+            <h5>Beauty Accessories</h5>
+            <a href="#">Grooming Appliances</a>
+            <a href="#">Bath Essentials</a>
+            <a href="#">Oral Care</a>
+            <a href="#">Women Hygiene</a>
+            <a href="#">Fashion Accessories</a>
+            <a href="#">Socks & Stockings</a>
+            <h5>Hair Accessories</h5>
+            <a href="#">Scarves & Stores</a>
+            <a href="#">Belts</a>
+            <a href="#">HandKerchiefs</a>
+            <a href="#">Shawls</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="section1">
+        <div class="sec1-col1">
+          <h5>HOME > MONILES & TABLET</h5>
+          <div class="sec1-col1-container">
+            <div class="sec1-col1-items">
+              <h2>Mobile & Tablet</h2>
+              <h3><i class="bi bi-caret-right-fill"></i> Smartphones</h3>
+              <h3><i class="bi bi-caret-right-fill"></i> Feature Phones</h3>
+              <h3><i class="bi bi-caret-right-fill"></i> Tablets</h3>
+            </div>
+            <div class="sec1-col1-items">
+              <h2>Offers</h2>
+              <h3><i class="bi bi-caret-right-fill"></i> Mobile by brands</h3>
+              <h3><i class="bi bi-caret-right-fill"></i> Wired high ASP</h3>
+            </div>
+            <div class="sec1-col1-items">
+              <div class="sec1-col1-item-1">
+                <div class="sec1-col1-item-1-1">Discount</div>
+                <div class="sec1-col1-item-1-2">Clear All</div>
+              </div>
+              <div class="sec1-col1-item-2">
+                <div><input type="checkbox" /> Upto 20% (380)</div>
+                <div><input type="checkbox" /> 21 - 40% (349)</div>
+                <div><input type="checkbox" /> 41 - 60% (222)</div>
+                <div><input type="checkbox" /> 61 - 80% (234)</div>
+                <div><input type="checkbox" /> More than 80% (12)</div>
+              </div>
+            </div>
+            <div class="sec1-col1-items">
+              <div class="sec1-col1-item-1">
+                <div class="sec1-col1-item-1-1">Pricing</div>
+                <div class="sec1-col1-item-1-2">Clear All</div>
+              </div>
+              <div class="sec1-col1-item-2">
+                <div><input type="checkbox" /> 500 -1000 (111)</div>
+                <div><input type="checkbox" /> 1000 - 2000 (12)</div>
+                <div><input type="checkbox" /> 2500 - 5000 (112)</div>
+                <div><input type="checkbox" /> Above 5000 (11)</div>
+              </div>
+            </div>
+            <div class="sec1-col1-items">
+              <div class="sec1-col1-item-1">
+                <div class="sec1-col1-item-1-1">Product Rating</div>
+                <div class="sec1-col1-item-1-2">Clear All</div>
+              </div>
+              <div class="sec1-col1-item-2">
+                <div><input type="checkbox" /> 4 & above (169)</div>
+                <div><input type="checkbox" /> 3 & above (112)</div>
+                <div><input type="checkbox" /> 2 & above (412)</div>
+                <div><input type="checkbox" /> 1 & above (234)</div>
+              </div>
+            </div>
+            <div class="sec1-col1-items">
+              <div class="sec1-col1-item-1">
+                <div class="sec1-col1-item-1-1">Brand</div>
+                <div class="sec1-col1-item-1-2">Clear All</div>
+              </div>
+              <div class="sec1-col1-item-2">
+                <h5>Top Brands</h5>
+                <div><input type="checkbox"  value="Samsung"/> Samsung (431)</div>
+                <div><input type="checkbox"  value="Apple"/> Apple (421)</div>
+                <div><input type="checkbox" value="Blackberry"/> Blackberry (232)</div>
+                <div><input type="checkbox" value="Frome"/> Frome (19)</div>
+                <div><input type="checkbox" /> Generic (12)</div>
+                <div><input type="checkbox" /> Gfive (11)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section1-col2">
+          <h2>Mobiles & Tablet</h2>
+          <div class="sec1-col2-2">
+            <div>2277 Products Found</div>
+            <div>
+              Sort By | High Price | Low Price | Popular Products | Bestselling
+              | New Arrivals
+            </div>
+          </div>
+
+          <div class="section2">
+            <div class="sec2-content-container">
+              <div class="sec2-content-items">
+                <div class="sec2-content-items1">
+                  <img src="../Assets/Images/samsung.webp" />
+                  <div class="sec2-content-items1-overlay wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </div>
+                </div>
+                <div class="sec2-content-items2">Samsung Galaxy S21</div>
+                <div class="sec2-content-items3">₹ 45,999</div>
+                <div class="sec2-content-items4">Add to Cart</div>
+              </div>
+
+              <div class="sec2-content-items">
+                <div class="sec2-content-items1">
+                  <img
+                    src="../Assets/Images/redmi.webp"
+                  />
+                  <div class="sec2-content-items1-overlay wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </div>
+                </div>
+                <div class="sec2-content-items2">Redmi Note 12 Pro</div>
+                <div class="sec2-content-items3">₹ 22,499</div>
+                <div class="sec2-content-items4">Add to Cart</div>
+              </div>
+
+              <div class="sec2-content-items">
+                <div class="sec2-content-items1">
+                  <img src="../Assets/Images/iphone.webp" />
+                  <div class="sec2-content-items1-overlay wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </div>
+                </div>
+                <div class="sec2-content-items2">iPhone 14 Pro</div>
+                <div class="sec2-content-items3">₹ 1,29,900</div>
+                <div class="sec2-content-items4">Add to Cart</div>
+              </div>
+
+              <div class="sec2-content-items">
+                <div class="sec2-content-items1">
+                  <img src="../Assets/Images/realme.webp" />
+                  <div class="sec2-content-items1-overlay wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </div>
+                </div>
+                <div class="sec2-content-items2">Realme Narzo 60</div>
+                <div class="sec2-content-items3">₹ 17,499</div>
+                <div class="sec2-content-items4">Add to Cart</div>
+              </div>
+
+              <div class="sec2-content-items">
+                <div class="sec2-content-items1">
+                  <img src="../Assets/Images/oneplus.webp" />
+                  <div class="sec2-content-items1-overlay wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </div>
+                </div>
+                <div class="sec2-content-items2">OnePlus Nord CE 3</div>
+                <div class="sec2-content-items3">₹ 26,999</div>
+                <div class="sec2-content-items4">Add to Cart</div>
+              </div>
+
+              <div class="sec2-content-items">
+                <div class="sec2-content-items1">
+                  <img src="../Assets/Images/vivo.webp" />
+                  <div class="sec2-content-items1-overlay wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </div>
+                </div>
+                <div class="sec2-content-items2">Vivo V29 5G</div>
+                <div class="sec2-content-items3">₹ 32,999</div>
+                <div class="sec2-content-items4">Add to Cart</div>
+              </div>
+
+              <div class="sec2-content-items">
+                <div class="sec2-content-items1">
+                  <img src="../Assets/Images/oppo.webp" />
+                  <div class="sec2-content-items1-overlay wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </div>
+                </div>
+                <div class="sec2-content-items2">Oppo Reno 10 Pro</div>
+                <div class="sec2-content-items3">₹ 38,499</div>
+                <div class="sec2-content-items4">Add to Cart</div>
+              </div>
+
+              <div class="sec2-content-items">
+                <div class="sec2-content-items1">
+                  <img src="../Assets/Images/iqoo.webp" />
+                  <div class="sec2-content-items1-overlay wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </div>
+                </div>
+                <div class="sec2-content-items2">iQOO Neo 7 5G</div>
+                <div class="sec2-content-items3">₹ 29,999</div>
+                <div class="sec2-content-items4">Add to Cart</div>
+              </div>
+
+              <div class="sec2-content-items">
+                <div class="sec2-content-items1">
+                  <img src="../Assets/Images/motorola.webp" />
+                  <div class="sec2-content-items1-overlay wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </div>
+                </div>
+                <div class="sec2-content-items2">Motorola Edge 40</div>
+                <div class="sec2-content-items3">₹ 27,999</div>
+                <div class="sec2-content-items4">Add to Cart</div>
+              </div>
+
+              <div class="sec2-content-items">
+                <div class="sec2-content-items1">
+                  <img src="../Assets/Images/googlepixel.webp" />
+                  <div class="sec2-content-items1-overlay wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </div>
+                </div>
+                <div class="sec2-content-items2">Google Pixel 7</div>
+                <div class="sec2-content-items3">₹ 59,999</div>
+                <div class="sec2-content-items4">Add to Cart</div>
+              </div>
+
+              <div class="sec2-content-items">
+                <div class="sec2-content-items1">
+                  <img src="../Assets/Images/infinix.webp" />
+                  <div class="sec2-content-items1-overlay wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </div>
+                </div>
+                <div class="sec2-content-items2">Infinix Zero Ultra</div>
+                <div class="sec2-content-items3">₹ 21,499</div>
+                <div class="sec2-content-items4">Add to Cart</div>
+              </div>
+
+              <div class="sec2-content-items">
+                <div class="sec2-content-items1">
+                  <img src="../Assets/Images/nothing.webp" />
+                  <div class="sec2-content-items1-overlay wishlist-btn">
+                    <i class="bi bi-heart"></i>
+                  </div>
+                </div>
+                <div class="sec2-content-items2">Nothing Phone (2)</div>
+                <div class="sec2-content-items3">₹ 44,999</div>
+                <div class="sec2-content-items4">Add to Cart</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <div class="section5zzz">
+        <img src="../Assets/Images/image 5.png">
+      </div>
+
+
+        <div class="section5">
+        <h2>Brand Of Trust</h2>
+        <div class="sec5-content">
+          <div class="sec5-items">
+            <div class="sec5-items-1">
+              <img src="../Assets/Images/shield.png" />
+            </div>
+            <div class="sec5-items-2">GREAT SELECTION</div>
+          </div>
+          <div class="sec5-items">
+            <div class="sec5-items-1">
+              <img src="../Assets/Images/price-drop.png" />
+            </div>
+            <div class="sec5-items-2">LOW PRICE</div>
+          </div>
+          <div class="sec5-items">
+            <div class="sec5-items-1">
+              <img src="../Assets/Images/fast-delivery.png" />
+            </div>
+            <div class="sec5-items-2">SPEED DELIVERY</div>
+          </div>
+        </div>
+      </div>
+
+
+            <div class="section6">
+        <div class="sec6-6">
+          <div>
+            <h3>Shopper Central</h3>
+            <h4>Easy Returns & Replacement</h4>
+            <h4>Sign In / Register</h4>
+            <h4>Our Policies</h4>
+            <h4>CluesBucks</h4>
+            <h4>Payment Options</h4>
+            <h4>ShopClues Surety</h4>
+            <h4>FAQs (Help)</h4>
+            <h4>Service Centers</h4>
+            <h4>User Agreement</h4>
+          </div>
+          <div>
+            <h3>Merchant Central</h3>
+            <h4>Merchant Panel</h4>
+            <h4>How To Sell</h4>
+            <h4>Commission Structure</h4>
+            <h4>Fullfillment Policy</h4>
+            <h4>Policies & Rules</h4>
+            <h4>User Agreement</h4>
+            <h4>Testimonials</h4>
+            <h4>Seller Summit</h4>
+            <h4>Merchant Blog</h4>
+            <h4>Developer Resources</h4>
+          </div>
+          <div>
+            <h3>About Us</h3>
+            <h4>History</h4>
+            <h4>In the News</h4>
+            <h4>Awards</h4>
+            <h4>Careers</h4>
+            <h4>Blog</h4>
+          </div>
+          <div>
+            <h3>Contact Us</h3>
+            <h4>Merchant Support</h4>
+            <h4>Bulk Orders</h4>
+            <h4>Press</h4>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="section7">
+        <div>KEEP IN TOUCH</div>
+        <div>100% Secure and Trusted Payment</div>
+      </div>
+
+      <div class="section8">
+        <div class="sec8-col1">
+          <div><i class="fa-brands fa-square-instagram"></i></div>
+          <div><i class="fa-brands fa-square-twitter"></i></div>
+          <div><i class="fa-brands fa-square-facebook"></i></div>
+        </div>
+        <div class="sec8-col2">
+          <img src="../Assets/Images/footer-logo-removebg-preview.png" />
+        </div>
+      </div>
+
+      <div class="section9">
+        <p>Online Shopping in India @www.ShopClues.com</p>
+        <p>India’s Asli Online Shopping Hub – www.ShopClues.com</p>
+
+        <p>
+          Back in 2011, when people were hopping from one store to another for
+          best bargains on an overall household’s monthly bill, ShopClues was
+          being developed as a budget-friendly online bazaar in India.
+          www.ShopClues.com was then given a shape and strategy in 2012 as
+          India’s First & Largest Fully Managed Marketplace.
+        </p>
+
+        <p>
+          ‘What you Think is what you Get’ isn’t just a saying at ShopClues.
+          With over 2.8 crore products, you can get just about everything that
+          you can imagine at ShopClues. From usual products in Electronics,
+          Fashion, Home & Kitchen, to unusual products like cow dung cakes,
+          Knife Sharpeners, etc., ShopClues tops in everything. So, you see what
+          we mean when we say Aflatooni Products! ShopClues has revolutionized
+          the conceptual Online Shopping in India with initiatives such as Ghar
+          Wapsi Sale, Bigger than the Biggest Thank You Sale, #EkZeroKum Sale
+          etc. Amongst many other shopping sites, ShopClues is the leader in
+          unstructured categories like Daily Utilities, Garden Needs, Hardware,
+          Kitchen Utilities, and others.
+        </p>
+
+        <p><b>Believable Shopping @ Unbelievable Prices</b></p>
+        <p>
+          Every day, ShopClues delights millions of discount-hunters with
+          Paisa-Vasool Shopping Experience with prices as low as Re.1. We are
+          the first ones to introduce the idea of ‘Sab Kuch Wholesale Ke Rate
+          Par’ on an online platform with shopping options to both wholesale as
+          well as retail seekers.
+        </p>
+
+        <p><b>Experiencing the neighbourhood Local Bazaar</b></p>
+        <p>
+          ShopClues brings the experience of India’s Flea Markets online, in the
+          form of its weekly properties - Sunday Flea Market, Refreshing Monday
+          Sale, Triple Value Friday Sale, and Wednesday Brand Bazaar. Another
+          property capturing the essence of regional Indian shopping is called
+          NRH (National Regional Heritage), which gives a sneak-peek into
+          India’s Cultural Gullies at very reasonable prices. These online
+          markets showcase products with range so wide, and prices so low, that
+          they beat the offline neighbourhood markets of India. The concept
+          especially works incredibly well with the middle class population
+          habituated in tier 2 & 3 cities.
+        </p>
+
+        <p><b>An Online Selling Space for SME Merchants</b></p>
+        <p>
+          Working as a marketplace, ShopClues has been well-supported by a
+          bourgeoning community of certified merchants in India. Unlike various
+          other online shopping sites, ShopClues has achieved the largest
+          merchant base of over 3.5 Lakhs. This online shopping website is
+          creating history by empowering local and regional merchants, primarily
+          from Tier 2 & 3 cities and making them a national enterprise at
+          ShopClues.
+        </p>
+
+        <p><b>ShopClues Surety</b></p>
+        <p>
+          The ShopClues Surety Program, was launched in order to ensure a hassle
+          free shopping experience for its customers. This premium service is in
+          addition to the ShopClues Buyer Protection program which ensures an
+          extensive 5 point quality check of the products in order to give
+          customers a seamless shopping experience. In order to make it
+          user-friendly, the platform marks out the rating of the products
+          classified into ‘Best Buy’, ‘Great Buy’, ‘Value Buy’ or ‘Brand
+          Authorized’. This allows the customers to make an optimal purchase
+          decision while shopping on the platform.
+        </p>
+
+        <p><b>ShopClues VIP Club</b></p>
+        <p>
+          Get Rewards Every time you Shop! Join the VIP Club and Get 5% Cashback
+          on Every Order. That’s not all! With Free Membership, No Hidden Costs
+          & No Registration Procedures, get Exclusive Benefits on Grofers,
+          Lenskart, Food Panda & Hi Care Pest Control Services. Join the Club
+          Now
+        </p>
+      </div>
+    </main>
+    <footer>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">User Agreement</a>
+      <a href="#">Notes to Security Practices</a>
+      <a href="#">Compliance</a>
+      <a href="#">Wall of Fame</a>
+    </div>
+
+    <div class="footer-right">
+      <p>Copyright © 2011-2025 Clues Network Pvt. Ltd.</p>
+      <img src="../Assets/Images/image-removebg-preview.png" alt="E-Shop Logo">
+    </div>
+  </footer>
+
+    <script src="../Javascript/mobilesandmore.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  </body>
+</html>

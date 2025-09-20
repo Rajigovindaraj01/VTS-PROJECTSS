@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Wishlist Page</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  color: #333;
+}
+.wishlist-container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.wishlist-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+.wishlist-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.wishlist-details {
+  flex: 1 1 200px;
+}
+.wishlist-details h3 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+}
+.wishlist-details p {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}
+.button-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.delete-btn, .move-btn {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  flex: 1 1 100px;
+  text-align: center;
+}
+.delete-btn { background: #dc3545; color: #fff; }
+.move-btn { background: #28a745; color: #fff; }
+.empty-msg {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 30px;
+}
+.back-home {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.back-home:hover { background: #0056b3; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .wishlist-item { flex-direction: column; align-items: flex-start; }
+  .wishlist-item img { width: 80px; height: 80px; }
+  .wishlist-details { flex: 1 1 100%; }
+  .delete-btn, .move-btn { flex: 1 1 48%; }
+}
+@media (max-width: 480px) {
+  .wishlist-item img { width: 70px; height: 70px; }
+  .wishlist-details h3 { font-size: 16px; }
+  .wishlist-details p { font-size: 14px; }
+  .delete-btn, .move-btn { flex: 1 1 100%; }
+}
+</style>
+</head>
+<body>
+<h1>Your Wishlist</h1>
+<div class="wishlist-container" id="wishlist-container"></div>
+<a href="../index.html" class="back-home">Back to Home</a>
+
+<script>
+const wishlistContainer = document.getElementById("wishlist-container");
+
+function getWishlistData() {
+  return JSON.parse(localStorage.getItem("ecommerce-wishlist")) || [];
+}
+
+function saveWishlistData(data) {
+  localStorage.setItem("ecommerce-wishlist", JSON.stringify(data));
+}
+
+function getCartData() {
+  return JSON.parse(localStorage.getItem("ecommerce-cart")) || [];
+}
+
+function saveCartData(data) {
+  localStorage.setItem("ecommerce-cart", JSON.stringify(data));
+}
+
+function renderWishlist() {
+  const wishlist = getWishlistData();
+  wishlistContainer.innerHTML = '';
+
+  if (wishlist.length === 0) {
+    wishlistContainer.innerHTML = '<div class="empty-msg">Your wishlist is empty!</div>';
+    return;
+  }
+
+  wishlist.forEach((item, index) => {
+    const itemDiv = document.createElement('div');
+    itemDiv.classList.add('wishlist-item');
+
+    itemDiv.innerHTML = `
+      <img src="${item.img}" alt="${item.name}">
+      <div class="wishlist-details">
+        <h3>${item.name}</h3>
+        <p>Price: ${item.price}</p>
+      </div>
+      <div class="button-group">
+        <button class="move-btn">Move to Cart</button>
+        <button class="delete-btn">Delete</button>
+      </div>
+    `;
+
+    wishlistContainer.appendChild(itemDiv);
+
+    // Delete button
+    itemDiv.querySelector('.delete-btn').addEventListener('click', () => {
+      wishlist.splice(index, 1);
+      saveWishlistData(wishlist);
+      renderWishlist();
+    });
+
+    // Move to Cart button
+    itemDiv.querySelector('.move-btn').addEventListener('click', () => {
+      const cart = getCartData();
+      cart.push(item);
+      saveCartData(cart);
+
+      wishlist.splice(index, 1);
+      saveWishlistData(wishlist);
+
+      alert(`${item.name} moved to Cart!`);
+      renderWishlist();
+    });
+  });
+}
+
+renderWishlist();
+</script>
+</body>
+</html>

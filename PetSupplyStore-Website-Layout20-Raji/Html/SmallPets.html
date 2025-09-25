@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smallpets-Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Boldonse&family=Cookie&family=Creepster&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dokdo&family=Engagement&family=Hanuman:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Outline&family=Londrina+Shadow&family=Mea+Culpa&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Pompiere&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rochester&family=Rubik+Mono+One&family=Rubik+Wet+Paint&family=Rubik:ital,wght@0,300..900;1,300..900&family=Rye&family=Special+Gothic+Condensed+One&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../Css/Smallpets.css" />
+  </head>
+  <body>
+    <header>
+      <div class="head1">
+        <p><i class="bi bi-telephone"></i> +91-1234567890</p>
+        <p><i class="bi bi-envelope"></i> Support@petpalooza.com</p>
+      </div>
+      <div class="head2">
+        <div class="head2-1">
+          <img src="../Assets/Images/logo-removebg-preview.png" />
+        </div>
+        <div class="head2-2">
+          <input
+            type="search"
+            id="product-search"
+            placeholder="Search for Products"
+          />
+          <div class="search-overlay"><i class="bi bi-search"></i></div>
+        </div>
+        <div class="head2-3">
+          <a href="../index.html">Home</a>
+          <a href="../Html/About.html">About</a>
+          <a href="../Html/Contactus.html">Contact</a>
+          <a href="../Html/Login.html"><i class="bi bi-person-circle"></i> Log In</a>
+          <a href="../Html/Cart.html"
+            ><i class="bi bi-cart-check"></i> Cart
+            <span id="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="head3 nav-list">
+        <a href="../Html/Dog.html" id="dog"
+          >Dog <span><i class="bi bi-caret-down"></i></span
+        ></a>
+        <a href="../Html/Cat.html" id="cat"
+          >Cat <span><i class="bi bi-caret-down"></i></span
+        ></a>
+        <a href="../Html/SmallPets.html" id="small-pets" style="color: yellow"
+          >Small Pets <span><i class="bi bi-caret-down"></i></span
+        ></a>
+        <a href="../Html/Petservice.html" id="petservice"
+          >Pet Service <span><i class="bi bi-caret-down"></i></span
+        ></a>
+        <a href="#" id="brand"
+          >Shop by Brand <span><i class="bi bi-caret-down"></i></span
+        ></a>
+        <a href="#" id="breed"
+          >Shop by Breed <span><i class="bi bi-caret-down"></i></span
+        ></a>
+        <a href="../Html/Consultavet.html">Consult a Vet</a>
+        <div class="nav-overlay1" id="dog1">
+          <div>
+            <a href="../Html/Dog.html">Dry & wet food</a>
+            <div>
+              <p>Dry Dog Food</p>
+              <p>Wet Dog Food</p>
+              <p>Veg Dog Food</p>
+              <p>Grain Free Dog Food</p>
+              <p>Human Grade Food</p>
+              <p>Low Grain Dog Food</p>
+              <p>Prescription Dog Food</p>
+              <p>Puppy Dog Food</p>
+            </div>
+          </div>
+          <div>
+            <h4>Clothing</h4>
+            <div class="nav-content">
+              <p>T-shirts</p>
+              <p>Raincoat</p>
+              <p>Sweaters</p>
+              <p>Special Occasion Wear</p>
+              <p>Hoodies & Sweatshirts</p>
+              <p>Jackets</p>
+              <p>Socks</p>
+              <p>Dresses</p>
+              <p>Shoes</p>
+              <p>Bandana</p>
+            </div>
+          </div>
+          <div>
+            <h4>Dog toys</h4>
+            <div>
+              <p>Rope Toys</p>
+              <p>Tough Chew Toys</p>
+              <p>Chew Toys</p>
+              <p>Plush Toys</p>
+              <p>Interactive Toys</p>
+              <p>Squeaky Toys</p>
+              <p>Ball Toys</p>
+              <p>Fetch Toys</p>
+            </div>
+          </div>
+          <div>
+            <h4>Health Care</h4>
+            <div>
+              <p>Skin Care</p>
+              <p>Eye Care</p>
+              <p>Digestion And Immunity</p>
+              <p>Hip And Joint Care</p>
+              <p>Dental Care</p>
+              <p>Calcium Supplements</p>
+              <p>Ear Care</p>
+              <p>Deworming</p>
+              <p>Tick And Flea Solutions</p>
+              <p>Antibiotics</p>
+            </div>
+          </div>
+          <div>
+            <h4>Dog beds & mats</h4>
+            <div>
+              <p>Dog Beds</p>
+              <p>Dog Cushions</p>
+              <p>Dog Blankets</p>
+              <p>Dog Mats</p>
+              <p>Wooden Furniture</p>
+              <p>Dog Tents</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-overlay1" id="cat1">
+          <div>
+            <a href="../Html/Cat.html">Dry & wet food</a>
+            <div>
+              <p>Kitten Food</p>
+              <p>Canned Cat Food</p>
+              <p>Dry Cat Food</p>
+              <p>Gravy Cat Food</p>
+              <p>Prescription Cat Food</p>
+              <p>Grain Free Cat Food</p>
+            </div>
+          </div>
+          <div>
+            <h4>Creamy & natural treats</h4>
+            <div class="nav-content">
+              <p>Creamy Cat Treats</p>
+              <p>Natural Cat Treats</p>
+            </div>
+          </div>
+          <div>
+            <h4>Cat toys</h4>
+            <div>
+              <p>Cat Interactive</p>
+              <p>Toys</p>
+              <p>Catnip</p>
+              <p>Plush Toy</p>
+            </div>
+          </div>
+          <div>
+            <h4>Grooming</h4>
+            <div>
+              <p>Brushes And Combs</p>
+              <p>Cat Shampoos</p>
+              <p>Conditioners</p>
+              <p>Paw and Nail Care</p>
+              <p>Trimmers And Tools</p>
+              <p>Waterless Care</p>
+              <p>Bathing Supplie</p>
+            </div>
+          </div>
+          <div>
+            <h4>Cleaning & Odar Control</h4>
+            <div>
+              <p>Wipes And Stain Removers</p>
+              <p>Diapers And Lint Rollers</p>
+              <p>Cat Deodorizers</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-overlay2" id="small-pets1">
+          <h4>Small Pets</h4>
+          <p>Hamsters</p>
+          <p>Guinea Pigs</p>
+          <p>Rabbits</p>
+          <p>Rats</p>
+          <p>Fish</p>
+        </div>
+
+        <div class="nav-overlay3" id="petservice-1">
+          <div>
+            <h4>Pet Services</h4>
+            <p>Grooming Saloon</p>
+            <p>Training Classes</p>
+            <p>Pet Hostel Boarding</p>
+            <p>Doggie Day Camb</p>
+            <p>Veterinary Care</p>
+          </div>
+          <div>
+            <h4>Adoption</h4>
+            <p>Pet Adoption</p>
+            <p>Petpalooza Charities</p>
+          </div>
+        </div>
+
+        <div class="nav-overlay4" id="brand1">
+          <div class="navover4-img">
+            <img src="../Assets/Images/logo1.png" />
+          </div>
+          <div class="navover4-img">
+            <img src="../Assets/Images/logo2.png" />
+          </div>
+          <div class="navover4-img">
+            <img src="../Assets/Images/logo3.png" />
+          </div>
+          <div class="navover4-img">
+            <img src="../Assets/Images/logo4.png" />
+          </div>
+          <div class="navover4-img">
+            <img src="../Assets/Images/logo5.png" />
+          </div>
+          <div class="navover4-img">
+            <img src="../Assets/Images/logo6.png" />
+          </div>
+          <div class="navover4-img">
+            <img src="../Assets/Images/logo7.png" />
+          </div>
+          <div class="navover4-img">
+            <img src="../Assets/Images/logo8.png" />
+          </div>
+          <div class="navover4-img">
+            <img src="../Assets/Images/logo9.png" />
+          </div>
+          <div class="navover4-img">
+            <img src="../Assets/Images/logo10.png" />
+          </div>
+          <div class="navover4-img">
+            <img src="../Assets/Images/logo11.png" />
+          </div>
+          <div class="navover4-img">
+            <img src="../Assets/Images/logo12.png" />
+          </div>
+        </div>
+
+        <div class="nav-overlay5" id="breed1">
+          <div class="nav-over5-imge">
+            <img src="../Assets/Images/nav5-1.png" />
+          </div>
+          <div>
+            <h4>Popular Dog Breeds</h4>
+            <p>Beagle</p>
+            <p>Dachshund</p>
+            <p>Shih Tzu</p>
+            <p>Cocker Spaniel</p>
+            <p>Boxer</p>
+            <p>German Shepherd</p>
+            <p>Golden Retriever</p>
+            <p>Labrador Retriever</p>
+            <p>Great Dane</p>
+          </div>
+          <div>
+            <h4>Popular Cat Breeds</h4>
+            <p>Persian Cat</p>
+            <p>Himalaiyan Cat</p>
+            <p>Bengal Cat</p>
+            <p>Siamese Cat</p>
+          </div>
+          <div class="nav-over5-imge">
+            <img src="../Assets/Images/nav5-2.png" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="section1">
+        <div class="section1-col1">
+          <div class="sec1-col1-1"><a href="../index.html">Home</a> / Small Pets</div>
+          <div class="sec1-col1-2">
+            <div><i class="fa-solid fa-sliders"></i></div>
+            <div>Filters</div>
+            <div><i class="fa-solid fa-chevron-down"></i></div>
+
+            <div class="sec1-col1-1-overlay">
+              <h3>Filters</h3>
+              <h3>Brand <i class="fa-solid fa-chevron-right"></i></h3>
+              <div class="sec1-col1-1-overlay-items">
+                <div><input type="checkbox" /> Aeolus</div>
+                <div><input type="checkbox" /> All For Paws</div>
+                <div><input type="checkbox" /> Arden Grange</div>
+                <div><input type="checkbox" /> Bayer</div>
+                <div><input type="checkbox" /> Beaphar</div>
+              </div>
+              <h3>Size <i class="fa-solid fa-chevron-right"></i></h3>
+              <div class="sec1-col1-1-overlay-items">
+                <div><input type="checkbox" /> X</div>
+                <div><input type="checkbox" /> Small</div>
+                <div><input type="checkbox" /> S</div>
+                <div><input type="checkbox" /> M</div>
+                <div><input type="checkbox" /> Medium</div>
+              </div>
+              <h3>Breed <i class="fa-solid fa-chevron-right"></i></h3>
+              <div class="sec1-col1-1-overlay-items">
+                <div><input type="checkbox" /> Beagle</div>
+                <div><input type="checkbox" /> Golden retriever</div>
+                <div><input type="checkbox" /> German Shepherd</div>
+                <div><input type="checkbox" /> Labrador</div>
+                <div><input type="checkbox" /> Pug</div>
+              </div>
+              <h3>Life Stage <i class="fa-solid fa-chevron-right"></i></h3>
+              <div class="sec1-col1-1-overlay-items">
+                <div><input type="checkbox" /> Puppy</div>
+                <div><input type="checkbox" /> Adult Dog</div>
+                <div><input type="checkbox" /> Senior Dog</div>
+                <div><input type="checkbox" /> Adult Cat</div>
+                <div><input type="checkbox" /> Senior Cat</div>
+              </div>
+              <h3>Flavour <i class="fa-solid fa-chevron-right"></i></h3>
+              <div class="sec1-col1-1-overlay-items">
+                <div><input type="checkbox" /> Chicken</div>
+                <div><input type="checkbox" /> Egg</div>
+                <div><input type="checkbox" /> Economic</div>
+                <div><input type="checkbox" /> Guinea Pigs</div>
+                <div><input type="checkbox" /> Vegetables</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sec1-col1-3">
+            <h4>Top Deals</h4>
+            <div class="sec1-col1-1-items">
+              <div class="sec1-col1-1-items-1">
+                <img src="../Assets/Images/sm1.png" />
+              </div>
+              <h3 class="sec1-col1-1-items-2">Stress - Free Summer</h3>
+              <p class="sec1-col1-1-items-3">
+                Keep Your pup calm along all season
+              </p>
+            </div>
+            <div class="sec1-col1-1-items">
+              <div class="sec1-col1-1-items-1">
+                <img src="../Assets/Images/sm2.png" />
+              </div>
+              <h3 class="sec1-col1-1-items-2">Toys</h3>
+              <p class="sec1-col1-1-items-3">All types of toys are available</p>
+            </div>
+            <div class="sec1-col1-1-items">
+              <div class="sec1-col1-1-items-1">
+                <img src="../Assets/Images/sm3.png" />
+              </div>
+              <h3 class="sec1-col1-1-items-2">Dog & cat camb</h3>
+              <p class="sec1-col1-1-items-3">
+                Taking them on a road trip, visiting dog-friendly beaches
+              </p>
+            </div>
+            <div class="sec1-col1-1-items">
+              <div class="sec1-col1-1-items-1">
+                <img src="../Assets/Images/sm4.png" />
+              </div>
+              <h3 class="sec1-col1-1-items-2">Training</h3>
+              <p class="sec1-col1-1-items-3">
+                All types of training are available
+              </p>
+            </div>
+            <div class="sec1-col1-1-items">
+              <div class="sec1-col1-1-items-1">
+                <img src="../Assets/Images/p4.png" />
+              </div>
+              <h3 class="sec1-col1-1-items-2">Natural Food</h3>
+              <p class="sec1-col1-1-items-3">Make Your dog more healthy</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section1-col2">
+          <div class="section1-col2-item1">
+            <div class="section1-col2-item1-1">Small Pets</div>
+            <div class="section1-col2-item1-2">
+              <div><i class="bi bi-funnel"></i></div>
+              <div>Sort by</div>
+              <div><i class="fa-solid fa-chevron-down"></i></div>
+
+              <div class="section1-col2-item1-2-ovrlay">
+                <p>Best Sellers</p>
+                <p>Relevence</p>
+                <p>Price: Low-High</p>
+                <p>Price: High-Low</p>
+                <p>New Arrivals</p>
+                <p>Top Rated</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="section1-col2-item2">
+            <div
+              class="section1-col2-itemsss"
+              data-brand="Drools"
+              data-size="2 Kg"
+              data-breed="Golden retriever"
+              data-lifestage="Adult Dog"
+              data-flavour="Chicken"
+              data-price="1899"
+              data-rating="4.5"
+            >
+              <div class="section1-col2-itemsss1">
+                <img src="../Assets/Images/sp1.png" />
+              </div>
+              <div class="section1-col2-itemsss2">
+                Chipsi Sunshine Hay For Small Pets
+              </div>
+              <div class="section1-col2-itemsss3">
+                <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                <span><i class="bi bi-star-fill"></i> (453)</span>
+              </div>
+              <div class="section1-col2-itemsss4">₹ 495</div>
+              <div class="section1-col2-itemsss5">1 Kg</div>
+              <div class="section1-col2-itemsss6">Add to Cart</div>
+            </div>
+
+
+            <div class="section1-col2-itemsss" 
+            data-brand="Cuddle"
+              data-size="2 Kg"
+              data-breed="Puppies"
+              data-lifestage="Adult Dog"
+              data-flavour="Chicken"
+              data-price="40"
+              data-rating="4.5">
+              <div class="section1-col2-itemsss1">
+                <img src="../Assets/Images/sp2.png" />
+              </div>
+              <div class="section1-col2-itemsss2">
+                Chipsi Classic Small Animal Litter
+              </div>
+              <div class="section1-col2-itemsss3">
+                <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                <span><i class="bi bi-star-fill"></i> (453)</span>
+              </div>
+              <div class="section1-col2-itemsss4">₹ 340</div>
+              <div class="section1-col2-itemsss5">1kg</div>
+              <div class="section1-col2-itemsss6">Add to Cart</div>
+            </div>
+
+
+
+            <div class="section1-col2-itemsss"
+            data-brand="Kennel"
+              data-size="2 Kg"
+              data-breed="Golden retriever"
+              data-lifestage="Adult Dog"
+              data-flavour="Chicken"
+              data-price="399"
+              data-rating="4.5"
+            >
+              <div class="section1-col2-itemsss1">
+                <img src="../Assets/Images/sp3.png" />
+              </div>
+              <div class="section1-col2-itemsss2">
+                Trixie Pico Transport Box For Small Animals
+              </div>
+              <div class="section1-col2-itemsss3">
+                <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                <span><i class="bi bi-star-fill"></i> (453)</span>
+              </div>
+              <div class="section1-col2-itemsss4">₹ 1350</div>
+              <div class="section1-col2-itemsss5">small</div>
+              <div class="section1-col2-itemsss6">Add to Cart</div>
+            </div>
+
+
+
+
+            <div class="section1-col2-itemsss"
+            data-brand="Drools"
+              data-size="3"
+              data-breed="Golden retriever"
+              data-lifestage="Adult Dog"
+              data-flavour="Chicken"
+              data-price="160"
+              data-rating="4.5"
+            >
+              <div class="section1-col2-itemsss1">
+                <img src="../Assets/Images/sp4.png" />
+              </div>
+              <div class="section1-col2-itemsss2">
+                Vitapol Economic Food For Guinea Pigs
+              </div>
+              <div class="section1-col2-itemsss3">
+                <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                <span><i class="bi bi-star-fill"></i> (453)</span>
+              </div>
+              <div class="section1-col2-itemsss4">₹ 525</div>
+              <div class="section1-col2-itemsss5">1.2 kg</div>
+              <div class="section1-col2-itemsss6">Add to Cart</div>
+            </div>
+
+
+
+
+            <div class="section1-col2-itemsss"
+            data-brand="Drools"
+              data-size="1.2 Kg"
+              data-breed="Puppy"
+              data-lifestage="Adult Dog"
+              data-flavour="Egg"
+              data-price="250"
+              data-rating="4.5"
+            >
+              <div class="section1-col2-itemsss1">
+                <img src="../Assets/Images/sp5.png" />
+              </div>
+              <div class="section1-col2-itemsss2">
+                Vitapol Economic Food for Rabbits - 1.2 Kg
+              </div>
+              <div class="section1-col2-itemsss3">
+                <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                <span><i class="bi bi-star-fill"></i> (453)</span>
+              </div>
+              <div class="section1-col2-itemsss4">₹ 500</div>
+              <div class="section1-col2-itemsss5">1.2 Kg</div>
+              <div class="section1-col2-itemsss6">Add to Cart</div>
+            </div>
+
+
+
+
+            <div class="section1-col2-itemsss">
+              <div class="section1-col2-itemsss1">
+                <img src="../Assets/Images/sp6.png" />
+              </div>
+              <div class="section1-col2-itemsss2">
+                Vitapol Economic Food For Cocktail - 1.2Kg
+              </div>
+              <div class="section1-col2-itemsss3">
+                <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                <span><i class="bi bi-star-fill"></i> (453)</span>
+              </div>
+              <div class="section1-col2-itemsss4">₹ 580</div>
+              <div class="section1-col2-itemsss5">1.2 Kg</div>
+              <div class="section1-col2-itemsss6">Add to Cart</div>
+            </div>
+
+
+
+
+            <div class="section1-col2-itemsss">
+              <div class="section1-col2-itemsss1">
+                <img src="../Assets/Images/sp7.png" />
+              </div>
+              <div class="section1-col2-itemsss2">
+                Vitapol Economic Food For Hamster
+              </div>
+              <div class="section1-col2-itemsss3">
+                <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                <span><i class="bi bi-star-fill"></i> (453)</span>
+              </div>
+              <div class="section1-col2-itemsss4">₹ 485</div>
+              <div class="section1-col2-itemsss5">1.3kg</div>
+              <div class="section1-col2-itemsss6">Add to Cart</div>
+            </div>
+
+
+
+
+            <div class="section1-col2-itemsss">
+              <div class="section1-col2-itemsss1">
+                <img src="../Assets/Images/sp8.png" />
+              </div>
+              <div class="section1-col2-itemsss2">
+                Me-O Delite Cat Food Tuna With Cheese In Gravy Cat Wet Food
+              </div>
+              <div class="section1-col2-itemsss3">
+                <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                <span><i class="bi bi-star-fill"></i> (453)</span>
+              </div>
+              <div class="section1-col2-itemsss4">₹ 397</div>
+              <div class="section1-col2-itemsss5">397g</div>
+              <div class="section1-col2-itemsss6">Add to Cart</div>
+            </div>
+
+
+
+
+
+            
+            <div class="section1-col2-itemsss">
+              <div class="section1-col2-itemsss1">
+                <img src="../Assets/Images/sp9.png" />
+              </div>
+              <div class="section1-col2-itemsss2">
+                Trixie Water Bottle For Guinea Pigs & Hamsters
+              </div>
+              <div class="section1-col2-itemsss3">
+                <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i>
+                <span><i class="bi bi-star-fill"></i> (453)</span>
+              </div>
+              <div class="section1-col2-itemsss4">₹ 225</div>
+              <div class="section1-col2-itemsss5">250 ml</div>
+              <div class="section1-col2-itemsss6">Add to Cart</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="section2">
+        <div class="sec2-1">
+            <img src="../Assets/Images/banner2-group.png">
+        </div>
+        <div>A balanced dog diet should consist of protein,fats,carbohydrates, vitamins and minerals along with plenty of fresh water.</div>
+        <div class="sec2-1">
+            <img src="../Assets/Images/dog22222222222222222222222.png">
+        </div>
+      </div>
+    </main>
+    <footer>
+        <div class="footer-row1">
+            <img src="../Assets/Images/logo-removebg-preview.png">
+        </div>
+        <div class="footer-row2">
+            <div class="footer-col1">
+                <h3>PetPalooza</h3>
+                <a href="../Html/About.html">About Us</a>
+                <a href="../Html/Contactus.html">Contact Us</a>
+                <a href="#">Shop</a>
+                <a href="#">Blog</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div class="footer-col2">
+                <h3>Categories</h3>
+                <a href="../Html/Dog.html">Dog</a>
+                <a href="../Html/Cat.html">Cat</a>
+                <a href="../Html/SmallPets.html">Fish</a>
+                <a href="../Html/SmallPets.html">Rats</a>
+                <a href="../Html/SmallPets.html">Rabbits</a>
+                <a href="../Html/SmallPets.html">Hamsters</a>
+                <a href="../Html/SmallPets.html">Guinea Pigs</a>
+            </div>
+            <div class="footer-col3">
+                <h3>Support</h3>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Refund & Returns Policy</a>
+                <a href="#">Shipping Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+            <div class="footer-col4">
+                <div class="footer-col4-1">
+                    <div class="footer-col4-1-1">Follow</div>
+                    <div class="footer-col4-1-2">
+                        <img src="../Assets/Images/footer-social.png">
+                    </div>
+                </div>
+                <div class="footer-col4-2">
+                    <div class="footer-col4-2-1">Get in Touch</div>
+                    <div>Call: +91-1234567890</div>
+                    <div>Email:support@petpalooza.com</div>
+                </div>
+            </div>
+            <div class="footer-col5">
+                <h3>For Subscribe</h3>
+                <div class="footer-col5-1">Email</div>
+                <div class="footer-col5-2">Subscribe Now</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../Javascript/Smallpets.js"></script>
+  </body>
+</html>

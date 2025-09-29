@@ -1,0 +1,826 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body{
+    background-color: #F8F9FA;
+}
+header{
+    position: relative;
+}
+.head1{
+    background-color: #F8F9FA;
+    padding: 20px;
+    text-align: right;
+}
+.head2{
+    position: relative;
+    background-color: #007BFF;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    font-size: 22px;
+    gap: 10px;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+.head2-1{
+    width: 50%;
+    aspect-ratio: 4/4;
+}
+.head2-1 img{
+    height: 100%;
+    width: 100%;
+}
+.head2 div{
+    cursor: pointer;
+}
+.plumbing-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+@keyframes top-down {
+    from{
+        transform: translateY(-20%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.plumbing-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 60%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    padding: 10px;
+    z-index: 1001;
+}
+.plumbing-overlay1 div{
+    margin-top: 10%;
+}
+.plumbing-overlay1 a{
+    text-decoration: none;
+    color: black;
+}
+/* ----------------------------- */
+.drains-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.drains-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 20%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    z-index: 1001;
+}
+.drains-overlay1 div{
+    margin-top: 10%;
+}
+
+/* ----------------------------- */
+.commercial-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.commercial-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 20%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    z-index: 1001;
+}
+.commercial-overlay1 div{
+    margin-top: 10%;
+}
+
+@media (min-width:300px) and (max-width:400px) {
+    .head1{
+    background-color: #F8F9FA;
+    padding: 20px;
+    text-align: center;
+}
+.head2{
+    position: relative;
+    background-color: #007BFF;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 15px;
+    gap: 10px;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+.head2-1{
+    width: 20%;
+    aspect-ratio: 4/4;
+}
+.head2-1 img{
+    height: 100%;
+    width: 100%;
+}
+.head2 div{
+    cursor: pointer;
+}
+.plumbing-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/6;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+@keyframes top-down {
+    from{
+        transform: translateY(-20%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.plumbing-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 90%;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    font-size: 10px;
+    z-index: 1001;
+    padding: 10px;
+}
+.plumbing-overlay1 div{
+    margin-top: 10%;
+}
+.plumbing-overlay1 a{
+    text-decoration: none;
+    color: black;
+}
+/* ----------------------------- */
+.drains-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    z-index: 1001;
+    aspect-ratio: 4/6;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+}
+.drains-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 50%;
+    top: 30%;
+    left: 50%;
+    font-size: 10px;
+    transform: translateX(-50%);
+    padding: 10px;
+    z-index: 1001;
+}
+.drains-overlay1 div{
+    margin-top: 10%;
+}
+
+/* ----------------------------- */
+.commercial-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/6;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.commercial-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 50%;
+    top: 30%;
+    left: 50%;
+    font-size: 10px;
+    transform: translateX(-50%);
+    z-index: 1001;
+    padding: 10px;
+}
+.commercial-overlay1 div{
+    margin-top: 10%;
+}
+}
+
+@media (min-width:401px) and (max-width:576px) {
+    .head1{
+    background-color: #F8F9FA;
+    padding: 20px;
+    text-align: right;
+    font-size: 10px;
+}
+.head2{
+    position: relative;
+    background-color: #007BFF;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 15px;
+    gap: 10px;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+.head2-1{
+    width: 20%;
+    aspect-ratio: 4/4;
+}
+.head2-1 img{
+    height: 100%;
+    width: 100%;
+}
+.head2 div{
+    cursor: pointer;
+}
+.plumbing-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/6;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+@keyframes top-down {
+    from{
+        transform: translateY(-20%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.plumbing-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 90%;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    font-size: 10px;
+    padding: 10px;
+    z-index: 1001;
+}
+.plumbing-overlay1 div{
+    margin-top: 10%;
+}
+.plumbing-overlay1 a{
+    text-decoration: none;
+    color: black;
+}
+/* ----------------------------- */
+.drains-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/6;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.drains-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 50%;
+    top: 30%;
+    left: 50%;
+    font-size: 10px;
+    transform: translateX(-50%);
+    padding: 10px;
+}
+.drains-overlay1 div{
+    margin-top: 10%;
+}
+
+/* ----------------------------- */
+.commercial-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/6;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.commercial-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 50%;
+    top: 30%;
+    left: 50%;
+    font-size: 10px;
+    transform: translateX(-50%);
+    padding: 10px;
+    z-index: 1001;
+}
+.commercial-overlay1 div{
+    margin-top: 10%;
+}
+}
+
+
+@media (min-width:577px) and (max-width:768px) {
+    .head1{
+    background-color: #F8F9FA;
+    padding: 20px;
+    font-size: 10px;
+    text-align: right;
+}
+.head2{
+    position: relative;
+    background-color: #007BFF;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    font-size: 12px;
+    gap: 5px;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+.head2-1{
+    width: 30%;
+    aspect-ratio: 4/4;
+}
+.head2-1 img{
+    height: 100%;
+    width: 100%;
+}
+.head2 div{
+    cursor: pointer;
+}
+.plumbing-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+@keyframes top-down {
+    from{
+        transform: translateY(-20%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.plumbing-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 60%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    padding: 10px;
+    z-index: 1001;
+    font-size: 12px;
+}
+.plumbing-overlay1 div{
+    margin-top: 10%;
+}
+.plumbing-overlay1 a{
+    text-decoration: none;
+    color: black;
+}
+/* ----------------------------- */
+.drains-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.drains-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 20%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    z-index: 1001;
+    font-size: 12px;
+}
+.drains-overlay1 div{
+    margin-top: 10%;
+}
+
+/* ----------------------------- */
+.commercial-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.commercial-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 20%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    font-size: 12px;
+    z-index: 1001;
+}
+.commercial-overlay1 div{
+    margin-top: 10%;
+}
+}
+
+
+
+@media (min-width:769px) and (max-width:992px) {
+    .head1{
+    background-color: #F8F9FA;
+    padding: 20px;
+    font-size: 12px;
+    text-align: right;
+}
+.head2{
+    position: relative;
+    background-color: #007BFF;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    font-size: 12px;
+    gap: 5px;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+.head2-1{
+    width: 30%;
+    aspect-ratio: 4/4;
+}
+.head2-1 img{
+    height: 100%;
+    width: 100%;
+}
+.head2 div{
+    cursor: pointer;
+}
+.plumbing-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+@keyframes top-down {
+    from{
+        transform: translateY(-20%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.plumbing-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 60%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    padding: 10px;
+    font-size: 12px;
+    z-index: 1001;
+}
+.plumbing-overlay1 div{
+    margin-top: 10%;
+}
+.plumbing-overlay1 a{
+    text-decoration: none;
+    color: black;
+}
+/* ----------------------------- */
+.drains-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.drains-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 20%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    font-size: 12px;
+    z-index: 1001;
+}
+.drains-overlay1 div{
+    margin-top: 10%;
+}
+
+/* ----------------------------- */
+.commercial-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.commercial-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 20%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    z-index: 1001;
+    font-size: 12px;
+}
+.commercial-overlay1 div{
+    margin-top: 10%;
+}
+}
+
+
+
+
+@media (min-width:993px) and (max-width:1200px) {
+    .head1{
+    background-color: #F8F9FA;
+    padding: 20px;
+    font-size: 12px;
+    text-align: right;
+}
+.head2{
+    position: relative;
+    background-color: #007BFF;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    font-size: 14px;
+    gap: 5px;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+.head2-1{
+    width: 50%;
+    aspect-ratio: 4/4;
+}
+.head2-1 img{
+    height: 100%;
+    width: 100%;
+}
+.head2 div{
+    cursor: pointer;
+}
+.plumbing-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+@keyframes top-down {
+    from{
+        transform: translateY(-20%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.plumbing-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 60%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    padding: 10px;
+    font-size: 12px;
+    z-index: 1001;
+}
+.plumbing-overlay1 div{
+    margin-top: 10%;
+}
+.plumbing-overlay1 a{
+    text-decoration: none;
+    color: black;
+}
+/* ----------------------------- */
+.drains-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.drains-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 20%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    font-size: 12px;
+}
+.drains-overlay1 div{
+    margin-top: 10%;
+    z-index: 1001;
+}
+
+/* ----------------------------- */
+.commercial-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    z-index: 1001;
+    animation: top-down 0.5s ease-in-out;
+}
+.commercial-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 20%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    font-size: 12px;
+    z-index: 1001;
+}
+.commercial-overlay1 div{
+    margin-top: 10%;
+}
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.section1-content{
+    width: 98vw;
+    margin: auto;
+    position: relative;
+    margin-top: 3%;
+    aspect-ratio: 6/3;
+}
+.section1-content img{
+    height: 100%;
+    width: 100%;
+}
+.section1-overlay{
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+.section1-overlay h3{
+    position: relative;
+    margin-top: 3%;
+}
+.back-home{
+    margin-top: 5%;
+    background-color: #B14308;
+    padding: 15px 30px;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (min-width:300px) and (max-width:400px) {
+    .section1-content{
+    width: 98vw;
+    margin: auto;
+    position: relative;
+    margin-top: 3%;
+    aspect-ratio: 6/3;
+}
+.section1-content img{
+    height: 100%;
+    width: 100%;
+}
+.section1-overlay{
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10%;
+}
+.section1-overlay h2{
+    font-size: 20px;
+}
+.section1-overlay h3{
+    position: relative;
+    margin-top: 3%;
+    font-size: 15px;
+}
+.back-home{
+    margin-top: 5%;
+    background-color: #B14308;
+    padding: 15px 30px;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+}

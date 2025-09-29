@@ -1,0 +1,832 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body{
+    background-color: #F8F9FA;
+}
+header{
+    position: relative;
+}
+.head1{
+    background-color: #F8F9FA;
+    padding: 20px;
+    text-align: right;
+}
+.head2{
+    position: relative;
+    background-color: #007BFF;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    font-size: 22px;
+    gap: 10px;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+.head2-1{
+    width: 50%;
+    aspect-ratio: 4/4;
+}
+.head2-1 img{
+    height: 100%;
+    width: 100%;
+}
+.head2 div{
+    cursor: pointer;
+}
+.plumbing-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+@keyframes top-down {
+    from{
+        transform: translateY(-20%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.plumbing-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 60%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    padding: 10px;
+    z-index: 1001;
+}
+.plumbing-overlay1 div{
+    margin-top: 10%;
+}
+.plumbing-overlay1 a{
+    text-decoration: none;
+    color: black;
+}
+/* ----------------------------- */
+.drains-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.drains-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 20%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    z-index: 1001;
+}
+.drains-overlay1 div{
+    margin-top: 10%;
+}
+
+/* ----------------------------- */
+.commercial-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.commercial-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 20%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    z-index: 1001;
+}
+.commercial-overlay1 div{
+    margin-top: 10%;
+}
+
+@media (min-width:300px) and (max-width:400px) {
+    .head1{
+    background-color: #F8F9FA;
+    padding: 20px;
+    text-align: center;
+}
+.head2{
+    position: relative;
+    background-color: #007BFF;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 15px;
+    gap: 10px;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+.head2-1{
+    width: 20%;
+    aspect-ratio: 4/4;
+}
+.head2-1 img{
+    height: 100%;
+    width: 100%;
+}
+.head2 div{
+    cursor: pointer;
+}
+.plumbing-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/6;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+@keyframes top-down {
+    from{
+        transform: translateY(-20%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.plumbing-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 90%;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    font-size: 10px;
+    z-index: 1001;
+    padding: 10px;
+}
+.plumbing-overlay1 div{
+    margin-top: 10%;
+}
+.plumbing-overlay1 a{
+    text-decoration: none;
+    color: black;
+}
+/* ----------------------------- */
+.drains-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    z-index: 1001;
+    aspect-ratio: 4/6;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+}
+.drains-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 50%;
+    top: 30%;
+    left: 50%;
+    font-size: 10px;
+    transform: translateX(-50%);
+    padding: 10px;
+    z-index: 1001;
+}
+.drains-overlay1 div{
+    margin-top: 10%;
+}
+
+/* ----------------------------- */
+.commercial-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/6;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.commercial-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 50%;
+    top: 30%;
+    left: 50%;
+    font-size: 10px;
+    transform: translateX(-50%);
+    z-index: 1001;
+    padding: 10px;
+}
+.commercial-overlay1 div{
+    margin-top: 10%;
+}
+}
+
+@media (min-width:401px) and (max-width:576px) {
+    .head1{
+    background-color: #F8F9FA;
+    padding: 20px;
+    text-align: right;
+    font-size: 10px;
+}
+.head2{
+    position: relative;
+    background-color: #007BFF;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 15px;
+    gap: 10px;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+.head2-1{
+    width: 20%;
+    aspect-ratio: 4/4;
+}
+.head2-1 img{
+    height: 100%;
+    width: 100%;
+}
+.head2 div{
+    cursor: pointer;
+}
+.plumbing-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/6;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+@keyframes top-down {
+    from{
+        transform: translateY(-20%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.plumbing-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 90%;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    font-size: 10px;
+    padding: 10px;
+    z-index: 1001;
+}
+.plumbing-overlay1 div{
+    margin-top: 10%;
+}
+.plumbing-overlay1 a{
+    text-decoration: none;
+    color: black;
+}
+/* ----------------------------- */
+.drains-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/6;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.drains-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 50%;
+    top: 30%;
+    left: 50%;
+    font-size: 10px;
+    transform: translateX(-50%);
+    padding: 10px;
+}
+.drains-overlay1 div{
+    margin-top: 10%;
+}
+
+/* ----------------------------- */
+.commercial-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/6;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.commercial-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 50%;
+    top: 30%;
+    left: 50%;
+    font-size: 10px;
+    transform: translateX(-50%);
+    padding: 10px;
+    z-index: 1001;
+}
+.commercial-overlay1 div{
+    margin-top: 10%;
+}
+}
+
+
+@media (min-width:577px) and (max-width:768px) {
+    .head1{
+    background-color: #F8F9FA;
+    padding: 20px;
+    font-size: 10px;
+    text-align: right;
+}
+.head2{
+    position: relative;
+    background-color: #007BFF;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    font-size: 12px;
+    gap: 5px;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+.head2-1{
+    width: 30%;
+    aspect-ratio: 4/4;
+}
+.head2-1 img{
+    height: 100%;
+    width: 100%;
+}
+.head2 div{
+    cursor: pointer;
+}
+.plumbing-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+@keyframes top-down {
+    from{
+        transform: translateY(-20%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.plumbing-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 60%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    padding: 10px;
+    z-index: 1001;
+    font-size: 12px;
+}
+.plumbing-overlay1 div{
+    margin-top: 10%;
+}
+.plumbing-overlay1 a{
+    text-decoration: none;
+    color: black;
+}
+/* ----------------------------- */
+.drains-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.drains-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 20%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    z-index: 1001;
+    font-size: 12px;
+}
+.drains-overlay1 div{
+    margin-top: 10%;
+}
+
+/* ----------------------------- */
+.commercial-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.commercial-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 20%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    font-size: 12px;
+    z-index: 1001;
+}
+.commercial-overlay1 div{
+    margin-top: 10%;
+}
+}
+
+
+
+@media (min-width:769px) and (max-width:992px) {
+    .head1{
+    background-color: #F8F9FA;
+    padding: 20px;
+    font-size: 12px;
+    text-align: right;
+}
+.head2{
+    position: relative;
+    background-color: #007BFF;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    font-size: 12px;
+    gap: 5px;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+.head2-1{
+    width: 30%;
+    aspect-ratio: 4/4;
+}
+.head2-1 img{
+    height: 100%;
+    width: 100%;
+}
+.head2 div{
+    cursor: pointer;
+}
+.plumbing-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+@keyframes top-down {
+    from{
+        transform: translateY(-20%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.plumbing-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 60%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    padding: 10px;
+    font-size: 12px;
+    z-index: 1001;
+}
+.plumbing-overlay1 div{
+    margin-top: 10%;
+}
+.plumbing-overlay1 a{
+    text-decoration: none;
+    color: black;
+}
+/* ----------------------------- */
+.drains-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.drains-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 20%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    font-size: 12px;
+    z-index: 1001;
+}
+.drains-overlay1 div{
+    margin-top: 10%;
+}
+
+/* ----------------------------- */
+.commercial-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.commercial-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 20%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    z-index: 1001;
+    font-size: 12px;
+}
+.commercial-overlay1 div{
+    margin-top: 10%;
+}
+}
+
+
+
+
+@media (min-width:993px) and (max-width:1200px) {
+    .head1{
+    background-color: #F8F9FA;
+    padding: 20px;
+    font-size: 12px;
+    text-align: right;
+}
+.head2{
+    position: relative;
+    background-color: #007BFF;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    font-size: 14px;
+    gap: 5px;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+.head2-1{
+    width: 50%;
+    aspect-ratio: 4/4;
+}
+.head2-1 img{
+    height: 100%;
+    width: 100%;
+}
+.head2 div{
+    cursor: pointer;
+}
+.plumbing-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+@keyframes top-down {
+    from{
+        transform: translateY(-20%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.plumbing-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 60%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    padding: 10px;
+    font-size: 12px;
+    z-index: 1001;
+}
+.plumbing-overlay1 div{
+    margin-top: 10%;
+}
+.plumbing-overlay1 a{
+    text-decoration: none;
+    color: black;
+}
+/* ----------------------------- */
+.drains-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.drains-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 20%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    font-size: 12px;
+}
+.drains-overlay1 div{
+    margin-top: 10%;
+    z-index: 1001;
+}
+
+/* ----------------------------- */
+.commercial-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    z-index: 1001;
+    animation: top-down 0.5s ease-in-out;
+}
+.commercial-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 20%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    font-size: 12px;
+    z-index: 1001;
+}
+.commercial-overlay1 div{
+    margin-top: 10%;
+}
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.final-checkout-container{
+    border: 1px solid black;
+    width: 50vw;
+    margin: auto;
+    position: relative;
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+.sec1-1{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    gap: 5%;
+    align-items: center;
+    font-size: 23px;
+    padding: 30px;
+}
+.amount-to-pay{
+    font-size: 18px;
+    margin-top: 5%;
+}
+.amount-to-pay span{
+    font-weight: bold;
+}
+.final-checkout-container h2{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.sec1-3{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    margin-top: 5%;
+    padding: 30px;
+    border-bottom: 1px solid grey;
+    font-size: 20px;
+}
+.pay{
+    margin-top: 5%;
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #B14308;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (max-width:1200px) and (min-width:993px){
+  .final-checkout-container{width:60vw;padding-bottom:4%}
+  .sec1-1{grid-template-columns:1fr 5fr;font-size:21px;padding:25px}
+  .amount-to-pay{font-size:17px}
+  .sec1-3{grid-template-columns:1fr 4fr 1fr;font-size:18px;padding:25px}
+  .pay{padding:12px 25px;font-size:18px}
+}
+
+@media (max-width:992px) and (min-width:769px){
+  .final-checkout-container{width:70vw;padding-bottom:4%}
+  .sec1-1{grid-template-columns:1fr 5fr;font-size:20px;padding:20px}
+  .amount-to-pay{font-size:16px}
+  .sec1-3{grid-template-columns:1fr 4fr 1fr;font-size:17px;padding:20px}
+  .pay{padding:12px 25px;font-size:17px}
+}
+
+@media (max-width:768px) and (min-width:577px){
+  .final-checkout-container{width:80vw;padding-bottom:4%}
+  .sec1-1{grid-template-columns:1fr 4fr;font-size:18px;padding:18px}
+  .amount-to-pay{font-size:15px}
+  .sec1-3{grid-template-columns:1fr 3fr 1fr;font-size:16px;padding:18px}
+  .pay{padding:10px 22px;font-size:16px}
+}
+
+@media (max-width:576px) and (min-width:401px){
+  .final-checkout-container{width:90vw;padding-bottom:4%}
+  .sec1-1{grid-template-columns:1fr 3fr;font-size:16px;padding:15px}
+  .amount-to-pay{font-size:14px}
+  .sec1-3{grid-template-columns:1fr 3fr 1fr;font-size:15px;padding:15px}
+  .pay{padding:10px 20px;font-size:15px}
+}
+
+@media (max-width:400px) and (min-width:300px){
+  .final-checkout-container{width:95vw;padding-bottom:4%}
+  .sec1-1{grid-template-columns:1fr 2fr;font-size:14px;padding:12px}
+  .amount-to-pay{font-size:13px}
+  .sec1-3{grid-template-columns:1fr 2fr 1fr;font-size:14px;padding:12px}
+  .pay{padding:8px 18px;font-size:14px}
+}

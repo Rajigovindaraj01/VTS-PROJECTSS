@@ -1,0 +1,1286 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body{
+    background-color: #F8F9FA;
+}
+header{
+    position: relative;
+}
+.head1{
+    background-color: #F8F9FA;
+    padding: 20px;
+    text-align: right;
+}
+.head2{
+    position: relative;
+    background-color: #007BFF;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    font-size: 22px;
+    gap: 10px;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+.head2-1{
+    width: 50%;
+    aspect-ratio: 4/4;
+}
+.head2-1 img{
+    height: 100%;
+    width: 100%;
+}
+.head2 div{
+    cursor: pointer;
+}
+.plumbing-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+@keyframes top-down {
+    from{
+        transform: translateY(-20%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.plumbing-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 60%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    padding: 10px;
+    z-index: 1001;
+}
+.plumbing-overlay1 div{
+    margin-top: 10%;
+}
+.plumbing-overlay1 a{
+    text-decoration: none;
+    color: black;
+}
+/* ----------------------------- */
+.drains-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.drains-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 20%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    z-index: 1001;
+}
+.drains-overlay1 div{
+    margin-top: 10%;
+}
+
+/* ----------------------------- */
+.commercial-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.commercial-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 20%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    z-index: 1001;
+}
+.commercial-overlay1 div{
+    margin-top: 10%;
+}
+
+@media (min-width:300px) and (max-width:400px) {
+    .head1{
+    background-color: #F8F9FA;
+    padding: 20px;
+    text-align: center;
+}
+.head2{
+    position: relative;
+    background-color: #007BFF;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 15px;
+    gap: 10px;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+.head2-1{
+    width: 20%;
+    aspect-ratio: 4/4;
+}
+.head2-1 img{
+    height: 100%;
+    width: 100%;
+}
+.head2 div{
+    cursor: pointer;
+}
+.plumbing-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/6;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+@keyframes top-down {
+    from{
+        transform: translateY(-20%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.plumbing-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 90%;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    font-size: 10px;
+    z-index: 1001;
+    padding: 10px;
+}
+.plumbing-overlay1 div{
+    margin-top: 10%;
+}
+.plumbing-overlay1 a{
+    text-decoration: none;
+    color: black;
+}
+/* ----------------------------- */
+.drains-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    z-index: 1001;
+    aspect-ratio: 4/6;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+}
+.drains-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 50%;
+    top: 30%;
+    left: 50%;
+    font-size: 10px;
+    transform: translateX(-50%);
+    padding: 10px;
+    z-index: 1001;
+}
+.drains-overlay1 div{
+    margin-top: 10%;
+}
+
+/* ----------------------------- */
+.commercial-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/6;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.commercial-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 50%;
+    top: 30%;
+    left: 50%;
+    font-size: 10px;
+    transform: translateX(-50%);
+    z-index: 1001;
+    padding: 10px;
+}
+.commercial-overlay1 div{
+    margin-top: 10%;
+}
+}
+
+@media (min-width:401px) and (max-width:576px) {
+    .head1{
+    background-color: #F8F9FA;
+    padding: 20px;
+    text-align: right;
+    font-size: 10px;
+}
+.head2{
+    position: relative;
+    background-color: #007BFF;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 15px;
+    gap: 10px;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+.head2-1{
+    width: 20%;
+    aspect-ratio: 4/4;
+}
+.head2-1 img{
+    height: 100%;
+    width: 100%;
+}
+.head2 div{
+    cursor: pointer;
+}
+.plumbing-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/6;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+@keyframes top-down {
+    from{
+        transform: translateY(-20%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.plumbing-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 90%;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    font-size: 10px;
+    padding: 10px;
+    z-index: 1001;
+}
+.plumbing-overlay1 div{
+    margin-top: 10%;
+}
+.plumbing-overlay1 a{
+    text-decoration: none;
+    color: black;
+}
+/* ----------------------------- */
+.drains-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/6;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.drains-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 50%;
+    top: 30%;
+    left: 50%;
+    font-size: 10px;
+    transform: translateX(-50%);
+    padding: 10px;
+}
+.drains-overlay1 div{
+    margin-top: 10%;
+}
+
+/* ----------------------------- */
+.commercial-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/6;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.commercial-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 50%;
+    top: 30%;
+    left: 50%;
+    font-size: 10px;
+    transform: translateX(-50%);
+    padding: 10px;
+    z-index: 1001;
+}
+.commercial-overlay1 div{
+    margin-top: 10%;
+}
+}
+
+
+@media (min-width:577px) and (max-width:768px) {
+    .head1{
+    background-color: #F8F9FA;
+    padding: 20px;
+    font-size: 10px;
+    text-align: right;
+}
+.head2{
+    position: relative;
+    background-color: #007BFF;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    font-size: 12px;
+    gap: 5px;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+.head2-1{
+    width: 30%;
+    aspect-ratio: 4/4;
+}
+.head2-1 img{
+    height: 100%;
+    width: 100%;
+}
+.head2 div{
+    cursor: pointer;
+}
+.plumbing-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+@keyframes top-down {
+    from{
+        transform: translateY(-20%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.plumbing-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 60%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    padding: 10px;
+    z-index: 1001;
+    font-size: 12px;
+}
+.plumbing-overlay1 div{
+    margin-top: 10%;
+}
+.plumbing-overlay1 a{
+    text-decoration: none;
+    color: black;
+}
+/* ----------------------------- */
+.drains-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.drains-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 20%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    z-index: 1001;
+    font-size: 12px;
+}
+.drains-overlay1 div{
+    margin-top: 10%;
+}
+
+/* ----------------------------- */
+.commercial-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.commercial-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 20%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    font-size: 12px;
+    z-index: 1001;
+}
+.commercial-overlay1 div{
+    margin-top: 10%;
+}
+}
+
+
+
+@media (min-width:769px) and (max-width:992px) {
+    .head1{
+    background-color: #F8F9FA;
+    padding: 20px;
+    font-size: 12px;
+    text-align: right;
+}
+.head2{
+    position: relative;
+    background-color: #007BFF;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    font-size: 12px;
+    gap: 5px;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+.head2-1{
+    width: 30%;
+    aspect-ratio: 4/4;
+}
+.head2-1 img{
+    height: 100%;
+    width: 100%;
+}
+.head2 div{
+    cursor: pointer;
+}
+.plumbing-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+@keyframes top-down {
+    from{
+        transform: translateY(-20%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.plumbing-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 60%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    padding: 10px;
+    font-size: 12px;
+    z-index: 1001;
+}
+.plumbing-overlay1 div{
+    margin-top: 10%;
+}
+.plumbing-overlay1 a{
+    text-decoration: none;
+    color: black;
+}
+/* ----------------------------- */
+.drains-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.drains-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 20%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    font-size: 12px;
+    z-index: 1001;
+}
+.drains-overlay1 div{
+    margin-top: 10%;
+}
+
+/* ----------------------------- */
+.commercial-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.commercial-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 20%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    z-index: 1001;
+    font-size: 12px;
+}
+.commercial-overlay1 div{
+    margin-top: 10%;
+}
+}
+
+
+
+
+@media (min-width:993px) and (max-width:1200px) {
+    .head1{
+    background-color: #F8F9FA;
+    padding: 20px;
+    font-size: 12px;
+    text-align: right;
+}
+.head2{
+    position: relative;
+    background-color: #007BFF;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    font-size: 14px;
+    gap: 5px;
+    color: white;
+    justify-items: center;
+    align-items: center;
+}
+.head2-1{
+    width: 50%;
+    aspect-ratio: 4/4;
+}
+.head2-1 img{
+    height: 100%;
+    width: 100%;
+}
+.head2 div{
+    cursor: pointer;
+}
+.plumbing-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+@keyframes top-down {
+    from{
+        transform: translateY(-20%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.plumbing-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 60%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    padding: 10px;
+    font-size: 12px;
+    z-index: 1001;
+}
+.plumbing-overlay1 div{
+    margin-top: 10%;
+}
+.plumbing-overlay1 a{
+    text-decoration: none;
+    color: black;
+}
+/* ----------------------------- */
+.drains-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    animation: top-down 0.5s ease-in-out;
+    z-index: 1001;
+}
+.drains-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 20%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    font-size: 12px;
+}
+.drains-overlay1 div{
+    margin-top: 10%;
+    z-index: 1001;
+}
+
+/* ----------------------------- */
+.commercial-overlay{
+    background-color: rgba(128, 128, 128, 0.623);
+    position: fixed;
+    top: 0;
+    width:100%;
+    aspect-ratio: 4/4;
+    display: none;
+    z-index: 1001;
+    animation: top-down 0.5s ease-in-out;
+}
+.commercial-overlay1{
+    background-color: white;
+    position: absolute;
+    width: 20%;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    font-size: 12px;
+    z-index: 1001;
+}
+.commercial-overlay1 div{
+    margin-top: 10%;
+}
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.section1{
+    width: 90vw;
+    margin: auto;
+    position: relative;
+    margin-top: 5%;
+    background-color: #342194;
+    color: white;
+    padding: 20px;
+}
+.section1 h4{
+    margin-top: 20px;
+}
+.section1-form{
+    margin-top: 3%;
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+.section1-form p{
+    margin-top: 5%;
+    font-size: 18px;
+}
+.section1-form input{
+    margin-top: 2%;
+    padding: 20px;
+    width: 100%;
+    flex: 1;
+}
+.sections-back-next{
+    margin-top: 5%;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Back{
+    padding: 15px 50px; 
+    cursor: pointer;
+    border: 1px solid gray;
+    text-align: center;
+}
+.next{
+    background-color: #B14308;
+    color: white;
+    padding: 15px 50px; 
+    cursor: pointer;
+}
+.grid-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+}
+.address input{
+    aspect-ratio: 15/2;
+}
+@media (min-width:300px) and (max-width:400px) {
+.section1{
+    width: 90vw;
+    margin: auto;
+    position: relative;
+    margin-top: 5%;
+    background-color: #342194;
+    color: white;
+    padding: 20px;
+}
+.section1 h2{
+    font-size: 20px;
+}
+.section1 h4{
+    margin-top: 20px;
+}
+.section1-form{
+    margin-top: 3%;
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+.section1-form p{
+    margin-top: 20%;
+    font-size: 15px;
+}
+.section1-form input{
+    margin-top: 2%;
+    padding: 20px;
+    width: 100%;
+    flex: 1;
+}
+.sections-back-next{
+    margin-top: 5%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.next{
+    background-color: #B14308;
+    color: white;
+    padding: 15px 50px; 
+    cursor: pointer;
+    text-align: center;
+}
+.grid-form{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5%;
+}
+.address input{
+    margin-top: 10% !important;
+    aspect-ratio: 15/2;
+}
+}
+
+
+
+@media (min-width:401px) and (max-width:576px) {
+.section1{
+    width: 90vw;
+    margin: auto;
+    position: relative;
+    margin-top: 5%;
+    background-color: #342194;
+    color: white;
+    padding: 20px;
+}
+.section1 h2{
+    font-size: 20px;
+}
+.section1 h4{
+    margin-top: 20px;
+}
+.section1-form{
+    margin-top: 3%;
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+.section1-form p{
+    margin-top: 20%;
+    font-size: 18px;
+}
+.section1-form input{
+    margin-top: 2%;
+    padding: 20px;
+    width: 100%;
+    flex: 1;
+}
+.sections-back-next{
+    margin-top: 5%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.next{
+    background-color: #B14308;
+    color: white;
+    padding: 15px 50px; 
+    cursor: pointer;
+    text-align: center;
+}
+.grid-form{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5%;
+}
+.address input{
+    margin-top: 10% !important;
+    aspect-ratio: 15/2;
+}
+}
+
+
+
+@media (min-width:577px) and (max-width:768px) {
+.section1{
+    width: 90vw;
+    margin: auto;
+    position: relative;
+    margin-top: 5%;
+    background-color: #342194;
+    color: white;
+    padding: 20px;
+}
+.section1 h2{
+    font-size: 20px;
+}
+.section1 h4{
+    margin-top: 20px;
+}
+.section1-form{
+    margin-top: 3%;
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+.section1-form p{
+    font-size: 18px;
+}
+.section1-form input{
+    margin-top: 2%;
+    padding: 20px;
+    width: 100%;
+    flex: 1;
+}
+.sections-back-next{
+    margin-top: 5%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.next{
+    background-color: #B14308;
+    color: white;
+    padding: 15px 50px; 
+    cursor: pointer;
+    text-align: center;
+}
+}
+
+
+
+@media (min-width:769px) and (max-width:992px) {
+.section1{
+    width: 90vw;
+    margin: auto;
+    position: relative;
+    margin-top: 5%;
+    background-color: #342194;
+    color: white;
+    padding: 20px;
+}
+.section1 h2{
+    font-size: 20px;
+}
+.section1 h4{
+    margin-top: 20px;
+}
+.section1-form{
+    margin-top: 3%;
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+.section1-form p{
+    font-size: 18px;
+}
+.section1-form input{
+    margin-top: 2%;
+    padding: 20px;
+    width: 100%;
+    flex: 1;
+}
+.sections-back-next{
+    margin-top: 5%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.next{
+    background-color: #B14308;
+    color: white;
+    padding: 15px 50px; 
+    cursor: pointer;
+    text-align: center;
+}
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.and-away{
+    text-align: center;
+    position: relative;
+    margin-top: 5%;
+}
+.and-away span{
+    color: #B14308;
+    font-weight: bold;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+footer{
+    background-color: white;
+    position: relative;
+    margin-top: 10%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
+    gap: 3%;
+}
+footer p{
+    margin-top: 10%;
+}
+.footer-overlay{
+    position: absolute;
+    width: 10vw;
+    aspect-ratio: 4/4;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -15%;
+    border-radius: 50%;
+}
+.footer-overlay img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.app-image{
+    position: relative;
+    margin-top: 5%;
+    width: 100%;
+    aspect-ratio: 4/3;
+}
+.app-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (min-width:300px) and (max-width:400px) {
+    footer{
+    background-color: white;
+    position: relative;
+    margin-top: 30%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3%;
+    text-align: center;
+    padding-top: 20%;
+    padding-bottom: 40%;
+}
+footer p{
+    margin-top: 10%;
+}
+.footer-overlay{
+    position: absolute;
+    width: 30vw;
+    aspect-ratio: 4/4;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5%;
+    border-radius: 50%;
+}
+.footer-overlay img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.app-image{
+    position: relative;
+    margin-top: 5%;
+    width: 100%;
+    aspect-ratio: 4/3;
+}
+.app-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+}
+
+
+
+@media (min-width:401px) and (max-width:576px) {
+    footer{
+    background-color: white;
+    position: relative;
+    margin-top: 30%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3%;
+    text-align: center;
+    padding-top: 20%;
+    padding-bottom: 40%;
+}
+footer p{
+    margin-top: 10%;
+}
+.footer-overlay{
+    position: absolute;
+    width: 30vw;
+    aspect-ratio: 4/4;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5%;
+    border-radius: 50%;
+}
+.footer-overlay img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.app-image{
+    position: relative;
+    margin-top: 5%;
+    width: 100%;
+    aspect-ratio: 4/3;
+}
+.app-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+}
+
+
+@media (min-width:577px) and (max-width:768px) {
+    footer{
+    background-color: white;
+    position: relative;
+    margin-top: 10%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
+    gap: 3%;
+    font-size: 12px;
+}
+footer p{
+    margin-top: 10%;
+}
+.footer-overlay{
+    position: absolute;
+    width: 10vw;
+    aspect-ratio: 4/4;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -15%;
+    border-radius: 50%;
+}
+.footer-overlay img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.app-image{
+    position: relative;
+    margin-top: 5%;
+    width: 100%;
+    aspect-ratio: 4/3;
+}
+.app-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+}
+
+
+
+@media (min-width:769px) and (max-width:992px) {
+    footer{
+    background-color: white;
+    position: relative;
+    margin-top: 10%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
+    gap: 3%;
+    font-size: 14px;
+}
+footer p{
+    margin-top: 10%;
+}
+.footer-overlay{
+    position: absolute;
+    width: 10vw;
+    aspect-ratio: 4/4;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -15%;
+    border-radius: 50%;
+}
+.footer-overlay img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.app-image{
+    position: relative;
+    margin-top: 5%;
+    width: 100%;
+    aspect-ratio: 4/3;
+}
+.app-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+}
+
+
+
+
+
+@media (min-width:993px) and (max-width:1200px) {
+    footer{
+    background-color: white;
+    position: relative;
+    margin-top: 10%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
+    gap: 3%;
+    font-size: 16px;
+}
+footer p{
+    margin-top: 10%;
+}
+.footer-overlay{
+    position: absolute;
+    width: 10vw;
+    aspect-ratio: 4/4;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -15%;
+    border-radius: 50%;
+}
+.footer-overlay img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.app-image{
+    position: relative;
+    margin-top: 5%;
+    width: 100%;
+    aspect-ratio: 4/3;
+}
+.app-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+}

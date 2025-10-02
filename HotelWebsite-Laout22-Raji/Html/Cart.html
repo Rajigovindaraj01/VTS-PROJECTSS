@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart-page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Boldonse&family=Cookie&family=Creepster&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dokdo&family=Engagement&family=Hanuman:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Outline&family=Londrina+Shadow&family=Mea+Culpa&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Pompiere&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rochester&family=Rubik+Mono+One&family=Rubik+Wet+Paint&family=Rye&family=Special+Gothic+Condensed+One&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../Css/Cartpage.css" />
+  </head>
+  <body>
+    <header>
+      <div>Dakshin Bhojanam</div>
+      <a href="../index.html">Home</a>
+      <a href="../Html/Menu.html" style="color: #c9a74d">Menu</a>
+      <a href="../Html/About.html">About</a>
+      <a href="../Html/Gallery.html">Gallery</a>
+      <a href="../Html/Contact.html">Contact</a>
+      <a href="../Html/Menu.html" class="order-now">Order now</a>
+    </header>
+    <main>
+      <div class="cart-container">
+        <h1>Your Cart</h1>
+        <div id="cart-items" class="cart-items"></div>
+        <div class="cart-summary">
+          <p>Total: ₹<span id="total-price">0</span></p>
+          <div class="cart-buttons">
+            <button id="cancel" class="cancel-btn">Cancel</button>
+            <button id="proceed" class="proceed-btn">Proceed to Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Confirmation Modal -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <h2>Are you sure you want to confirm this order?</h2>
+          <p>Cash on Delivery only</p>
+          <div id="popup-cart"></div>
+          <div class="popup-buttons">
+            <button id="popup-cancel" class="cancel-btn">Cancel</button>
+            <button id="popup-confirm" class="proceed-btn">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="../Javascript/cart.js"></script>
+  </body>
+</html>
